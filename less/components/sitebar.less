@@ -1,0 +1,119 @@
+
+.content-sitebar{
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+    .content-sitebar-user{
+        background-color: #fff;
+        padding: 15px;
+        border: 1px solid #e1e1e1;
+        margin-bottom: 25px;
+        img{
+            width: 100%;
+        }
+    }
+    img.img-mobile{
+        display: none;
+    }
+    .content-sitebar-user-name{
+        font-size: 18px;
+        margin: 15px 0;
+        line-height: 24px;
+        color: #444444;
+        width: 75%;
+        text-align: left;
+    }
+    .user-online{
+        background-image: url(../img/interface/ellipse.png);
+        width: 12px;
+        height: 12px;
+        margin-left: 15px;
+    }
+    .content-sitebar-user-info-text-top{
+        font-size: 18px;
+        padding-top: 30px;
+        line-height: 24px;
+        color: #b0b0b0;
+        text-align: left;
+        margin-bottom: 30px;
+        border-top: 1px solid #e6e6e6;
+    }
+    .content-sitebar-user-info-text-bottom{
+        font-size: 14px;
+        line-height: 46px;
+        color: #b0b0b0;
+        position: relative;
+        margin-bottom: 35px;
+    }
+    .content-sitebar-user-info-text-bottom:last-child{
+        margin-bottom: 20px;
+    }
+    .content-sitebar-user-info-text-bottom-value{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 46px;
+        color: #444444;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .content-sitebar-calendar-text-top{
+        font-size: 18px;
+        line-height: 24px;
+        color: #444444;
+        text-align: left;
+        padding: 25px 0 20px 15px;
+        margin: 0;
+    }
+    @import "less/components/calendar.less";
+    @import "less/components/banner.less";
+    @media(max-width: 768px){
+        .content-sitebar-user-name{
+            margin: 0 0 5px 0;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+        }
+        .user-online{
+            margin-left: 5px;
+        }
+        .content-sitebar-user-info-text-top{
+            padding-top: 5px;
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+        p.content-sitebar-user-info-text-bottom{
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 27px;
+        }
+        .content-sitebar-user-info-text-bottom-value{
+            font-size: 14px;
+            line-height: 27px;
+        }
+    }
+    @media(max-width: 992px){
+        .content-sitebar-user{
+            font-size: 0;
+        }
+        .content-sitebar-user .img-desctop,
+        .content-sitebar-user-info{
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .content-sitebar-user-info{
+            padding-left: 15px;
+        }
+        .content-sitebar-user-info-text-bottom{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media(max-width: 992px){
+    .content-sitebar{
+        display: block;
+        width: 100%;
+    }
+}
