@@ -3003,7 +3003,7 @@ div#widjet-help:before {
   color: #004444;
 }
 .content-sitebar #calendar thead tr:nth-child(1) td:nth-child(1):hover,
-.content-sitebar #calendar #calendar thead tr:nth-child(1) td:nth-child(3):hover {
+.content-sitebar #calendar thead tr:nth-child(1) td:nth-child(3):hover {
   cursor: pointer;
 }
 .content-sitebar #calendar tbody td:nth-child(n+6),
