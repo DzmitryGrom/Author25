@@ -6,7 +6,8 @@ module.exports = function (grunt) {
             dev: {
                 files: {
                     'css/home.css': 'less/home.less',
-                    'css/main.css': 'less/main.less'
+                    'css/main.css': 'less/main.less',
+                    'css/form.css': 'less/form.less'
                 }
             }
         },
