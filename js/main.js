@@ -2,15 +2,16 @@
 $(document).ready(function () {
     'use strict';
     /*calendar*/
+    var Dlast, D, DNlast, DNfirst, calendar, month;
     function Calendar(id, year, month) {
-        var Dlast = new Date(year, month + 1, 0).getDate(),
-            D = new Date(year, month, Dlast),
-            DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
-            DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
-            calendar = '<tr>',
-            month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-        if (DNfirst != 0) {
-            for (var  i = 1; i < DNfirst; i++) calendar += '<td>';
+        Dlast = new Date(year, month + 1, 0).getDate();
+        D = new Date(year, month, Dlast);
+        DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay();
+        DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay();
+        calendar = '<tr>';
+        month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+        if (DNfirst !== 0) {
+            for (var i = 1; i < DNfirst; i++) calendar += '<td>';
         } else {
           for(var  i = 0; i < 6; i++) calendar += '<td>';
         }
