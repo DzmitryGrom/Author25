@@ -11,38 +11,44 @@ $(document).ready(function () {
             month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
         if (DNfirst != 0) {
             for (var  i = 1; i < DNfirst; i++) calendar += '<td>';
-        }else{
+        } else {
           for(var  i = 0; i < 6; i++) calendar += '<td>';
         }
         for(var  i = 1; i <= Dlast; i++) {
           if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
             calendar += '<td class="today today_info">' + i;
-          }else{
+          } else {
             calendar += '<td>' + i;
           }
           if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
             calendar += '<tr>';
           }
         }
-        for(var  i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
         document.querySelector('#'+id+' tbody').innerHTML = calendar;
         document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
         document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
         document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
-        if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+        if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница,             добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
             document.querySelector('#'+id+' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
+            $('.today_info').hover(function(){
+                $(this).append("<div class='today-info-block'><div class='today-info-block_tr'></div><div class='today-info-block-value'><span id='block_value'>15 июня 20016</span></div><div class='today-info-block-content'><p class='today-info-block-content-number'>12345</p><p class='today-info-block-content-name'>Автор</p><p class='today-info-block-content-theme'>Автоматизация технологических процессов</p></div</div>");
+            },
+            function(){
+                $(this).children().remove();
+            });
         }
-        }
-        Calendar("calendar", new Date().getFullYear(), new Date().getMonth());
-        // переключатель минус месяц
-        document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
-          Calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month)-1);
-        }
-        // переключатель плюс месяц
-        document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
-          Calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month)+1);
+    }
+    Calendar("calendar", new Date().getFullYear(), new Date().getMonth());
+    // переключатель минус месяц
+    document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+        Calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month)-1);
+    }
+    // переключатель плюс месяц
+    document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+        Calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month)+1);
     };
     $('.today_info').hover(function(){
+        console.log("hi");
         $(this).append("<div class='today-info-block'><div class='today-info-block_tr'></div><div class='today-info-block-value'><span id='block_value'>15 июня 20016</span></div><div class='today-info-block-content'><p class='today-info-block-content-number'>12345</p><p class='today-info-block-content-name'>Автор</p><p class='today-info-block-content-theme'>Автоматизация технологических процессов</p></div</div>");
     },
     function(){
@@ -77,7 +83,7 @@ $(document).ready(function () {
         $('.pop-up_user').addClass("show");
         $(this).find(".pop-up_tr_user").addClass("show");
     });
-     $(".btn-pop-up_user-exit").on("click", function(){
+    $(".btn-pop-up_user-exit").on("click", function(){
         $('.pop-up_user').removeClass("show");
         $('.pop-up_tr_user').removeClass("show");
     });

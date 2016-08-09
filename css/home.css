@@ -2297,6 +2297,7 @@ body {
 .container-nav {
   background-color: #4786c8;
   z-index: 5;
+  overflow: hidden;
 }
 .container-nav .container {
   position: relative;
