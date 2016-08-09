@@ -1,7 +1,7 @@
 div#widjet-help:before {
     content: '';
     position: absolute;
-    left: 0;
+    left: -1px;
     top: 0;
     bottom: 0;
     width: 50px;
@@ -35,6 +35,7 @@ div#widjet-help:before {
         padding-bottom: 10px;
         font-weight: 600;
         font-size: 14px;
+        font-family: "OpenSansSemibold";
     }
     .widjet-help-list-item:hover{
         text-decoration: none;
@@ -43,4 +44,9 @@ div#widjet-help:before {
 }
 #widjet-help:hover{
     right: 0;
+}
+@media(max-width: 768px){
+    #widjet-help{
+        display: none;
+    }
 }

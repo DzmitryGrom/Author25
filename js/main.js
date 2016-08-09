@@ -46,21 +46,47 @@ $(document).ready(function () {
         $(this).append("<div class='today-info-block'><div class='today-info-block_tr'></div><div class='today-info-block-value'><span id='block_value'>15 июня 20016</span></div><div class='today-info-block-content'><p class='today-info-block-content-number'>12345</p><p class='today-info-block-content-name'>Автор</p><p class='today-info-block-content-theme'>Автоматизация технологических процессов</p></div</div>");
     },
     function(){
-        $(this).children().empty();
+        $(this).children().remove();
     });
     /*скрытие календаря*/
     $('.btn-toggle-calendar').on("click", function(){
         $('#calendar').toggleClass("calendar-open");
-        if($('#calendar').hasClass("calendar-open")) {   
+        
+        if($('#calendar').hasClass("calendar-open")) {
+            setTimeout(function(){
+                $(".content-sitebar-calendar").toggleClass("no-overwlow");
+            }, 1000);
             $(this).empty();
             $(this).html("<i class='fa fa-angle-up'></i>");
         } else {
+            $(".content-sitebar-calendar").removeClass("no-overwlow");
             $(this).empty();
             $(this).html("<i class='fa fa-angle-down'></i>");
         }
     });
     /*pop-up notification*/
     $(".navbar-header-info-list-item_notifications").on("click", function(){
-        $('.pop-up-notification').toggleClass("show");
+        $('.pop-up-notification_info').toggleClass("show");
+        $(this).find(".pop-up_tr_notifications").toggleClass("show");
     });
+    $(".navbar-header-info-list-item_message").on("click", function(){
+        $('.pop-up-notification_message').toggleClass("show");
+        $(this).find(".pop-up_tr_notifications").toggleClass("show");
+    });
+    $(".navbar-header-info-list-item_user").on("click", function(){
+        $('.pop-up_user').addClass("show");
+        $(this).find(".pop-up_tr_user").addClass("show");
+    });
+     $(".btn-pop-up_user-exit").on("click", function(){
+        $('.pop-up_user').removeClass("show");
+        $('.pop-up_tr_user').removeClass("show");
+    });
+    $(document).mouseup(function (e) {
+        var toggleMenu = $(".pop-up-notification");
+        if (!toggleMenu.is(e.target) && toggleMenu.has(e.target).length === 0) {
+            toggleMenu.removeClass("show");
+            $(".pop-up_tr_notifications").removeClass("show");
+        }
+    });
+    
 });

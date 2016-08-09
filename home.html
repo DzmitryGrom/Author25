@@ -11,58 +11,63 @@
 <body>
     <div class="page">
         <!--nav-->
-        <div class="container-nav container-fluid ">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
-                    <span class="sr-only">Toggle navigation</span> 
-                    <span class="icon-bar"></span> 
-                    <span class="icon-bar"></span> 
-                    <span class="icon-bar"></span> 
-                </button>
-                <a class="navbar-brand" href="#"></a>
+        <div class="container-nav container-fluid">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <i class="collapse-tr"></i>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Магазин готовых работ</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Топ авторов</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Сделать заказ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-header-info-list">
+                    <a href="#" class="navbar-header-info-list-item navbar-header-info-list-item_notifications">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="navbar-header-info-list-item-value navbar-header-info-list-item_notifications-value">4</span>
+                        <i class="pop-up_tr pop-up_tr_notifications"></i>
+                    </a>
+                    <a href="#" class="navbar-header-info-list-item navbar-header-info-list-item_message">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="navbar-header-info-list-item-value navbar-header-info-list-item_notifications-value">11</span>
+                        <i class="pop-up_tr pop-up_tr_notifications"></i>
+                    </a>
+                    <span class="navbar-header-info-list-item navbar-header-info-list-item_user">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="pop-up_tr pop-up_tr_user"></i>
+                    </span>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <i class="collapse-tr"></i>
-                <ul class="nav navbar-nav">
-                    <li>
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <a href="#">Главная<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <a href="#">Мои заказы</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <a href="#">Магазин готовых работ</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <a href="#">Топ авторов</a>
-                    </li>
-                    <li class="active">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <a href="#">Сделать заказ</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="navbar-header-info-list">
-                <a href="#" class="navbar-header-info-list-item navbar-header-info-list-item_notifications">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    <span class="navbar-header-info-list-item-value navbar-header-info-list-item_notifications-value"><i></i>4</span>
-                </a>
-                <a href="#" class="navbar-header-info-list-item navbar-header-info-list-item_message">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <span class="navbar-header-info-list-item-value navbar-header-info-list-item_notifications-value"><i></i>11</span>
-                </a>
-                <span class="navbar-header-info-list-item navbar-header-info-list-item_user">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i>
-                </span>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
         <!--content-->
         <!--widjet-->
@@ -77,8 +82,7 @@
                 <a class="widjet-help-list-item" href="#">Узнать среднюю стоимость работы</a>
             </div>
         </div>
-        <div class="pop-up-notification">
-            <div class="pop-up_tr"></div>
+        <div class="pop-up-notification pop-up-notification_info">
             <p class="pop-up-notification-caption">Новые уведомления:</p>
             <div class="pop-up-notification-list">
                 <div class="pop-up-notification-list-item">
@@ -96,6 +100,48 @@
             </div>
             <div class="pop-up-notification-btn-remove-inner">
                 <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up-notification pop-up-notification_message">
+            <p class="pop-up-notification-caption">Новые собщения:</p>
+            <div class="pop-up-notification-list">
+                <div class="pop-up-notification-list-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-list-item-text-top">Привет, я готова приступить к проекту, только мне нуджно предоплата</p>
+                    <p class="pop-up-notification-list-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-list-item-link" href="#">физика 2</a>
+                </div>
+                <div class="pop-up-notification-list-item">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    <p class="pop-up-notification-list-item-text-top">Очень интересно получается! Я могу сделать прямо на этой странице, но для этого мне надо время</p>
+                    <p class="pop-up-notification-list-item-date">26 июня 2016 в 20:43</p>
+                    <a class="pop-up-notification-list-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
+                </div>
+            </div>
+            <div class="pop-up-notification-btn-remove-inner">
+                <a href="#" class="pop-up-notification-btn-remove-inner-btn">Очистить уведомления</a>
+            </div>
+        </div>
+        <div class="pop-up_user">
+            <div class="pop-up_user-list">
+                <div class="pop-up_user-list-item">
+                    <a href="#" class="pop-up_user-list-item-text">Баланс<span class="pop-up_user-list-item-text_balance">0 р.</span></a>   
+                </div>
+                <div class="pop-up_user-list-item">
+                    <a href="#" class="pop-up_user-list-item-text">Настройки</a>   
+                </div>
+                <div class="pop-up_user-list-item">
+                    <a href="#" class="pop-up_user-list-item-text">Текущая комиссия</a>   
+                </div>
+                <div class="pop-up_user-list-item">
+                    <a href="#" class="pop-up_user-list-item-text">Избранные авторы<span class="pop-up_user-list-item-text_new">NEW</span></a>   
+                </div>
+                <div class="pop-up_user-list-item">
+                    <a href="#" class="pop-up_user-list-item-text">Черный список</a>   
+                </div>
+                <div class="pop-up_user-list-item">
+                    <a href="#" class="pop-up_user-list-item-text btn-pop-up_user-exit">Выход</a>   
+                </div>
             </div>
         </div>
         <div class="content container">
@@ -149,9 +195,9 @@
                                 <td>1</td>
                                 <td>2</td>
                                 <td>3</td>
-                                <td>4</td>
+                                <td class="today today_info">4</td>
                                 <td>5</td>
-                                <td class="today">6</td>
+                                <td>6</td>
                                 <td>7</td>
                             </tr>
                             <tr>
@@ -190,15 +236,6 @@
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
                         </tbody>
                     </table>
                     
@@ -210,7 +247,6 @@
                     <i class="i i_phone"></i>
                 </div>
             </div>
-            
             <div class="content-center">    
                 <div class="content-notification">
                     <div class="content-notification-history">
@@ -298,7 +334,7 @@
                         <a class="content-notification-orders-btn-all" href="#">Посмотреть все заказы</a>
                         <div class="content-notification-orders-list">
                             <div class="content-notification-orders-list-item">
-                                <a class="content-notification-orders-list-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРИЧЕСКОЙ СИСТЕМЫ УСТОЙЧИВОСТИ ЭЛЕКТРИЧЕСКОЙ СИСТЕМЫ</a>
+                                <a class="content-notification-orders-list-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
                                 <p class="content-notification-orders-list-item-text-top">Контрольная работа. Электроника. электроника, радиотехника</p>
                                 <a href="#" class="content-notification-orders-list-item-liked"><i class="fa fa-star" aria-hidden="true"></i></a>
                                 <div class="content-notification-orders-list-item-content-list">
@@ -327,7 +363,7 @@
                                 </div>
                             </div>
                             <div class="content-notification-orders-list-item">
-                                <a class="content-notification-orders-list-item-link" href="#">РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРИЧЕСКОЙ СИСТЕМЫ</a>
+                                <a class="content-notification-orders-list-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
                                 <p class="content-notification-orders-list-item-text-top">Контрольная работа. Электроника. электроника, радиотехника</p>
                                 <a href="#" class="content-notification-orders-list-item-liked"><i class="fa fa-star" aria-hidden="true"></i></a>
                                 <div class="content-notification-orders-list-item-content-list">
@@ -356,7 +392,7 @@
                                 </div>
                             </div>
                             <div class="content-notification-orders-list-item">
-                                <a class="content-notification-orders-list-item-link" href="#">РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРИЧЕСКОЙ СИСТЕМЫ</a>
+                                <a class="content-notification-orders-list-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
                                 <p class="content-notification-orders-list-item-text-top">Контрольная работа. Электроника. электроника, радиотехника</p>
                                 <a href="#" class="content-notification-orders-list-item-liked"><i class="fa fa-star" aria-hidden="true"></i></a>
                                 <div class="content-notification-orders-list-item-content-list">
@@ -382,7 +418,7 @@
                                 </div>
                             </div>
                             <div class="content-notification-orders-list-item">
-                                <a class="content-notification-orders-list-item-link" href="#">РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРИЧЕСКОЙ СИСТЕМЫ</a>
+                                <a class="content-notification-orders-list-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
                                 <p class="content-notification-orders-list-item-text-top">Контрольная работа. Электроника. электроника, радиотехника</p>
                                 <a href="#" class="content-notification-orders-list-item-liked"><i class="fa fa-star" aria-hidden="true"></i></a>
                                 <div class="content-notification-orders-list-item-content-list">

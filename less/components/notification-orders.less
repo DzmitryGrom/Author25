@@ -8,6 +8,7 @@
     }
     .content-notification-orders-caption{
         font-size: 18px;
+        font-family: "OpenSansRegular";
         line-height: 24px;
         color: #444444;
         display: inline-block;
@@ -22,6 +23,7 @@
         .content-notification-orders-list-item-link{
             color: #4786c8;
             font-size: 14px;
+            font-family: "OpenSansSemibold";
             line-height: 24px;
             width: 80%;
             display: inline-block;
@@ -29,6 +31,7 @@
         }
         .content-notification-orders-list-item-text-top{
             font-size: 14px;
+            font-family: "OpenSansRegular";
             line-height: 24px;
             color: #444444;
             margin: 18px 0 30px 30px;
@@ -41,6 +44,7 @@
             .content-notification-orders-list-item-content-list-item{
                 display: inline-block;
                 width: 25%;
+                font-weight: 900;
                 font-size: 14px;
                 color: #444444;
                 position: relative;
@@ -121,24 +125,31 @@
     }
     .content-notification-orders-btn-all{
         font-size: 14px;
+        font-family: "OpenSansLight";
         line-height: 24px;
-        color: #444444;
+        color: #4786c8;
     }
     .content-notification-orders-btn-all:hover{
         text-decoration: none;
+        color: #444444;
     }
     .content-notification-orders-list-item-liked{
         position: absolute;
         top: 30px;
         right: 30px;
         color: #b0b0b0;
+        width: 15px;
+        height: 15px
     }
-    
+    .content-notification-orders-list-item-liked i{
+        font-size: 15px;
+    }
 }
 @media(max-width: 768px){
     .content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-link,
     .content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-text-top{
         margin-left: 15px;
+        width: 90%;
     }
     .content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item {
         width: 50%;
