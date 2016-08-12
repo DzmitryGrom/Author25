@@ -1,13 +1,5 @@
-div#widjet-help:before {
-    content: '';
-    position: absolute;
-    left: -1px;
-    top: 0;
-    bottom: 0;
-    width: 50px;
-    background: url(../img/interface/widjet.png) 50% no-repeat; 
-}
-#widjet-help{
+
+.widget-help{
     border: 2px solid #4786c8;
     position: fixed;
     min-height: 220px;
@@ -29,24 +21,34 @@ div#widjet-help:before {
     z-index: 10;
     box-sizing: border-box;
     
-    .widjet-help-list-item {
+    @media(max-width: 768px){
+        display: none;
+    }
+    &:hover{
+        right: 0;
+    }
+    
+    &:before {
+        content: '';
+        position: absolute;
+        left: -1px;
+        top: 0;
+        bottom: 0;
+        width: 50px;
+        background: url(../img/interface/widjet.png) 50% no-repeat; 
+    }
+    &-item {
         color: #4786c8;
         display: block;
         padding-bottom: 10px;
         font-weight: 600;
         font-size: 14px;
         font-family: "OpenSansSemibold";
+        &:hover{
+            text-decoration: none;
+            color: black;
+        }
     }
-    .widjet-help-list-item:hover{
-        text-decoration: none;
-        color: black;
-    }
+    
 }
-#widjet-help:hover{
-    right: 0;
-}
-@media(max-width: 768px){
-    #widjet-help{
-        display: none;
-    }
-}
+

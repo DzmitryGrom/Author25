@@ -62,7 +62,7 @@ $(document).ready(function () {
         if($('#calendar').hasClass("calendar-open")) {
             setTimeout(function(){
                 $(".content-sitebar-calendar").toggleClass("no-overwlow");
-            }, 1000);
+            }, 200);
             $(this).empty();
             $(this).html("<i class='fa fa-angle-up'></i>");
         } else {

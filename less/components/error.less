@@ -1,0 +1,54 @@
+.error{
+    padding: 20px 0;
+    background-color: #fff8f7;
+    border: 2px solid #ea7b73;
+    margin-bottom: 20px;
+    display: none;
+    .error-caption{
+        color: #e95454;
+        margin-top: 0;
+        font-size: 20px;
+        font-family: "OpenSansRegular";
+        position: relative;
+        i{
+            position: absolute;
+            margin-right: 10px;
+            left: -35px;
+            top: -4px;
+            z-index: 2;
+            font-size: 30px;
+        }
+    }
+    .error-caption,.error-text{
+        width: 80%;
+        margin: 0 auto;
+    } 
+    .error-text{
+        font-size: 14px;
+        font-family: "OpenSansRegular";
+        color: #444444;
+         span{
+            font-weight: 600;
+        }
+        a{
+            margin: 0 5px;
+        }
+    }
+    @media(max-width: 768px){
+        .error-caption, .error-text{
+            width: 100%;
+        }
+        .error-text{
+            font-size: 13px;
+        }
+        .error-caption{
+            margin: 0 0 10px 37px;
+        }
+    }
+}
+@media(max-width: 768px){
+    .error{
+        padding: 20px 10px 10px 20px;
+        overflow: hidden;
+    }
+}

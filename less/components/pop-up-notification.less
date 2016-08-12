@@ -10,74 +10,73 @@
     top: 60px;
     right: 64px;
     display: none;
-    .pop-up-notification-caption{
+    @media(max-width: 1140px){
+        right: 22px;
+    }
+    &-caption{
         font-size: 14px;
         font-family: "OpenSansLight";
         line-height: 24px;
         color: #444444;
         margin: 10px 0 10px 15px;
     }
-    .pop-up-notification-list-item{
-        border-top: 1px solid #e6e6e6;
-        padding: 15px 0;
-        cursor: pointer;
-        i{
-            float: left;
-            margin-right: 5px;
-        }
-        i,.pop-up-notification-list-item-date,
-        .pop-up-notification-list-item-link {
-            margin-left: 15px;
-            
-        }
-        .pop-up-notification-list-item-text-top{
-            font-size: 14px;
-            color: #444444;
-            font-family: "OpenSansLight";
-            line-height: 18px;
-            width: 90%;
-            margin-left: 15px;
-        }
-        .pop-up-notification-list-item-date {
-            font-size: 12px;
-            line-height: 18px;
-            color: #b0b0b0;
-            font-family: "OpenSansLight";
-        }
-        .pop-up-notification-list-item-link{
-            font-size: 14px;
-            line-height: 18px;
-            color: #4786c8;
-            display: inline-block;
-            font-family: "OpenSansLight";
-        }
-        .pop-up-notification-list-item-link:hover{
-            text-decoration: none;
+    &-inner{
+        &-item{
+            border-top: 1px solid #e6e6e6;
+            padding: 15px 0;
+            cursor: pointer;
+            i{
+                float: left;
+                margin-right: 5px;
+            }
+            i,&-date,
+            &-link {
+                margin-left: 15px;
+            }
+            &-text-top{
+                font-size: 14px;
+                color: #444444;
+                font-family: "OpenSansLight";
+                line-height: 18px;
+                width: 90%;
+                margin-left: 15px;
+            }
+            &-date {
+                font-size: 12px;
+                line-height: 18px;
+                color: #b0b0b0;
+                font-family: "OpenSansLight";
+            }
+            &-link{
+                font-size: 14px;
+                line-height: 18px;
+                color: #4786c8;
+                display: inline-block;
+                font-family: "OpenSansLight";
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            &:hover{
+               background-color: #f4f9fe; 
+            }
         }
        
     }
-    .pop-up-notification-list-item:hover{
-        background-color: #f4f9fe;
-    }
-    .pop-up-notification-btn-remove-inner{
+    &-btn-remove-inner{
         border-top: 1px solid #e6e6e6;
         text-align: center;
+        &-btn{
+            font-size: 14px;
+            font-family: "OpenSansLight";
+            line-height: 24px;
+            color: #444444;
+            display: block;
+            padding: 10px 0 15px 0;
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
-    .pop-up-notification-btn-remove-inner-btn{
-        font-size: 14px;
-        font-family: "OpenSansLight";
-        line-height: 24px;
-        color: #444444;
-        display: block;
-        padding: 10px 0 15px 0;
-    }
-    .pop-up-notification-btn-remove-inner-btn:hover{
-        text-decoration: none;
-    }
-    
-}
-@media(max-width: 1140px){
-    .pop-up-notification{
-        right: 22px;
-    }
+  
 }

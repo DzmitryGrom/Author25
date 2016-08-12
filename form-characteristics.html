@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title>Author25-form</title>
+    <title>Author25-form-characteristics</title>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="css/libs/select2.css">
     <link rel="stylesheet" href="css/form.css">
@@ -136,94 +136,126 @@
         <!--content-->
         <div class="content container">
             <div class="content-center"> 
-                <h2 class="content-center-description">Форма заказа учебной работы</h2>
-                <div class="error">
-                    <h2 class="error-caption"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Произошла ошибка</h2>
-                    <p class="error-text">У вас уже есть заказ<a href="#">546555</a> с аналогичным названием, который доступен авторам.</p>     
-                    <p class="error-text">
-                        Создание дубликата заказа <span>уменьшит количество предложений</span> авторов, вероятно это приведёт к               <span>падению качества и повышению цены.</span>
-                    </p>
-                    <p class="error-text">
-                        Мы стараемся повысить качество создаваемых работ, поэтому<span>новый заказ не был создан.</span>
-                    </p>
-                </div>   
+                <h2 class="content-center-description">Форма заказа учебной работы</h2>   
                 <div class="content-form-orders">
                     <form>
                         <div class="content-form-orders-list">
                             <div class="content-form-orders-list-item_main">
-                                <p class="content-form-orders-list-item content-form-orders-list-item_main-text">Основное</p>
-                                <div class="content-form-orders-list-item_main-list">
-                                    <div class="content-form-orders-list-item_main-list-item">
-                                        <i class="i i_middle i_low-coast"></i>
-                                        <div class="content-form-orders-list-item_main-list-item-content">
-                                            <p class="content-form-orders-list-item_main-list-item-content-description">Низкие цены</p>
-                                            <p class="content-form-orders-list-item_main-list-item-content-text">Работа с автором без посредников</p>
-                                        </div>
-                                    </div>
-                                    <div class="content-form-orders-list-item_main-list-item">
-                                        <i class="i i_middle i_guarantees"></i>
-                                        <div class="content-form-orders-list-item_main-list-item-content">
-                                            <p class="content-form-orders-list-item_main-list-item-content-description">Гарантии качества</p>
-                                            <p class="content-form-orders-list-item_main-list-item-content-text">После завершения заказа все доработки бесплатно</p>
-                                        </div>
-                                    </div>
-                                    <div class="content-form-orders-list-item_main-list-item">
-                                        <i class="i i_middle i_on-time"></i>
-                                        <div class="content-form-orders-list-item_main-list-item-content">
-                                            <p class="content-form-orders-list-item_main-list-item-content-description">Точно в срок</p>
-                                            <p class="content-form-orders-list-item_main-list-item-content-text">Вы сами указываете срок выполнения</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p class="content-form-orders-list-item content-form-orders-list-item_main-text">Характеристики</p>
                             </div>
                             <div class="content-form-orders-list-item_select">
                                 <div class="content-form-orders-list-item_select-top-panel">
-                                    <a class="active" href="#">Основное</a>
-                                    <a href="#">Технические характеристики</a>
+                                    <a  href="#">Основное</a>
+                                    <a class="active" href="#">Технические характеристики</a>
                                 </div>
-                                <div class="content-form-orders-list-item_select-inner-list">
+                                <div class="content-form-orders-list-item_select-inner-list content-form-orders-list-item_select-inner-side_left">
                                     <div class="content-form-orders-list-item_select-inner-list-item">
-                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Напишите тему вашей работы 
+                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Количество странниц
+                                        </span>
+                                        <p>
+                                            <span class="content-form-orders-list-item_select-inner-list-item-text-pages">от
+                                                <input type="number" min="5" class="" placeholder="5">
+                                            </span>
+                                            <span class="content-form-orders-list-item_select-inner-list-item-text-pages">до
+                                                <input type="number" max="10" class="" placeholder="10">
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="content-form-orders-list-item_select-inner-list-item">
+                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Срок сдачи до 
                                             <sup>*</sup>
                                         </span>
+                                        <input class="form-control" type="text"><i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="content-form-orders-list-item_select-inner-list-item">
+                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Гарантийный срок (в днях)
+                                        </span>
+                                        <input id="Slider3" type="range" name="area" value="10;50" />
+                                    </div>
+                                </div>
+                                <div class="content-form-orders-list-item_select-inner-list content-form-orders-list-item_select-inner-side_right">
+                                    <div class="content-form-orders-list-item_select-inner-list-item">
+                                        <p class="content-form-orders-list-item_select-inner-list-item-text-bottom">ВУЗ: не выбран</p>
+                                        <p class="content-form-orders-list-item_select-inner-list-item-text-bottom">Шрифт: 14</p>
+                                        <p class="content-form-orders-list-item_select-inner-list-item-text-bottom">Оригинальность: 50%</p>
+                                        <span class="open-content content-form-orders-list-item_select-inner-list-item-text-bottom" href="#">изменить</span>
+                                    </div>
+                                    <div class="content-form-orders-list-item_select-inner-list-item_hidden-content">  
+                                       <div class="content-form-orders-list-item_select-inner-list-item">
+                                            <span class="content-form-orders-list-item_select-inner-list-item-text">ВУЗ</span>
+                                            <input class="form-control" type="text">
+                                                </div>
+                                        <div class="content-form-orders-list-item_select-inner-list-item">
+                                            <span class="content-form-orders-list-item_select-inner-list-item-text">Курс</span>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="content-form-orders-list-item_select-inner-list-item">
+                                            <span class="content-form-orders-list-item_select-inner-list-item-text">Шрифт</span>
+                                            <select class="form-control js-example-basic-single">
+                                                <option value="AL">14</option>
+                                                <option value="WY">12</option>
+                                                <option value="WY">10</option>
+                                            </select>
+                                        </div>
+                                        <div class="content-form-orders-list-item_select-inner-list-item">
+                                            <span class="content-form-orders-list-item_select-inner-list-item-text">Интервал</span>
+                                            <select class="form-control js-example-basic-single">
+                                                <option value="AL">Полуторный</option>
+                                            </select>
+                                        </div>
+                                        <div class="content-form-orders-list-item_select-inner-list-item">
+                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Оригинальность</span>
+                                        <span class="content-form-orders-list-item_select-inner-list-item-text-percents">
+                                            <input type="number" max="10" class="" placeholder="50">
+                                            %
+                                        </span>
+                                        <div class="radio-inner">
+                                            <label>
+                                                <input class="radio" type="radio" name="radio-test" checked>
+                                                <span class="radio-custom"></span>
+                                                <span class="radio-custom-text">ETXT</span>
+                                            </label>
+                                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                            <div class="tooltip-text originality">
+                                                <p>Наиболее распространенная система проверки  на уникальность текстов 
+                                                    <a href="#">http://www.etxt.ru</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div></div>
+                                        <div class="radio-inner">
+                                            <label>
+                                                <input class="radio" type="radio" name="radio-test">
+                                                <span class="radio-custom"></span>
+                                                <span class="radio-custom-text">Антилпагиат </span>
+                                            </label>
+                                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                            <div class="tooltip-text plagiarism">
+                                                <p>Альтернативная ситсема проверки  на антиплагиат. Используеться рядом ВУЗов 
+                                                    <a href="#">http://www.antiplagiat.ru</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="content-form-orders-list-item_select-bottom-panel">
+                                    <span class="content-form-orders-list-item_select-bottom-panel-text-top">Бюджет в рублях</span>
+                                    <p class="content-form-orders-list-item_select-inner-list-item-text-bottom">
                                         <input type="text" class="form-control">
-                                    </div>
-                                    <div class="content-form-orders-list-item_select-inner-list-item">
-                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Выберете тип работы 
-                                            <sup>*</sup>
-                                        </span>
-                                        <select class="form-control js-example-basic-single">
-                                            <option value="AL">Выберете тип...</option>
-                                            <option value="WY">Экзамен</option>
-                                            <option value="WY">Контрольная</option>
-                                        </select>
-                                    </div>
-                                    <div class="content-form-orders-list-item_select-inner-list-item">
-                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Выберете предмет 
-                                            <sup>*</sup>
-                                        </span>
-                                        <select class="form-control js-example-basic-single">
-                                            <option value="AL">Выберете предмет</option>
-                                            <option value="WY">Физика</option>
-                                            <option value="WY">Алгебра</option>
-                                        </select>
-                                    </div>
-                                    <div class="content-form-orders-list-item_select-inner-list-item">
-                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Пояснения и коментарии к заказу</span>
-                                        <textarea cols="20"  maxlength="1200" name="Text" rows="5"></textarea>
-                                    </div>
-                                    <div class="content-form-orders-list-item_select-inner-list-item">
-                                        <span class="content-form-orders-list-item_select-inner-list-item-text">Номер заказа в вашей системе</span>
-                                        <p class="content-form-orders-list-item_select-inner-list-item-text">(эта информация скрыта от автора)</p>
-                                        <input type="password" class="form-control">
-                                    </div>
-                                    <div class="content-form-orders-list-item_select-inner-list-item">
-                                        <label class="btn-add-caption">
-                                            <i class="fa fa-paperclip btn-add-caption-icon"></i>
-                                            <input class="btn-add-caption-element" type="file" name="photo" accept="image/*,image/jpeg"> 
-                                            <span class="btn-add-caption-text">ПРИКРЕПИТЬ ФАЙЛ</span> 
-                                        </label>
-                                        <p class="content-form-orders-list-item_select-inner-list-item-text-bottom">Максимальный размер загружаемого файла 15 Мб</p>
+                                        Оставьте поле пустым, если бюджет по договоренности
+                                    </p>
+                                    <div class="content-form-orders-list-item_select-bottom-panel-help">
+                                        <p class="content-form-orders-list-item_select-bottom-panel-help-text-top">Рекомендованная цена от:</p>
+                                        <p>
+                                           <span class="content-form-orders-list-item_select-bottom-panel-help-value">2.010</span>
+                                            <i class="fa fa-rub" aria-hidden="true"></i>
+                                        </p>
+                                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                        <p class="hidden">
+                                            <span class="content-form-orders-list-item_select-bottom-panel-help-text-bottom">Мы считаем стоимость на основании статистики выполненных заказов в системе.</span>
+                                            <span class="content-form-orders-list-item_select-bottom-panel-help-text-bottom">Учитывая тип работы, предмет, количество страниц и срок сдачи.</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -231,8 +263,28 @@
                                 <sup>*</sup>Обязательные поля формы
                             </p>
                         </div>
-                        <div class="content-form-orders-btn-next-inner">
-                            <button class="next" type="submit">ДАЛЕЕ</button>
+                        <div class="content-form-orders-special-offer">
+                            <div class="content-form-orders-special-offer-inner">
+                                <div class="checkbox dynamicallyAddedCheckbox">
+                                    <input type="checkbox" id="withoutbids" name="withoutbids">
+                                </div>
+                                <span class="content-form-orders-special-offer-inner-bonus"><i class="i i_sun"></i>2x</span>
+                                <span class="content-form-orders-special-offer-inner-caption">Получи в два раза больше предложений</span>
+                                <span href="#" class="content-form-orders-special-offer-inner-question">Что это такое?</span>
+                                <span class="content-form-orders-special-offer-inner-coast">100<i class="fa fa-rub" aria-hidden="true"></i></span>
+                                <div class="content-form-orders-special-offer-inner-bottom-list">
+                                    <div class="content-form-orders-special-offer-inner-bottom-img-item">
+                                        <img src="img/interface/example.jpg" alt="example">
+                                    </div>
+                                    <div class="content-form-orders-special-offer-inner-bottom-text-item">
+                                        <span>Ваш заказ будет визуально выделен для авторов и закреплен в самом верху ленты заказов. Его увидят большее число исполнителей и вы получите в два раза больше откликов.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-form-orders-btn-next-inner btn-two">
+                            <a class="prev" href="#">НАЗАД</a>
+                            <button class="next" type="submit">РАЗМЕСТИТЬ ЗАКАЗ В АУКЦИОНЕ</button>
                         </div>
                     </form>
                 </div>
@@ -337,7 +389,14 @@
 <script src="js/libs/jquery-1.12.4.js"></script>
 <script src="js/libs/bootstrap.js"></script>
 <script src="js/libs/select2.min.js"></script>
+<script src="js/libs/jshashtable-2.1_src.js"></script>
+<script src="js/libs/jquery.numberformatter-1.2.3.js"></script>
+<script src="js/libs/tmpl.js"></script>
+<script src="js/libs/jquery.dependClass-0.1.js"></script>
+<script src="js/libs/draggable-0.1.js"></script>
+<script src="js/libs/jquery.slider.js"></script>
 <script src="js/main.js"></script>
+<script src="js/slider-filter.js"></script>
 <script src="js/form.js"></script>
 </body>
 </html>

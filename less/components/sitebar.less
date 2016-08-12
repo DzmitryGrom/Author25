@@ -3,115 +3,126 @@
     display: inline-block;
     width: 22%;
     vertical-align: top;
-    .content-sitebar-user{
+    &-user{
         background-color: #fff;
         padding: 15px;
         border: 1px solid #e1e1e1;
         margin-bottom: 25px;
+        @media(max-width: 992px){
+            font-size: 0;
+        }
         img{
             width: 100%;
+            @media(max-width: 992px){
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+                padding-left: 15px;
+            }
         }
+        &-name{
+            font-size: 18px;
+            font-family: "OpenSansSemibold";
+            margin: 15px 0;
+            line-height: 24px;
+            color: #444444;
+            width: 75%;
+            text-align: left;
+            position: relative;
+            @media(max-width: 768px){
+                margin: 0 0 5px 0;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 600;
+            }
+            span{
+                background-image: url(../img/interface/ellipse.png);
+                width: 12px;
+                height: 12px;
+                margin-left: 5px;
+                
+                @media(max-width: 768px){
+                    position: absolute;
+                    right: -46px;
+                    bottom: 2px;
+                }
+            }
+        }
+        
+        &-info{
+            @media(max-width: 992px){
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+                padding-left: 15px;
+            }
+            &-text-top{
+                font-size: 18px;
+                font-family: "OpenSansRegular";
+                padding-top: 30px;
+                line-height: 24px;
+                color: #b0b0b0;
+                text-align: left;
+                margin-bottom: 30px;
+                border-top: 1px solid #e6e6e6;
+                
+                @media(max-width: 768px){
+                    padding-top: 5px;
+                    margin-bottom: 0;
+                    font-size: 16px;
+                }
+            }
+            &-text-bottom{
+                font-size: 14px;
+                font-family: "OpenSansRegular";
+                line-height: 46px;
+                color: #b0b0b0;
+                position: relative;
+                margin-bottom: 35px;
+                
+                @media(max-width: 992px){
+                    margin-bottom: 20px;
+                }
+                
+                @media(max-width: 768px){
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                &:last-child{
+                    margin-bottom: 20px;
+                }
+                &-value{
+                    font-size: 14px;
+                    font-family: "OpenSansSemibold";
+                    line-height: 46px;
+                    color: #444444;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    @media(max-width: 768px){
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+                
+            }
+        }
+        
     }
-    img.img-mobile{
-        display: none;
-    }
-    .content-sitebar-user-name{
-        font-size: 18px;
-        font-family: "OpenSansSemibold";
-        margin: 15px 0;
-        line-height: 24px;
-        color: #444444;
-        width: 75%;
-        text-align: left;
-    }
-    .user-online{
-        background-image: url(../img/interface/ellipse.png);
-        width: 12px;
-        height: 12px;
-        margin-left: 10px;
-    }
-    .content-sitebar-user-info-text-top{
-        font-size: 18px;
-        font-family: "OpenSansRegular";
-        padding-top: 30px;
-        line-height: 24px;
-        color: #b0b0b0;
-        text-align: left;
-        margin-bottom: 30px;
-        border-top: 1px solid #e6e6e6;
-    }
-    .content-sitebar-user-info-text-bottom{
-        font-size: 14px;
-        font-family: "OpenSansRegular";
-        line-height: 46px;
-        color: #b0b0b0;
-        position: relative;
-        margin-bottom: 35px;
-    }
-    .content-sitebar-user-info-text-bottom:last-child{
-        margin-bottom: 20px;
-    }
-    .content-sitebar-user-info-text-bottom-value{
-        font-size: 14px;
-        font-family: "OpenSansSemibold";
-        line-height: 46px;
-        color: #444444;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .content-sitebar-calendar-text-top{
-        font-size: 18px;
-        line-height: 24px;
-        color: #444444;
-        text-align: left;
-        padding: 25px 0 20px 15px;
-        margin: 0;
+    
+    &-calendar{
+        &-text-top{
+            font-size: 18px;
+            line-height: 24px;
+            color: #444444;
+            text-align: left;
+            padding: 25px 0 20px 15px;
+            margin: 0;
+        }
     }
     @import "less/components/calendar.less";
     @import "less/components/banner.less";
-    @media(max-width: 768px){
-        .content-sitebar-user-name{
-            margin: 0 0 5px 0;
-            font-size: 16px;
-            line-height: 20px;
-            font-weight: 600;
-        }
-        .user-online{
-            margin-left: 5px;
-        }
-        .content-sitebar-user-info-text-top{
-            padding-top: 5px;
-            margin-bottom: 0;
-            font-size: 16px;
-        }
-        p.content-sitebar-user-info-text-bottom{
-            margin-bottom: 0;
-            font-size: 14px;
-            line-height: 27px;
-        }
-        .content-sitebar-user-info-text-bottom-value{
-            font-size: 14px;
-            line-height: 27px;
-        }
-    }
-    @media(max-width: 992px){
-        .content-sitebar-user{
-            font-size: 0;
-        }
-        .content-sitebar-user .img-desctop,
-        .content-sitebar-user-info{
-            width: 50%;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .content-sitebar-user-info{
-            padding-left: 15px;
-        }
-        .content-sitebar-user-info-text-bottom{
-            margin-bottom: 20px;
-        }
-    }
 }
 
 @media(max-width: 992px){
