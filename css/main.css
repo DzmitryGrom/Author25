@@ -2355,7 +2355,7 @@ textarea:focus {
   font-weight: bold;
 }
 .container-nav .nav > li {
-  border-right: 0.5px solid #4273a6;
+  border-right: 1px solid #4273a6;
 }
 .container-nav .nav > li:last-child {
   border-right: 0;
@@ -3275,58 +3275,78 @@ textarea:focus {
 .content-notification {
   margin-left: 25px;
 }
-.content-notification .content-notification-history {
+.content-notification-history {
   background-color: #fff;
   border: 1px solid #e1e1e1;
   margin-bottom: 60px;
+  /* Smilings0 */
 }
-.content-notification .content-notification-history .content-notification-history-top-panel {
+.content-notification-history-top-panel {
   border-bottom: 1px solid #e6e6e6;
   position: relative;
   padding: 30px 0 25px 25px;
 }
-.content-notification .content-notification-history .content-notification-history-top-panel-text {
+@media (max-width: 768px) {
+  .content-notification-history-top-panel {
+    padding: 30px 0px 25px 15px;
+  }
+}
+.content-notification-history-top-panel-btn-all,
+.content-notification-history-top-panel-btn-delete-all {
+  font-size: 14px;
+  font-family: "OpenSansLight";
+  line-height: 24px;
+  color: #4786c8;
+}
+.content-notification-history-top-panel-btn-all:hover,
+.content-notification-history-top-panel-btn-delete-all:hover {
+  text-decoration: none;
+  color: #444444;
+}
+.content-notification-history-top-panel-btn-delete-all {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+}
+@media (max-width: 768px) {
+  .content-notification-history-top-panel-btn-delete-all {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+  }
+}
+.content-notification-history-top-panel-text {
   font-size: 18px;
   font-family: "OpenSansRegular";
   line-height: 24px;
   color: #b0b0b0;
   margin-right: 30px;
 }
-.content-notification .content-notification-history .content-notification-history-top-panel-text-value {
-  color: #444444;
-}
-.content-notification .content-notification-history .content-notification-history-top-panel-btn-all,
-.content-notification .content-notification-history .content-notification-history-top-panel-btn-delete-all {
-  font-size: 14px;
-  font-family: "OpenSansLight";
-  line-height: 24px;
-  color: #4786c8;
-}
-.content-notification .content-notification-history .content-notification-history-top-panel-btn-delete-all {
-  position: absolute;
-  right: 30px;
-  bottom: 25px;
-}
-.content-notification .content-notification-history .content-notification-history-top-panel-btn-all:hover,
-.content-notification .content-notification-history .content-notification-history-top-panel-btn-delete-all:hover {
-  text-decoration: none;
-  color: #444444;
-}
-.content-notification .content-notification-history .content-notification-history-list-item {
+.content-notification-history-list-item {
   padding: 30px 0 20px 30px;
   position: relative;
 }
-.content-notification .content-notification-history .content-notification-history-list-item .fa-check-circle {
+@media (max-width: 768px) {
+  .content-notification-history-list-item {
+    padding: 30px 0px 20px 15px;
+  }
+}
+.content-notification-history-list-item .fa-check-circle {
   font-size: 24px;
   color: #a2c679;
   vertical-align: top;
   margin: 10px 30px 0 0;
 }
-.content-notification .content-notification-history .content-notification-history-list-item .content-notification-history-list-item-content {
+@media (max-width: 768px) {
+  .content-notification-history-list-item .fa-check-circle {
+    margin: 10px 10px 0 0;
+  }
+}
+.content-notification-history-list-item-content {
   display: inline-block;
   width: 70%;
 }
-.content-notification .content-notification-history .content-notification-history-list-item .content-notification-history-list-item-content .content-notification-history-list-item-content-date {
+.content-notification-history-list-item-content-date {
   font-size: 12px;
   line-height: 24px;
   color: #4786c8;
@@ -3334,25 +3354,32 @@ textarea:focus {
   display: inline-block;
   width: 100%;
 }
-.content-notification .content-notification-history .content-notification-history-list-item .content-notification-history-list-item-content-date-user {
+.content-notification-history-list-item-content-date-user {
   margin-right: 30px;
 }
-.content-notification .content-notification-history .content-notification-history-list-item .content-notification-history-list-item-content-date-user i {
+.content-notification-history-list-item-content-date-user i {
   color: #b0b0b0;
   margin-right: 10px;
 }
-.content-notification .content-notification-history .content-notification-history-list-item .content-notification-history-list-item-content-date-user:hover {
+.content-notification-history-list-item-content-date-user:hover {
   color: #004444;
   text-decoration: none;
 }
-.content-notification .content-notification-history .content-notification-history-list-item .content-notification-history-list-item-content-date-value {
+.content-notification-history-list-item-content-date-value {
   color: #b0b0b0;
 }
-.content-notification .content-notification-history .content-notification-history-list-item .content-notification-history-list-item-content-date-value i {
+@media (max-width: 768px) {
+  .content-notification-history-list-item-content-date-value {
+    position: absolute;
+    top: 0;
+    left: 92px;
+  }
+}
+.content-notification-history-list-item-content-date-value i {
   color: #b0b0b0;
   margin-right: 10px;
 }
-.content-notification .content-notification-history .content-notification-history-list-item .content-notification-history-list-item-content-text {
+.content-notification-history-list-item-content-text {
   font-size: 14px;
   font-family: "OpenSansRegular";
   line-height: 24px;
@@ -3361,17 +3388,27 @@ textarea:focus {
   display: inline-block;
   width: 95%;
 }
-.content-notification .content-notification-history .content-notification-history-list-item:hover {
+@media (max-width: 768px) {
+  .content-notification-history-list-item-content-text {
+    width: 85%;
+  }
+}
+.content-notification-history-list-item:hover {
   background-color: #f5f5f5;
   cursor: pointer;
 }
-.content-notification .content-notification-history .content-notification-history-list-item-btn-inner {
+.content-notification-history-list-item-btn-inner {
   display: inline-block;
   position: absolute;
   right: 30px;
   top: 47px;
 }
-.content-notification .content-notification-history .content-notification-history-list-item-btn-inner-add {
+@media (max-width: 768px) {
+  .content-notification-history-list-item-btn-inner {
+    right: 15px;
+  }
+}
+.content-notification-history-list-item-btn-inner-add {
   font-size: 14px;
   line-height: 1;
   font-family: "OpenSansBold";
@@ -3381,66 +3418,38 @@ textarea:focus {
   border-radius: 3px;
   cursor: pointer;
 }
-.content-notification .content-notification-history .content-notification-history-list-item-btn-inner-add:hover {
+.content-notification-history-list-item-btn-inner-add:hover {
   background-color: #b2d38d;
 }
-.content-notification .content-notification-history .content-notification-history-list-item-btn-inner-delete {
+.content-notification-history-list-item-btn-inner-delete {
   margin-left: 25px;
   color: #b0b0b0;
   cursor: pointer;
   font-size: 16px;
 }
-.content-notification .content-notification-history .content-notification-history-list-item-btn-inner-delete:hover {
+@media (max-width: 768px) {
+  .content-notification-history-list-item-btn-inner-delete {
+    margin-left: 15px;
+  }
+}
+.content-notification-history-list-item-btn-inner-delete:hover {
   color: #e95454;
 }
-.content-notification .content-notification-history .content-notification-history-list-btn-more-inner {
+.content-notification-history-list-btn-more-inner {
   background-color: #ececec;
   text-align: center;
   width: 95%;
   margin: 0 auto 30px;
   border-radius: 3px;
 }
-.content-notification .content-notification-history .content-notification-history-list-btn-more-inner-btn {
+.content-notification-history-list-btn-more-inner-btn {
   font-size: 14px;
   font-family: "OpenSansRegular";
   line-height: 46px;
   color: #444444;
 }
-.content-notification .content-notification-history .content-notification-history-list-btn-more-inner-btn:hover {
+.content-notification-history-list-btn-more-inner-btn:hover {
   cursor: pointer;
-}
-@media (max-width: 768px) {
-  .content-notification-history .content-notification-history-top-panel-btn-all {
-    position: absolute;
-    right: 15px;
-  }
-  div.content-notification-history .content-notification-history-top-panel a.content-notification-history-top-panel-btn-delete-all {
-    right: 15px;
-    bottom: 10px;
-  }
-  .content-notification .content-notification-history .content-notification-history-top-panel {
-    padding: 30px 0px 25px 15px;
-  }
-  .content-notification .content-notification-history .content-notification-history-list-item {
-    padding: 30px 0px 20px 15px;
-  }
-  .content-notification .content-notification-history .content-notification-history-list-item .fa-check-circle {
-    margin: 10px 10px 0 0;
-  }
-  .content-notification .content-notification-history .content-notification-history-list-item-btn-inner {
-    right: 15px;
-  }
-  .content-notification .content-notification-history .content-notification-history-list-item-btn-inner-delete {
-    margin-left: 15px;
-  }
-  .content-notification .content-notification-history .content-notification-history-list-item .content-notification-history-list-item-content-date-value {
-    position: absolute;
-    top: 0;
-    left: 92px;
-  }
-  .content-notification .content-notification-history .content-notification-history-list-item .content-notification-history-list-item-content-text {
-    width: 85%;
-  }
 }
 .content-notification-orders .user-online {
   background-image: url(../img/interface/ellipse.png);
@@ -3449,7 +3458,7 @@ textarea:focus {
   margin-left: 15px;
   vertical-align: middle;
 }
-.content-notification-orders .content-notification-orders-caption {
+.content-notification-orders-caption {
   font-size: 18px;
   font-family: "OpenSansRegular";
   line-height: 24px;
@@ -3457,14 +3466,14 @@ textarea:focus {
   display: inline-block;
   margin: 0 30px 20px 0;
 }
-.content-notification-orders .content-notification-orders-list-item {
+.content-notification-orders-list-item {
   background-color: #fff;
   border: 1px solid #e1e1e1;
   padding: 30px 0 0 0;
   position: relative;
   margin-bottom: 30px;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-link {
+.content-notification-orders-list-item-link {
   color: #4786c8;
   font-size: 14px;
   font-family: "OpenSansSemibold";
@@ -3473,7 +3482,17 @@ textarea:focus {
   display: inline-block;
   margin-left: 30px;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-text-top {
+@media (max-width: 768px) {
+  .content-notification-orders-list-item-link {
+    margin-left: 15px;
+    width: 90%;
+  }
+}
+.content-notification-orders-list-item-link:hover {
+  text-decoration: none;
+  color: #444444;
+}
+.content-notification-orders-list-item-text-top {
   font-size: 14px;
   font-family: "OpenSansRegular";
   line-height: 24px;
@@ -3482,11 +3501,17 @@ textarea:focus {
   display: inline-block;
   width: 100%;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list {
+@media (max-width: 768px) {
+  .content-notification-orders-list-item-text-top {
+    margin-left: 15px;
+    width: 90%;
+  }
+}
+.content-notification-orders-list-item-content-list {
   font-size: 0;
   border-top: 1px solid #e6e6e6;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item {
+.content-notification-orders-list-item-content-list-item {
   display: inline-block;
   width: 25%;
   font-weight: 900;
@@ -3496,29 +3521,67 @@ textarea:focus {
   text-align: center;
   padding: 20px 0;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item .fa-file {
+@media (max-width: 768px) {
+  .content-notification-orders-list-item-content-list-item {
+    width: 50%;
+  }
+  .content-notification-orders-list-item-content-list-item:nth-child(2):after {
+    content: '';
+    border-right: none;
+  }
+  .content-notification-orders-list-item-content-list-item:nth-child(3):after,
+  .content-notification-orders-list-item-content-list-item:nth-child(4):after {
+    content: '';
+    border-top: 1px solid #e6e6e6;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.content-notification-orders-list-item-content-list-item .fa-file {
   color: #b0b0b0;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item .fa {
+.content-notification-orders-list-item-content-list-item .fa {
   margin-right: 10px;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item .fa-calendar {
+.content-notification-orders-list-item-content-list-item .fa-calendar {
   color: #a2c679;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item .fa-key {
+.content-notification-orders-list-item-content-list-item .fa-key {
   color: #ffd800;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item a {
+.content-notification-orders-list-item-content-list-item .fa-comments {
+  color: #b0b0b0;
+  margin-right: 10px;
+}
+.content-notification-orders-list-item-content-list-item a {
   color: #4786c8;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item a:hover {
+.content-notification-orders-list-item-content-list-item a:hover {
   text-decoration: none;
   color: #444444;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item .content-notification-orders-list-item-content-list-item_bet {
+.content-notification-orders-list-item-content-list-item__bet {
   font-weight: 400;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item:after {
+.content-notification-orders-list-item-content-list-item__bet__with-img {
+  position: relative;
+}
+.content-notification-orders-list-item-content-list-item__bet__with-img img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -20px;
+}
+.content-notification-orders-list-item-content-list-item__bet__with-img-login {
+  display: inline-block;
+  width: 55%;
+  padding-left: 25px;
+  max-width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content-notification-orders-list-item-content-list-item:after {
   content: '';
   border-right: 1px solid #e6e6e6;
   position: absolute;
@@ -3526,57 +3589,32 @@ textarea:focus {
   top: 0;
   bottom: 0;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item:last-child:after {
+.content-notification-orders-list-item-content-list-item:last-child:after {
   content: '';
   border-right: none;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item_bet_with-img {
-  position: relative;
-}
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item_bet_with-img img {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  margin-top: -20px;
-}
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item_bet_with-img-login {
-  display: inline-block;
-  width: 55%;
-  padding-left: 20px;
-}
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item .fa-comments {
-  color: #b0b0b0;
-  margin-right: 10px;
-}
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item_message a {
+.content-notification-orders-list-item-content-list-item__message a {
   color: #444444;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item_message-red a,
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item_message-with-message a {
+.content-notification-orders-list-item-content-list-item__message-red a,
+.content-notification-orders-list-item-content-list-item__message-with-message a {
   color: #4786c8;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item_message-red .fa-comments,
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item_message-red span {
+.content-notification-orders-list-item-content-list-item__message-red .fa-comments,
+.content-notification-orders-list-item-content-list-item__message-red span {
   color: #e95454;
 }
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item:last-child {
-  border-right: none;
-}
-.content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-link:hover {
-  text-decoration: none;
-  color: #444444;
-}
-.content-notification-orders .content-notification-orders-btn-all {
+.content-notification-orders-btn-all {
   font-size: 14px;
   font-family: "OpenSansLight";
   line-height: 24px;
   color: #4786c8;
 }
-.content-notification-orders .content-notification-orders-btn-all:hover {
+.content-notification-orders-btn-all:hover {
   text-decoration: none;
   color: #444444;
 }
-.content-notification-orders .content-notification-orders-list-item-liked {
+.content-notification-orders-liked {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -3584,30 +3622,8 @@ textarea:focus {
   width: 15px;
   height: 15px;
 }
-.content-notification-orders .content-notification-orders-list-item-liked i {
+.content-notification-orders-liked i {
   font-size: 15px;
-}
-@media (max-width: 768px) {
-  .content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-link,
-  .content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-text-top {
-    margin-left: 15px;
-    width: 90%;
-  }
-  .content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item {
-    width: 50%;
-  }
-  .content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item:nth-child(2):after {
-    content: '';
-    border-right: none;
-  }
-  .content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item:nth-child(3):after,
-  .content-notification-orders .content-notification-orders-list-item .content-notification-orders-list-item-content-list .content-notification-orders-list-item-content-list-item:nth-child(4):after {
-    content: '';
-    border-top: 1px solid #e6e6e6;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
 }
 /*footer*/
 .footer {
