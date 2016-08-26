@@ -2254,7 +2254,9 @@ textarea:focus {
 .pop-up-notification-list-item,
 .pop-up-notification,
 .pop-up_user-list-item,
-.content-form-orders-list-item_select .content-form-orders-list-item_select-top-panel a {
+.content-form-orders-list-item_select .content-form-orders-list-item_select-top-panel a,
+.btn-select,
+.btn-delete {
   transition: all .3s;
 }
 .show {

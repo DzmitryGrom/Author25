@@ -2254,7 +2254,9 @@ textarea:focus {
 .pop-up-notification-list-item,
 .pop-up-notification,
 .pop-up_user-list-item,
-.content-form-orders-list-item_select .content-form-orders-list-item_select-top-panel a {
+.content-form-orders-list-item_select .content-form-orders-list-item_select-top-panel a,
+.btn-select,
+.btn-delete {
   transition: all .3s;
 }
 .show {
@@ -4440,7 +4442,7 @@ textarea:focus {
 .content-form-orders-list-item_select-inner-list-item .tooltip-text:after {
   content: "";
   position: absolute;
-  background-image: url(../img/interface/arrow-tooltip.png);
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAXCAMAAADqZkX0AAAAUVBMVEUAAADY3d/Z3d/Y3d/Z3uDa3+Dk5ebn6Ojv8PDv8PHw8fHx8fLe4uPn6ura3d3a3d3o6uvp6+zb3d3r7O3c3d7t7u/d3t/////X3N7n6uvk6OnaSKgwAAAAF3RSTlMA+/H16uVUPzcwKiTEdXVtbGJiWFBHR7WwjPwAAABaSURBVBjTZc9HDsAgDADB9N4bTv7/0JhshA/saUAITGKNxkUCVwneU7l/VkoHT09c50rcZErcZvI43BVK3JeeeIDRvp23e+L77d2vSxdqOpjThkbaxr9oxjS9yFUK4n+USTgAAAAASUVORK5CYII=');
   width: 11px;
   height: 23px;
   z-index: 2;
@@ -4450,10 +4452,14 @@ textarea:focus {
 @media (max-width: 1010px) {
   .content-form-orders-list-item_select-inner-list-item .originality:after {
     margin-left: -5px;
+    top: -17px;
+    left: 50%;
   }
   .content-form-orders-list-item_select-inner-list-item .plagiarism:after {
     content: "";
     margin-left: 43px;
+    top: -17px;
+    left: 50%;
   }
 }
 .content-form-orders-list-item_select-inner-list-item .radio-inner {
@@ -4861,6 +4867,25 @@ textarea:focus {
   border-top: 13px solid #fff;
 }
 /*special-offer*/
+.bonus {
+  display: inline-block;
+  margin: 6px 0 0 10px;
+  font-size: 20px;
+  font-family: "OpenSansExtrabold";
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  vertical-align: top;
+}
+.bonus .i_sun {
+  background-image: url(../img/interface/sun.png);
+  width: 31px;
+  height: 29px;
+  position: absolute;
+  top: 0;
+  left: -3px;
+  z-index: -1;
+}
 .i_sun {
   background-image: url(../img/interface/sun.png);
   width: 31px;
@@ -4911,16 +4936,6 @@ textarea:focus {
 .content-form-orders-special-offer-inner .checkbox.checked {
   background: #a1c67a url(../img/interface/check.png) 50% no-repeat;
 }
-.content-form-orders-special-offer-inner-bonus {
-  font-size: 20px;
-  font-family: "OpenSansExtrabold";
-  color: #fff;
-  position: relative;
-  z-index: 2;
-  display: inline-block;
-  vertical-align: top;
-}
-.content-form-orders-special-offer-inner-bonus,
 .content-form-orders-special-offer-inner-caption,
 .content-form-orders-special-offer-inner-question {
   display: inline-block;
