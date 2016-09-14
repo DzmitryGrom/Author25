@@ -20,6 +20,9 @@ $(document).ready(function () {
         $('.pop-up__user').removeClass("show");
         $('.pop-up_tr__user').removeClass("show");
     });
+    $(".link-more").on("click", function() {
+        $(this).parent().prev().toggleClass("hidden");
+    });
     $(document).mouseup(function (e) {
         var toggleMenu = $(".pop-up-notification");
         if (!toggleMenu.is(e.target) && toggleMenu.has(e.target).length === 0) {

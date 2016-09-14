@@ -1,3 +1,4 @@
+@import "components/bonus.less";
 .i_sun{
     background-image: url(../img/interface/sun.png);
     width: 31px;
@@ -12,146 +13,112 @@
     padding: 20px;
     margin-top: 20px;
     position: relative;
-    .content-form-orders-special-offer-inner{
+    &-inner{
         background-color: #fff;
         padding: 15px 30px;
-        [type=checkbox]{
-            width: 20px;
-            height: 20px;
-            display: inline-block;
-            background: #d7dcde;
-            border-radius: 2px;
-            cursor: pointer;
+        @media(max-width: 665px){
+            padding: 15px;
         }
-        .checkbox {
-            width: 20px;
-            height: 20px;
-            display: inline-block;
-            background: #d7dcde;
-            border-radius: 3px;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        .checkbox input[type=checkbox] {
-            display: none;
-        }
-        .checkbox.checked {
-            background: #a1c67a url(../img/interface/check.png) 50% no-repeat;
-        }
-        .content-form-orders-special-offer-inner-bonus{
-            font-size: 20px;
-            font-family: "OpenSansExtrabold";
-            color: #fff;
-            position: relative;
-            z-index: 2;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .content-form-orders-special-offer-inner-bonus,
-        .content-form-orders-special-offer-inner-caption,
-        .content-form-orders-special-offer-inner-question{
+        &-caption,
+        &-question{
             display: inline-block;
             vertical-align: top;
             margin: 6px 0 0 10px;
         }
-        .content-form-orders-special-offer-inner-caption{
+        &-caption{
             font-size: 18px;
             font-family: "OpenSansRegular";
             color: #444444;
+            
+            @media(max-width: 665px){
+                font-size: 16px;
+                display: inline-block;
+                width: 70%;
+            }
         }
-        .content-form-orders-special-offer-inner-question{
+        &-question{
             font-size: 14px;
             font-family: "OpenSansRegular";
             margin: 10px 10% 0 10%;
             color: #87abd7;
             text-decoration: underline;
+            
+            @media(max-width: 665px){
+                margin-left: 65px;
+            }
+            &:hover{
+                text-decoration: none;
+                cursor: pointer;
+            }
         }
-        .content-form-orders-special-offer-inner-question:hover{
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .content-form-orders-special-offer-inner-coast,
-        .content-form-orders-special-offer-inner-caption,
-        .content-form-orders-special-offer-inner-question:hover{
+        &-coast,
+        &-caption,
+        &-question:hover{
             color: #444444;
         }
-        .content-form-orders-special-offer-inner-bottom-list{
+        &-bottom-list{
             padding: 15px 0;
             font-size: 0;
             display: none;
         }
-        .content-form-orders-special-offer-inner-bottom-img-item,
-        .content-form-orders-special-offer-inner-bottom-text-item{
+        &-bottom-text-item{
+            width: 28%;
+            span{
+                font-size: 14px;
+                font-family: "OpenSansRegular";
+                line-height: 20px;
+                color: #444444;
+                display: block;
+            }
+        }
+        &-bottom-img-item,
+        &-bottom-text-item{
             display: inline-block;
             vertical-align: top;
+            
+            @media(max-width: 1120px){
+                display: block;
+                width: 100%;
+            }
         }
-        .content-form-orders-special-offer-inner-bottom-img-item{
+        &-bottom-img-item{
             width: 72%;
             padding-top: 5px;
+            
+            @media(max-width: 1120px){
+                width: 100%;
+                padding: 0;
+                margin-bottom: 10px;
+                text-align: center;
+                img{
+                    width: 100%;
+                }
+            }
         }
-        .content-form-orders-special-offer-inner-bottom-text-item{
-            width: 28%;
-        }
-        .content-form-orders-special-offer-inner-bottom-text-item span{
-            font-size: 14px;
-            font-family: "OpenSansRegular";
-            line-height: 20px;
-            color: #444444;
-            display: block;
-        }
-        .content-form-orders-special-offer-inner-coast{
+       
+
+        &-coast{
             font-size: 20px;
             font-weight: bold;
             display: inline-block;
             border-left: 1px solid #e6e6e6;
             position: absolute;
             right: 50px;
-            top: 37px;
+            top: 34px;
             padding: 5px 0px 5px 15px;
-        }
-        .content-form-orders-special-offer-inner-coast i{
-            font-size: 18px;
-            margin-left: 5px;
-        }
-        @media(max-width: 1120px){
-            .content-form-orders-special-offer-inner-bottom-img-item,
-            .content-form-orders-special-offer-inner-bottom-text-item{
-                display: block;
-                width: 100%;
-            }
-            .content-form-orders-special-offer-inner-bottom-img-item{
-                padding: 0;
-                margin-bottom: 10px;
-                text-align: center;
-            }
-            .content-form-orders-special-offer-inner-bottom-img-item img{
-                width: 100%;
+            
+            @media(max-width: 665px){
+                top: 70px;
+                right: 25px;
+                margin-top: -35px;
+                padding: 21px 0px 21px 15px;
+            } 
+            i{
+                font-size: 18px;
+                margin-left: 5px;
             }
         }
-    }
-    @media(max-width: 665px){
-        .content-form-orders-special-offer-inner{
-            padding: 15px;
-        }
-        .content-form-orders-special-offer-inner .content-form-orders-special-offer-inner-caption{
-            font-size: 16px;
-        }
-        .content-form-orders-special-offer-inner-caption{
-            display: inline-block;
-            width: 70%;
-        }
-        .content-form-orders-special-offer-inner .content-form-orders-special-offer-inner-coast{
-            top: 70px;
-            right: 25px;
-            margin-top: -35px;
-            padding: 21px 0px 21px 15px;
-        } 
-        .content-form-orders-special-offer-inner .content-form-orders-special-offer-inner-question{
-            margin-left: 65px;
-        }
-    }
-    
+    }  
 }
+/*checkbox*/
+@import "less/components/checkbox.less";
