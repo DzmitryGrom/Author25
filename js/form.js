@@ -3,7 +3,7 @@ $(document).ready(function () {
     'use strict';
     $(".js-example-basic-single").select2();
     
-    $(".checkbox").on("click", function(){
+    $(".checkbox-dynamic").on("click", function(){
         $(this).toggleClass("checked");
     })
     $(".fa-question-circle").on("click", function(){

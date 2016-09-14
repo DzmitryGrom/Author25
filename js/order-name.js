@@ -27,4 +27,7 @@ $(document).ready(function () {
             $(this).html("Подробнее");
         }
     })
+    $(".checkbox-dynamic").on("click", function(){
+        $(this).toggleClass("checked");
+    })
 });

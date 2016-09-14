@@ -1,0 +1,47 @@
+
+.author{
+    display: block;
+    &-online {
+        background-image: url(../img/interface/ellipse.png);
+        width: 12px;
+        height: 12px;
+        margin-left: 15px;
+        vertical-align: text-top;
+        &-text {
+        font-size: 14px;
+           color: #a2c679;
+           margin: -1px 0 0 15px;
+           display: inline-block;
+           line-height: 1;
+           
+        }
+    }
+    img {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        margin-top: -20px;
+    }
+    &-login {
+        display: inline-block;
+        padding-left: 25px;
+        max-width: 110px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-family: "OpenSansRegular";
+    }
+    
+    
+}
+.author__table {
+    .author-online {
+        position: absolute;
+        left: 90px;
+        bottom: 5px;
+    }
+    img {
+        position: static;
+        margin-top: 1px;
+    }
+}

@@ -16,38 +16,8 @@
     &-inner{
         background-color: #fff;
         padding: 15px 30px;
-        
-        
         @media(max-width: 665px){
             padding: 15px;
-        }
-        [type=checkbox]{
-            width: 20px;
-            height: 20px;
-            display: inline-block;
-            background: #d7dcde;
-            border-radius: 2px;
-            cursor: pointer;
-        }
-        .checkbox {
-            width: 20px;
-            height: 20px;
-            display: inline-block;
-            background: #d7dcde;
-            border-radius: 3px;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            
-            input[type=checkbox] {
-                display: none;
-            }
-            
-            &.checked {
-                background: #a1c67a url(../img/interface/check.png) 50% no-repeat;
-            }
         }
         &-caption,
         &-question{
@@ -91,6 +61,16 @@
             font-size: 0;
             display: none;
         }
+        &-bottom-text-item{
+            width: 28%;
+            span{
+                font-size: 14px;
+                font-family: "OpenSansRegular";
+                line-height: 20px;
+                color: #444444;
+                display: block;
+            }
+        }
         &-bottom-img-item,
         &-bottom-text-item{
             display: inline-block;
@@ -106,6 +86,7 @@
             padding-top: 5px;
             
             @media(max-width: 1120px){
+                width: 100%;
                 padding: 0;
                 margin-bottom: 10px;
                 text-align: center;
@@ -114,16 +95,7 @@
                 }
             }
         }
-        &-bottom-text-item{
-            width: 28%;
-            span{
-                font-size: 14px;
-                font-family: "OpenSansRegular";
-                line-height: 20px;
-                color: #444444;
-                display: block;
-            }
-        }
+       
 
         &-coast{
             font-size: 20px;
@@ -132,7 +104,7 @@
             border-left: 1px solid #e6e6e6;
             position: absolute;
             right: 50px;
-            top: 37px;
+            top: 34px;
             padding: 5px 0px 5px 15px;
             
             @media(max-width: 665px){
@@ -148,3 +120,5 @@
         }
     }  
 }
+/*checkbox*/
+@import "less/components/checkbox.less";

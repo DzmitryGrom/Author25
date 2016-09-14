@@ -1,3 +1,5 @@
+/*textarea*/
+@import "less/components/textarea.less";
 /*icon*/
 .i_low-coast{
     background-image: url(../img/interface/low-coast.png);
@@ -75,11 +77,11 @@
             }
             &:before{
                 content: "";
-                left: -30px;
-                top: 1px;
+                left: -32px;
+                top: 0px;
                 position: absolute;
-                border: 19px solid transparent;
-                border-right: 11px solid #c1c6c8;
+                border: 20px solid transparent;
+                border-right: 12px solid #c1c6c8;
             }
         }
         .next{
@@ -94,10 +96,10 @@
             &:after{
                 content: '';
                 position: absolute;
-                right: -30px;
-                top: 1px;
-                border: 19px solid transparent;
-                border-left: 11px solid #a2c679;
+                right: -32px;
+                top: 0px;
+                border: 20px solid transparent;
+                border-left: 12px solid #a2c679;
             }
         }
             
@@ -446,6 +448,7 @@
                     margin-left: 5px;
                     display: inline-block;
                     vertical-align: middle;
+                    cursor: pointer;
                 }
                 .fa-question-circle:hover + div.tooltip-text{
                     display: block;
@@ -466,15 +469,7 @@
                     width: 35px;
                 }
                 textarea{
-                    resize: none;
-                    font-family: "OpenSansRegular";
-                    border-radius: 2px;
-                    font-size: 14px;
-                    border: 1px solid #ececec;
                     width: 100%;
-                    padding: 0 15px;
-                    padding-top: 6px;
-                    margin-bottom: 15px;
                 }
                 /*btn-add*/
                 @import "less/components/btn-add.less";                

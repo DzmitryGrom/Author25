@@ -2246,6 +2246,7 @@ textarea:focus {
 }
 .nav > li > a,
 .content-notification-history-list-item-btn-inner-add,
+.btn-green,
 .content-notification-history-list-item-btn-inner-delete,
 .content-notification-history-list-item-content-date-user,
 .content-notification-history-list-item,
@@ -3453,12 +3454,47 @@ textarea:focus {
 .content-notification-history-list-btn-more-inner-btn:hover {
   cursor: pointer;
 }
-.content-notification-orders .user-online {
+/*status*/
+.author {
+  display: block;
+}
+.author-online {
   background-image: url(../img/interface/ellipse.png);
   width: 12px;
   height: 12px;
   margin-left: 15px;
-  vertical-align: middle;
+  vertical-align: text-top;
+}
+.author-online-text {
+  font-size: 14px;
+  color: #a2c679;
+  margin: -1px 0 0 15px;
+  display: inline-block;
+  line-height: 1;
+}
+.author img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -20px;
+}
+.author-login {
+  display: inline-block;
+  padding-left: 25px;
+  max-width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+}
+.author__table .author-online {
+  position: absolute;
+  left: 90px;
+  bottom: 5px;
+}
+.author__table img {
+  position: static;
+  margin-top: 1px;
 }
 .content-notification-orders-caption {
   font-size: 18px;
@@ -3565,23 +3601,6 @@ textarea:focus {
 }
 .content-notification-orders-list-item-content-list-item__bet {
   font-weight: 400;
-}
-.content-notification-orders-list-item-content-list-item__bet__with-img {
-  position: relative;
-}
-.content-notification-orders-list-item-content-list-item__bet__with-img img {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  margin-top: -20px;
-}
-.content-notification-orders-list-item-content-list-item__bet__with-img-login {
-  display: inline-block;
-  width: 55%;
-  padding-left: 25px;
-  max-width: 110px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .content-notification-orders-list-item-content-list-item:after {
   content: '';

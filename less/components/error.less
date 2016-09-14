@@ -25,12 +25,19 @@
             top: -4px;
             z-index: 2;
             font-size: 30px;
+            @media(max-width: 768px){
+                left: -40px;
+                margin: 0;
+            }
         }
     }
     &-caption,&-text{
         width: 80%;
         margin: 0 auto;
-    } 
+    }
+    &-caption {
+         margin: 0 auto 15px;
+    }
     &-text{
         font-size: 14px;
         font-family: "OpenSansRegular";
