@@ -30,6 +30,9 @@
 @import "less/components/pop-up-info.less";
 /*message*/
 @import "less/components/message.less";
+/*filter-list*/
+@import "less/components/filter-list.less";
+
 
 /*icon*/
 .i-offline {
@@ -318,35 +321,7 @@
                 margin-left: 5px;
             }
         }
-        &-filters-list{
-            font-size: 12px;
-            color: #b0b0b0;
-            display: inline-block;
-            position: absolute;
-            right: 0;
-            bottom: 10px;
-            z-index: 2;
-            @media(max-width: 640px) {
-                right: inherit;
-                left: 0;
-                bottom: -16px;
-                &:first-child {
-                    margin-left: 0;    
-                }
-            }
-            span{
-                margin-left: 20px;
-                cursor: pointer;
-                @media(max-width: 640px) {
-                    &:first-child {
-                        margin-left: 0;    
-                    }
-                }    
-            }
-            span.active{
-                color: #4786c8;
-            }
-        }
+        
     }
     &-list-item {
         margin-bottom: 20px;
@@ -812,6 +787,11 @@
                 .quantity-message {
                     color:  #538ecc;
                     padding: 13px 30px;
+                    @media(max-width: 750px) {
+                        padding: 13px 0px;
+                        width: 154px;
+                        margin-top: 7px;
+                    }
                     i{
                         color: #b0b0b0;
                         font-size: 12px;
@@ -865,6 +845,10 @@
                             font-family: "OpenSansRegular";
                             display: block;
                         }
+                        &-remake {
+                            color: #e95454;
+                            margin-bottom: 10px;
+                        }
                         &-name {
                             color: #444444;
                             
@@ -878,6 +862,7 @@
                         vertical-align: top;
                         line-height: 1;
                         margin-left: 23px;
+                        
                     }
                     &-question img,
                     &-answer img {
@@ -895,11 +880,15 @@
                         padding: 15px;
                         position: relative;
                         margin-bottom: 10px;
+                        @media(max-width: 768px) {
+                            min-width: 66%;
+                        }
                         &-name {
                             font-weight: 600;
                             margin-bottom: 15px;
                             display: inline-block;
                         }
+                        
                     }
                     &-answer {
                         text-align: left;
@@ -1157,4 +1146,3 @@
         }
     }
 }
-

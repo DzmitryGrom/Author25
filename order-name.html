@@ -329,12 +329,110 @@
                 <a href="#" class="btn-green btn-confirmation">ЗАПОЛНИТЕ ФОРМУ ЕЩЕ РАЗ</a>
             </div>
         </div>
+        <div class="pop-up-info pop-up-info__order-author-selection" style="display:none">
+            <span class="btn-delete">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <p class="pop-up-info-description">
+                Выбрать автора
+            </p>
+            <div class="pop-up-info__order-author-selection-scheme-list">
+                <div class="pop-up-info__order-author-selection-scheme-list-item">
+                    <p class="pop-up-info-text-bottom">Ставка автора</p>
+                    <p class="pop-up-info-text-clarification">10 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                </div>
+                <div class="pop-up-info__order-author-selection-scheme-list-item">
+                    <p class="pop-up-info-text-number">+</p>
+                </div>
+                <div class="pop-up-info__order-author-selection-scheme-list-item">
+                    <p class="pop-up-info-text-bottom">Комиссия сервиса</p>
+                    <p class="pop-up-info-text-clarification">3 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                </div>
+                <div class="pop-up-info__order-author-selection-scheme-list-item">
+                    <p class="pop-up-info-text-number">=</p>
+                </div>
+                <div class="pop-up-info__order-author-selection-scheme-list-item">
+                    <p class="pop-up-info-text-bottom ">Будет списано</p>
+                    <p class="pop-up-info-text-clarification">13 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                </div>
+            </div>
+            <p class="pop-up-info-text-clarification">
+                Автор 24 - биржа, на которой заказчики сами выбирают авторов.
+            </p>
+            <p class="pop-up-info-text-clarification">
+                Вы выбрали автора для работы над заказом "История древнего мира".
+            </p> 
+            <p class="pop-up-info-text-clarification">
+                Деньги будут списаны с вашего счета.
+            </p>
+            <div class="pop-up-info-btn-inner">
+                <a href="#" class="btn-gray btn-confirmation">ОТМЕНА</a>
+                <a href="#" class="btn-green btn-confirmation">ДА, ВЫБРАТЬ ЭТОГО АВТОРА</a>
+            </div>
+        </div>
+        <div class="pop-up-info pop-up-info__specification" style="display:none">
+            <span class="btn-delete">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <p class="pop-up-info-description">
+                Уточнения по заказу
+            </p>
+            <p class="pop-up-info-text-clarification">
+                Мы создали ваш заказ, в течение 5 минут авторы начнут делать ставки и вы узнаете стоимость. Уточните ниже срок, количество страниц и другие параметры заказа, чтобы авторам было проще его оценивать.
+            </p>
+            <div class="pop-up-info__specification-select-inner">
+                <select class="form-control js-example-basic-single">
+                    <option value="AL">Выберете предмет</option>
+                    <option value="WY">Экзамен</option>
+                    <option value="WY">Контрольная</option>
+                </select>
+            </div>
+            <div class="pop-up-info__specification-list">
+                <div class="pop-up-info__specification-list-item">
+                    <p class="pop-up-info-text-clarification">
+                        Количество страниц 
+                    </p>
+                    <div class="pop-up-info__specification-list-item-left">
+                        <select class="js-example-basic-single">
+                            <option value="AL">от 5</option>
+                            <option value="WY">6</option>
+                            <option value="WY">7</option>
+                        </select>
+                    </div>
+                    <div class="pop-up-info__specification-list-item-right">
+                        <select class="js-example-basic-single">
+                            <option value="AL">до 10</option>
+                            <option value="WY">9</option>
+                            <option value="WY">8</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pop-up-info__specification-list-item">
+                    <p class="pop-up-info-text-clarification">
+                        Срок сдачи 
+                    </p>
+                    <input class="select2-container-text form-control" type="text" placeholder="20.07.2016">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="pop-up-info__specification-btn-inner">
+                <p >
+                    <label class="btn-add-file-inner">
+                        Прикрепить файл
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        <input class="btn-add" type="file" name="photo" accept="image/*,image/jpeg"> 
+                    </label>
+                </p>
+                <a href="#" class="btn-add-comment">Добавить комментарий к заявке <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+            </div>
+            <a href="#" class="btn-green">РАЗМЕСТИТЬ ЗАКАЗ ></a>
+        </div>
         <div class="pop-up-info pop-up-info__order-accept" style="display:none">
             <span class="btn-delete">
                 <i class="fa fa-times" aria-hidden="true"></i>
             </span>
             <p class="pop-up-info-description">
-                Принять на работу
+                Принять работу
             </p>
             <div class="pop-up-info-text">
                 <strong class="pop-up-info-text-bottom">
@@ -423,6 +521,28 @@
                     <input class="btn-add-caption-element" type="file" name="photo" accept="image/*,image/jpeg"> 
                     <span class="btn-add-caption-text">ПРИКРЕПИТЬ ФАЙЛ</span> 
                 </label>
+            </div>
+            <div class="pop-up-info-btn-inner">
+                <a href="#" class="btn-gray btn-order-accept">ОТМЕНИТЬ</a>
+                <a href="#" class="btn-blue btn-order-accept">ОТПРАВИТЬ</a>
+            </div>
+        </div>
+        <div class="pop-up-info pop-up-info__order-recalculation" style="display:none">
+            <span class="btn-delete">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <p class="pop-up-info-description">
+                Отправить заказ в корректировку
+            </p>
+            <div class="pop-up-info-text">
+                <strong class="pop-up-info-text-bottom">
+                    Укажите, какие корректировки необходимо произвести:
+                </strong>
+                <textarea class="texterea-blue" cols="20" maxlength="1200" name="Text" rows="5" placeholder="Укажите, какие корректировки необходимо произвести:"></textarea>
+            </div>
+            <div class="pop-up-info-btn-add-inner">
+                <i class="i i_doc"></i>
+                <span class="pop-up-info-btn-add-inner-file-name">Древнийегипет.docx (22,39 KB)</span>
             </div>
             <div class="pop-up-info-btn-inner">
                 <a href="#" class="btn-gray btn-order-accept">ОТМЕНИТЬ</a>
@@ -528,6 +648,50 @@
                             <div class="alert alert__yellow" style="display:none">
                                 <div class="description">
                                     <span class="type">
+                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>Отказ от корректировок
+                                    </span>
+                                    <span class="price">1 200 руб.</span>
+                                </div>
+                                <div class="inner">
+                                    <p class="inner-text">
+                                        Автор отказался вносить корректировки
+                                    </p>
+                                    <p class="inner-text">
+                                        Вы можете отказаться от корректировок и заказать перерасчет.
+                                    </p>
+                                    <p class="inner-text">
+                                        14 сентября 2016 г.  заказ автоматически будет завершен, и деньги (ставка 1200 руб.) будут перечислены автору.
+                                    </p>
+                                    <div class="inner-btns inner-btns__right">
+                                        <a class="btn-red btn__right" href="#">ПРИНЯТЬ РАБОТУ СРАЗУ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--alert-->
+                            <div class="alert alert__yellow" style="display:none">
+                                <div class="description">
+                                    <span class="type">
+                                        Черновик
+                                    </span>
+                                    <span class="price">1 200 руб.</span>
+                                </div>
+                                <div class="inner">
+                                    <p class="inner-text">
+                                        Заказ находиться в черновике
+                                    </p>
+                                    <p class="inner-text">
+                                        Если вы хотите разместить его в аукционе нажмите кнопку ниже.
+                                    </p>
+                                    
+                                    <div class="inner-btns inner-btns__right">
+                                        <a class="btn-green btn__right" href="#">ПРИНЯТЬ РАБОТУ СРАЗУ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--alert-->
+                            <div class="alert alert__yellow" style="display:none">
+                                <div class="description">
+                                    <span class="type">
                                         <i class="fa fa-thumbs-up" aria-hidden="true"></i>Заказ на гарантии
                                     </span>
                                     <span class="price">1 200 руб.</span>
@@ -559,7 +723,7 @@
                                 </div>
                                 <div class="inner">
                                     <p class="inner-text">
-                                        Вы отправили  запрос на корректировку. В течении 3 дней(до 21 июля 2016) автор должен выложить исправленный вариант работы.
+                                        Вы отправили  запрос на корректировку. В течении 3 дней (до 21 июля 2016) автор должен выложить исправленный вариант работы.
                                     </p>
                                     
                                 </div>
@@ -616,7 +780,7 @@
                                 </div>
                             </div>
                             <!--alert-->
-                            <div class="alert alert__green alert__no-price" style="display:">
+                            <div class="alert alert__green alert__no-price" style="display:none">
                                 <div class="description">
                                     <span class="type">
                                         <i class="fa fa-thumbs-up" aria-hidden="true"></i>Оцените, пожайлуста, выполненную автором работу
@@ -958,10 +1122,15 @@
                                     </div>
                                     <a class="btn-gray" href="#"><i class="fa fa-phone" aria-hidden="true"></i>ЗАКАЗАТЬ ЗВОНОК</a>
                                     <div class="content-order-name-offers-list-item-author-info-item-right">
-                                       <span class="bonus bonus__check">
+                                        <div class="bonus bonus__check">
                                            <i class="i i_sun"></i>
                                            <i class="fa fa-check" aria-hidden="true"></i>
-                                        </span>
+                                           <div class="tooltip-text tooltip-text__bonus">
+                                                <p>
+                                                    Автор проверен администрацией, имеет профильное образование, указал свой телефон и прошел собеседование с нашей службой поддержки. 
+                                                </p>
+                                            </div>
+                                        </div>
                                         <span class="content-order-name-offers-list-item-author-info-item-right-text">
                                             Сделает за 
                                             <span class="content-order-name-offers-list-item-author-info-item-right-text-value">8000<i class="fa fa-rub" aria-hidden="true"></i></span>
@@ -975,13 +1144,15 @@
                                             <div class="content-order-name-offers-list-item-author-info-bottom-panel-info-show">
                                                 <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-description">Технические предметы</span>
                                                 <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-date">1</span>
-                                                <span class="like">
-                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                                                    262
-                                                </span>
-                                                <span class="dislike">
-                                                    <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                                                    2
+                                                <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-opinion">
+                                                    <span class="like">
+                                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                        262
+                                                    </span>
+                                                    <span class="dislike">
+                                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                                        2
+                                                    </span>
                                                 </span>
                                                 <span class="more">
                                                     Подробнее
@@ -990,13 +1161,15 @@
                                             <div class="content-order-name-offers-list-item-author-info-bottom-panel-info-hide">
                                                 <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-description">Всего выполненно работ</span>
                                                 <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-date">2624</span>
-                                                <span class="like">
-                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                                                    262
-                                                </span>
-                                                <span class="dislike">
-                                                    <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                                                    2
+                                                <span class="content-order-name-offers-list-item-author-info-bottom-panel-info-show-opinion">
+                                                    <span class="like">
+                                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                        262
+                                                    </span>
+                                                    <span class="dislike">
+                                                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                                        2
+                                                    </span>
                                                 </span>
                                                 <div class="content-order-name-offers-list-item-author-info-bottom-panel-info-hide-link">
                                                     <a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>Другие предметы</a>
@@ -1058,13 +1231,24 @@
                                                 <div class="content-order-name-offers-list-item-author-info-message-content-question-user">
                                                     <div>
                                                         <span class="content-order-name-offers-list-item-author-info-message-content-question-user-name">Dzmitry</span>
-                                                    
                                                     </div>
                                                     <i class="i i_download"></i>
                                                     <div class="file-info">
                                                         <span class="file-info-name">1261632_2.pdf</span>
                                                     </div>
                                                     <a href="#" class="file-download-link" download>Скачать</a>
+                                                </div>
+                                                <img  src="img/interface/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="content-order-name-offers-list-item-author-info-message-content-question">
+                                                <div class="content-order-name-offers-list-item-author-info-message-content-question-user">
+                                                    <div>
+                                                        <span class="content-order-name-offers-list-item-author-info-message-content-question-user-name">Dzmitry</span>
+                                                    </div>
+                                                    <div class="file-info">
+                                                        <span class="file-info-remake">Отправлено в корректировку(1)</span>
+                                                        <span class="file-info-name">Уникальность не соответствует</span>
+                                                    </div>
                                                 </div>
                                                 <img  src="img/interface/avatar.jpg" alt="avatar">
                                             </div>
@@ -1094,7 +1278,7 @@
                     <div class="content-order-name-offers">
                         <div class="content-order-name-offers-top-panel">
                             <h2 class="content-order-name-offers-top-panel-description">Предложение авторовы<span>(4)</span></h2>
-                            <div class="content-order-name-offers-top-panel-filters-list">
+                            <div class="filters-list">
                                 <span class="active">
                                     По цене
                                     <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
@@ -1157,6 +1341,7 @@
                                         </div>
                                     </div>
                                     <div class="content-order-name-offers-list-item-author-info-item-right">
+                                        
                                         <span class="content-order-name-offers-list-item-author-info-item-right-text">
                                             Сделает за 
                                             <span class="content-order-name-offers-list-item-author-info-item-right-text-value">8000<i class="fa fa-rub" aria-hidden="true"></i></span>
@@ -1284,6 +1469,15 @@
                                         </div>
                                     </div>
                                     <div class="content-order-name-offers-list-item-author-info-item-right">
+                                        <div class="bonus bonus__check">
+                                           <i class="i i_sun"></i>
+                                           <i class="fa fa-check" aria-hidden="true"></i>
+                                           <div class="tooltip-text tooltip-text__bonus">
+                                                <p>
+                                                    Автор проверен администрацией, имеет профильное образование, указал свой телефон и прошел собеседование с нашей службой поддержки. 
+                                                </p>
+                                            </div>
+                                        </div>
                                         <span class="content-order-name-offers-list-item-author-info-item-right-text">
                                             Сделает за 
                                             <span class="content-order-name-offers-list-item-author-info-item-right-text-value">8000<i class="fa fa-rub" aria-hidden="true"></i></span>
@@ -1813,5 +2007,7 @@
 <script src="js/libs/bootstrap.js"></script>
 <script src="js/main.js"></script>
 <script src="js/order-name.js"></script>
+<script src="js/form.js"></script>
+<script src="js/libs/select2.min.js"></script>
 </body>
 </html>

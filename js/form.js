@@ -23,5 +23,4 @@ $(document).ready(function () {
             $(this).html("Что это такое?");
         }
     })
-
 });

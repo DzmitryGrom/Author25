@@ -389,6 +389,9 @@
     }
     .pop-up-info-btn-inner {
         margin-top: 20px;
+        .btn-gray {
+            margin-right: 5px;
+        }
     }
     &-scheme-list {
         background-color: #fffced;
@@ -478,6 +481,12 @@
         padding: 25px 0 20px 0;
         width: 91%;
         margin: 0 auto 20px;
+        &-file-name {
+            margin-left: 10px;
+            font-size: 13px;
+            font-family: "OpenSansSemibold";
+            color: #444444;
+        }
         @media(max-width: 768px) {
             width: 87%;
         }
@@ -552,6 +561,90 @@
         }
     }
 }
+.pop-up-info__specification {
+    width: 530px;
+    text-align: center;
+    padding: 0 40px 20px;
+    margin-left: -265px;
+    @media(max-width: 768px) {
+        width: 400px;
+        margin-left: -200px;
+    }
+    &-select-inner {
+        margin: 20px 0;
+    }
+    &-list {
+        font-size: 0;
+        &-item {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            position: relative;
+            .pop-up-info-text-clarification {
+                text-align: left;
+            }
+            &-left, &-right {
+                width: 50%;
+                display: inline-block;
+            }
+            &-left {
+                .select2-selection {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-right: none!important;
+                }
+            }
+            &-right {
+                .select2-selection {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    border-left: 1px solid #ececec!important;
+                }
+            }
+            &:first-child {
+                padding-right: 15px;
+            }
+            &:last-child {
+                padding-left: 15px;
+            }
+            .fa-calendar {
+                font-size: 15px;
+                position: absolute;
+                top: 40px;
+                right: 20px;
+                color: #b0b0b0;
+            }
+        }
+    }
+    &-btn-inner {
+        text-align: left;
+        margin: 20px 0 25px 0;
+        label {
+            display: inline-block;
+        }
+        .btn-add {
+            display: none;
+        }
+        .btn-add-comment,
+        .btn-add-file-inner {
+            color: #4786c8;
+            font-size: 14px;
+            text-decoration: underline;
+            font-weight: normal;
+            &:hover {
+                cursor: pointer;
+            }
+            .fa {
+                color: #a2c679;
+                margin-left: 5px;
+            }
+        }
+    }
+    .btn-green {
+        padding: 12px 0;
+        width: 100%;
+    }
+}
 .link-more {
     color: #4786c8;
     text-decoration: underline;
@@ -564,4 +657,41 @@ a.pop-up-info-text-btn-next {
     font-size: 14px;
     text-decoration: underline;
     margin-left: 15px;
+}
+.select2-container {
+    width: 100% !important;
+    text-align: left;
+}
+.select2-container--default .select2-selection--single, 
+.select2-container-text {
+    border: 2px solid #ececec;
+    height: 40px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-container-text {
+    line-height: 36px;
+    color: #b0b0b0;
+    font-size: 14px;
+    font-family: "OpenSansRegular";
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    background-color: #ececec;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    background-image: url(../img/interface/arrow-select__bl.png);
+    width: 12px;
+    height: 7px;
+    display: inline-block;
+    border-style: none;
+}
+.select2-container--default.select2-container--open b{
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 12px;
+    top: 7px;
 }
