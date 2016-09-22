@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title>Author25</title>
+    <title>Author25-all-orders</title>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all-orders.css">
 </head>
 <body>
     <div class="page">
@@ -52,12 +52,10 @@
                 <div class="navbar-info">
                     <span class="navbar-info-item navbar-info-item__notifications">
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
-                        <span class="navbar-info-item-value">4</span>
                         <i class="pop-up_tr"></i>
                     </span>
                     <span class="navbar-info-item navbar-info-item__message">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <span class="navbar-info-item-value">11</span>
                         <i class="pop-up_tr"></i>
                     </span>
                     <span class="navbar-info-item navbar-info-item__user">
@@ -142,33 +140,69 @@
         <!--content-->
         <div class="content container">
             <div class="content-sitebar">
-                <div class="content-sitebar-user">
-                    <img class="img-desctop" src="img/interface/user.png" alt="user">
+                <div class="content-sitebar-user content-sitebar-user__without-paddings">
                     <div class="content-sitebar-user-info">
-                        <p class="content-sitebar-user-name">
-                        Владимир Владимирович
-                            <span class="i"></span>
-                        </p>
-                        <p class="content-sitebar-user-info-text-top">Мои заказы</p>
-                        <p class="content-sitebar-user-info-text-bottom">Всего
-                            <span class="content-sitebar-user-info-text-bottom-value">130</span>
-                        </p>
-                        <p class="content-sitebar-user-info-text-bottom">В аукционе
-                            <span class="content-sitebar-user-info-text-bottom-value">2</span>
-                        </p>
-                        <p class="content-sitebar-user-info-text-bottom">В работе
-                            <span class="content-sitebar-user-info-text-bottom-value">1</span>
-                        </p>
-                        <p class="content-sitebar-user-info-text-bottom">В гарантии
-                            <span class="content-sitebar-user-info-text-bottom-value">6</span>
-                        </p>
-                        <p class="content-sitebar-user-info-text-bottom">Черновики
-                            <span class="content-sitebar-user-info-text-bottom-value">102</span>
-                        </p>
+                        <p class="content-sitebar-user-info-orders-description">Заказы</p>
+                        <ul class="content-sitebar-user-info-list">
+                            <li class="content-sitebar-user-info-list-item">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">В аукционе 
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">130</span>
+                                        <span class="increasing-number">+10</span>
+                                    </span>
+                                    
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">В работе 
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">2</span>
+                                    </span>
+                                    
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">
+                                   <i class="fa fa-star" aria-hidden="true"></i>Избранные 
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">1</span>
+                                    </span>
+                                    
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">На гарантии 
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">6</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Завершенные 
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">102</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">В черновике 
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">50</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="content-sitebar-user-info-list-item">
+                                <a class="content-sitebar-user-info-list-item-link" href="#">Перерасчет 
+                                    <span class="content-sitebar-user-info-list-item-link-value-inner">
+                                        <span class="content-sitebar-user-info-list-item-link-value">1</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="content-sitebar-calendar">
-                    <p class="content-sitebar-calendar-text-top">Календарь<span class="btn-toggle-calendar"><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
+                <div class="calendar">
+                    <p class="calendar-text-top">Календарь<span class="btn-toggle-calendar"><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
                     <table id="calendar">
                         <thead>
                             <tr>
@@ -235,97 +269,28 @@
                         </tbody>
                     </table>   
                 </div>
-                <div class="content-sitebar-banner">
-                    <span class="content-sitebar-banner-text">Новое приложение для Android</span>
-                    <p class="content-sitebar-banner-img-inner"><a href="#"><i class="i i_google-play"></i></a></p>
-                    <i class="i i_phone"></i>
-                </div>
             </div>
             <div class="content-center">    
                 <div class="content-notification">
-                    <div class="content-notification-history">
-                        <div class="content-notification-history-top-panel">
-                            <span class="content-notification-history-top-panel-text">Уведомления
-                                <span class="content-notification-history-top-panel-text-value">(5 новых)</span>
-                            </span>
-                            <a href="#" class="content-notification-history-top-panel-btn-all">История уведомлений</a>
-                            <a href="#" class="content-notification-history-top-panel-btn-delete-all">удалить все</a>
-                        </div>
-                        <div class="content-notification-history-list">
-                            <div class="content-notification-history-list-item">
-                                <div class="content-notification-history-list-item-btn-inner">
-                                    <span class="btn-green">В ЗАКАЗ</span>
-                                    <span class="btn-delete">
-                                        <i class="fa fa-times" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                                <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                <div class="content-notification-history-list-item-content">
-                                    <p class="content-notification-history-list-item-content-date">
-                                        <a href="#" class="content-notification-history-list-item-content-date-user">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            Lrilm
-                                        </a>
-                                        <span class="content-notification-history-list-item-content-date-value">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            26 июня 20016 в 16:23
-                                        </span>
-                                    </p>
-                                    <p class="content-notification-history-list-item-content-text">Гарантийный срок по заказу «физика 2» истек</p>
-                                </div>
-                            </div>
-                            <div class="content-notification-history-list-item">
-                                <div class="content-notification-history-list-item-btn-inner">
-                                    <span class="btn-green">В ЗАКАЗ</span>
-                                    <span class="btn-delete">
-                                        <i class="fa fa-times" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                                <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                <div class="content-notification-history-list-item-content">
-                                    <p class="content-notification-history-list-item-content-date">
-                                        <a  href="#" class="content-notification-history-list-item-content-date-user">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            Alpetrovich
-                                        </a>
-                                        <span class="content-notification-history-list-item-content-date-value">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            26 июня 20016 в 16:23
-                                        </span>
-                                    </p>
-                                    <p class="content-notification-history-list-item-content-text">Автор сделал ставку к вашему заказу «контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ»</p>
-                                </div>
-                            </div>
-                            <div class="content-notification-history-list-item">
-                                <div class="content-notification-history-list-item-btn-inner">
-                                    <span class="btn-green">В ЗАКАЗ</span>
-                                    <span class="btn-delete">
-                                        <i class="fa fa-times" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                                <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                <div class="content-notification-history-list-item-content">
-                                    <p class="content-notification-history-list-item-content-date">
-                                        <a  href="#" class="content-notification-history-list-item-content-date-user">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            Alpetrovich
-                                        </a>
-                                        <span class="content-notification-history-list-item-content-date-value">
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            26 июня 20016 в 16:23
-                                        </span>
-                                    </p>
-                                    <p class="content-notification-history-list-item-content-text">Автор сделал ставку к вашему заказу «контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ»</p>
-                                </div>
-                            </div>
-                            <div class="content-notification-history-list-btn-more-inner">
-                                <p class="content-notification-history-list-btn-more-inner-btn">Показать еще</p>
-                            </div>
-                        </div>
-                    </div>
                     <div class="content-notification-orders">
-                        <span class="content-notification-orders-caption">Активные заказы</span>
-                        <a class="content-notification-orders-btn-all" href="#">Посмотреть все заказы</a>
+                        <div class="content-notification-orders-top-panel">
+                            <span class="content-notification-orders-caption">Завершенные заказы</span>
+                            <div class="content-notification-orders-top-panel-search-inner">
+                                <input class="search form-control" type="text" placeholder="Поиск">
+                                <span class="btn-green">НАЙТИ</span>
+                            </div>
+                            <div class="filters-list">
+                                <span class="active">
+                                    По дате создания
+                                    <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    По дате обновления
+                                    <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                           
                         <div class="content-notification-orders-list">
                             <div class="content-notification-orders-list-item">
                                 <a class="content-notification-orders-list-item-link" href="#">контрольная РАСЧЕТ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ УСТОЙЧИВОСТИ ЭЛЕКТРОЭНЕРГЕТИЧЕСКОЙ СИСТЕМЫ</a>
@@ -437,54 +402,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="content-notification-without-orders">
-                        <div class="content-notification-without-orders-top-panel">
-                            <p class="content-notification-without-orders-top-panel-description">В настоящий момент у вас нет заказов</p>
-                            <p class="content-notification-without-orders-top-panel-text">
-                                <span class="content-notification-without-orders-top-panel-text-value">80649</span> авторов ждут вашго задания
-                            </p>
-                            <a href="#" class="btn-blue">СДЕЛАТЬ ЗАКАЗ</a>
-                        </div>
-                        <p class="content-notification-without-orders-description">Как это работает?</p>
-                        <div class="content-notification-without-orders-list">
-                            <div class="content-notification-without-orders-list-item">
-                                <i class="i i_order-placement"></i>
-                                <p class="content-notification-without-orders-list-item-text">Вы размещаете заказ</p>
-                            </div>
-                            <div class="content-notification-without-orders-list-item-arrow">
-                                <i class="i i_arrow-list"></i>
-                            </div>
-                            <div class="content-notification-without-orders-list-item">
-                                <i class="i i_select-author"></i>
-                                <p class="content-notification-without-orders-list-item-text">Выбираете одного из авторов</p>
-                            </div>
-                            <div class="content-notification-without-orders-list-item-arrow">
-                                <i class="i i_arrow-list"></i>
-                            </div>
-                            <div class="content-notification-without-orders-list-item">
-                                <i class="i i_paying-work"></i>
-                                <p class="content-notification-without-orders-list-item-text">Оплачиваете работу</p>
-                            </div>
-                            <div class="content-notification-without-orders-list-item-arrow">
-                                <i class="i i_arrow-list"></i>
-                            </div>
-                            <div class="content-notification-without-orders-list-item">
-                                <i class="i i_finished-work"></i>
-                                <p class="content-notification-without-orders-list-item-text">Получаете готовую работу точно в срок</p>
-                            </div>
-                        </div>
-                        <div class="content-notification-without-orders-info">
-                            <i class="i i_guarantee-days"></i>
-                            <p class="content-notification-without-orders-info-text">
-                                После получения работы, в течении гарантийного периода, атвор бесплатно будет вносить корректировки по выполненному заказу.
-                            </p>
-                        </div>
-                        <div class="content-notification-without-orders-bottom-panel">
-                            <p class="content-notification-without-orders-bottom-panel-text">Если у вас возникли трудности - обратитесь в <a class="content-notification-without-orders-bottom-panel-text-link" href="#">службу поддержки</a>
-                                Наши сотрудники обязательно вам помогут.
-                            </p>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,39 @@
+@import "main.less";
+/*content*/
+/*btn-greey*/
+@import "components/btn-green.less";
+/*btn-delete*/
+@import "components/btn-delete.less";
+/*filter-list*/
+@import "less/components/filter-list.less";
+@media(max-width: 641px) {
+    .search {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .content-sitebar .calendar {
+        width: 100%;
+        display: block;
+        vertical-align: top;
+    }
+    .content-sitebar-user-info {
+        width: 100%;
+        display: block;
+        vertical-align: top;
+        padding-left: 0px;
+    }
+}
+
+.content-notification-orders-top-panel {
+    position: relative;
+    &-search-inner {
+        margin-bottom: 25px;
+        .search {
+            width: 175px;
+            height: 38px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+}

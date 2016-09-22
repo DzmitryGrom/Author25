@@ -2830,6 +2830,11 @@ textarea:focus {
   padding: 30px 0 20px 0;
   font-size: 0;
 }
+.content-full-width {
+  background-color: #fff;
+  padding: 30px;
+  border: 1px solid #e1e1e1;
+}
 .content-center {
   display: inline-block;
   width: 77%;
@@ -2837,6 +2842,13 @@ textarea:focus {
 }
 .content-center .content-notification {
   overflow: hidden;
+}
+.content-center-description {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "OpenSansRegular";
+  color: #444444;
+  margin: 0 0 23px 0;
 }
 @media (max-width: 992px) {
   .content-center {
@@ -2927,47 +2939,60 @@ textarea:focus {
     padding-left: 15px;
   }
 }
-.content-sitebar-user-info-text-top {
+.content-sitebar-user-info-text-top,
+.content-sitebar-user-info-orders-description {
   font-size: 18px;
   font-family: "OpenSansRegular";
-  padding-top: 30px;
   line-height: 24px;
-  color: #b0b0b0;
   text-align: left;
   margin-bottom: 30px;
-  border-top: 1px solid #e6e6e6;
 }
 @media (max-width: 768px) {
-  .content-sitebar-user-info-text-top {
+  .content-sitebar-user-info-text-top,
+  .content-sitebar-user-info-orders-description {
     padding-top: 5px;
     margin-bottom: 0;
     font-size: 16px;
   }
 }
-.content-sitebar-user-info-text-bottom {
+.content-sitebar-user-info-text-top {
+  border-top: 1px solid #e6e6e6;
+  color: #b0b0b0;
+  padding-top: 30px;
+}
+.content-sitebar-user-info-orders-description {
+  color: #444444;
+  padding-top: 0px;
+  margin-bottom: 0;
+}
+.content-sitebar-user-info-text-bottom,
+.content-sitebar-user-info-list-item {
   font-size: 14px;
   font-family: "OpenSansRegular";
   line-height: 46px;
-  color: #b0b0b0;
   position: relative;
   margin-bottom: 35px;
 }
 @media (max-width: 992px) {
-  .content-sitebar-user-info-text-bottom {
+  .content-sitebar-user-info-text-bottom,
+  .content-sitebar-user-info-list-item {
     margin-bottom: 20px;
   }
 }
 @media (max-width: 768px) {
-  .content-sitebar-user-info-text-bottom {
+  .content-sitebar-user-info-text-bottom,
+  .content-sitebar-user-info-list-item {
     margin-bottom: 0;
     font-size: 14px;
     line-height: 24px;
   }
 }
-.content-sitebar-user-info-text-bottom:last-child {
+.content-sitebar-user-info-text-bottom:last-child,
+.content-sitebar-user-info-list-item:last-child {
   margin-bottom: 20px;
 }
-.content-sitebar-user-info-text-bottom-value {
+.content-sitebar-user-info-text-bottom-value,
+.content-sitebar-user-info-list-item-value {
   font-size: 14px;
   font-family: "OpenSansSemibold";
   line-height: 46px;
@@ -2977,10 +3002,61 @@ textarea:focus {
   top: 0;
 }
 @media (max-width: 768px) {
-  .content-sitebar-user-info-text-bottom-value {
+  .content-sitebar-user-info-text-bottom-value,
+  .content-sitebar-user-info-list-item-value {
     font-size: 14px;
     line-height: 24px;
   }
+}
+.content-sitebar-user-info-list {
+  padding: 0;
+  margin: 0;
+}
+.content-sitebar-user-info-list-item {
+  list-style: none;
+}
+.content-sitebar-user-info-list-item:last-child {
+  margin-bottom: 0;
+}
+.content-sitebar-user-info-text-bottom {
+  color: #b0b0b0;
+}
+.content-sitebar-user-info-list-item {
+  color: #4786c8;
+  padding: 0 15px;
+  margin: 0;
+  border-top: 1px solid #e1e1e1;
+}
+.content-sitebar-user-info-list-item-link {
+  display: block;
+  position: relative;
+}
+.content-sitebar-user-info-list-item-link .fa-star {
+  color: #ffd800;
+  margin-right: 5px;
+}
+.content-sitebar-user-info-list-item-link:hover {
+  text-decoration: none;
+  color: #444444;
+}
+.content-sitebar-user-info-list-item-link-value {
+  color: #444444;
+}
+.content-sitebar-user-info-list-item-link-value-inner {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+.content-sitebar-user-info-list-item:hover {
+  background-color: #f5f5f5;
+}
+.content-sitebar-user-info-list-item .increasing-number {
+  color: #fff;
+  background-color: #e95454;
+  border-radius: 12px;
+  padding: 1px 6px;
+  margin-left: 5px;
 }
 .content-sitebar-calendar-text-top {
   font-size: 18px;
@@ -3268,6 +3344,12 @@ textarea:focus {
     right: 115px;
   }
 }
+.content-sitebar-user__without-paddings {
+  padding: 0;
+}
+.content-sitebar-user__without-paddings .content-sitebar-user-info-orders-description {
+  padding: 15px;
+}
 @media (max-width: 992px) {
   .content-sitebar {
     display: block;
@@ -3457,6 +3539,7 @@ textarea:focus {
 /*status*/
 .author {
   display: block;
+  line-height: 1;
 }
 .author-online {
   background-image: url(../img/interface/ellipse.png);
@@ -3557,6 +3640,7 @@ textarea:focus {
   color: #444444;
   position: relative;
   text-align: center;
+  height: 60px;
   padding: 20px 0;
 }
 @media (max-width: 768px) {
@@ -3747,7 +3831,6 @@ textarea:focus {
 .footer-list-item__left-banner-img-inner {
   display: inline-block;
   vertical-align: top;
-  margin-left: 20px;
 }
 .footer-list-item__left-banner-text-inner-text-top {
   font-size: 16px;
@@ -3769,6 +3852,9 @@ textarea:focus {
   line-height: 24px;
   color: #4786c8;
   display: block;
+}
+.footer-list-item__left-banner-img-inner {
+  margin-left: 20px;
 }
 @media (max-width: 830px) {
   .footer-list-item__left-copyright {
