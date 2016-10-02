@@ -3058,6 +3058,11 @@ textarea:focus {
   padding: 1px 6px;
   margin-left: 5px;
 }
+.content-sitebar-user-info-btn-inner {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #e6e6e6;
+}
 .content-sitebar-calendar-text-top {
   font-size: 18px;
   line-height: 24px;
@@ -3364,7 +3369,6 @@ textarea:focus {
   background-color: #fff;
   border: 1px solid #e1e1e1;
   margin-bottom: 60px;
-  /* Smilings0 */
 }
 .content-notification-history-top-panel {
   border-bottom: 1px solid #e6e6e6;
@@ -3506,18 +3510,18 @@ textarea:focus {
 .content-notification-history-list-item-btn-inner-add:hover {
   background-color: #b2d38d;
 }
-.content-notification-history-list-item-btn-inner-delete {
+.content-notification-history-list-item-btn-inner .btn-delete {
   margin-left: 25px;
   color: #b0b0b0;
   cursor: pointer;
   font-size: 16px;
 }
 @media (max-width: 768px) {
-  .content-notification-history-list-item-btn-inner-delete {
+  .content-notification-history-list-item-btn-inner .btn-delete {
     margin-left: 15px;
   }
 }
-.content-notification-history-list-item-btn-inner-delete:hover {
+.content-notification-history-list-item-btn-inner .btn-delete:hover {
   color: #e95454;
 }
 .content-notification-history-list-btn-more-inner {

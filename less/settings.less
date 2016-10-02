@@ -10,12 +10,12 @@
 @import "components/btn-blue.less";
 /*btn-gray*/
 @import "components/btn-gray.less";
-/*settings*/
-@import "components/settings.less";
 /*top-menu*/
 @import "components/top-menu.less";
 /*checkbox*/
 @import "components/checkbox.less";
+/*select*/
+@import "less/components/select.less";
 /*notification-without-orders*/
 .content-center {
     width: 100%;
@@ -134,9 +134,11 @@
                         }
                     }
                     &-no-wrap {
+                        text-align: left;
                         @media(max-width: 826px){
                             width: 50%;
                             display: inline-block;
+                            float: left;
                         }
                     }
                     label.active {
@@ -168,6 +170,7 @@
                     }
                     &-size-avatar {
                         margin-top: 20px;
+                        text-align: left;
                         .i_icon-size:first-child {
                             margin-right: 10px;
                         }
@@ -181,7 +184,6 @@
                         @media(max-width: 826px) {
                             width: 175px;
                             display: inline-block;
-                            float: right;
                             margin-bottom: 20px;
                         }
                        
@@ -270,6 +272,11 @@
                     }
                 }
             }
+            &-item__avatar {
+                @media(max-width: 826px) {
+                    text-align: right;
+                }    
+            }
         }
     }
 }
@@ -278,20 +285,6 @@
 }
 .select2-container--default .select2-results__option--highlighted[aria-selected]{
     background-color: #ececec;
-}
-.select2-container--default .select2-selection--single .select2-selection__arrow b{
-    background-image: url(../img/interface/arrow-select.png);
-    width: 12px;
-    height: 7px;
-    display: inline-block;
-    border-style: none;
-}
-.select2-container--default.select2-container--open b{
-    transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     border-left: 1px solid #ececec;

@@ -24,12 +24,12 @@
 @import "less/components/tooltip.less";
 /*checkbox*/
 @import "less/components/checkbox.less";
-/*pop-up__shadow*/
-@import "less/components/pop-up__shadow.less";
 /*pop-up-info*/
 @import "less/components/pop-up-info.less";
 /*message*/
 @import "less/components/message.less";
+/*select*/
+@import "less/components/select.less";
 
 /*icon*/
 .i-offline {
@@ -593,6 +593,12 @@
                 right: 30px;
                 top: 30px;
                 z-index: 2;
+                .bonus:hover {
+                    cursor: pointer;
+                    .tooltip-text__bonus {
+                        display: block;
+                    }
+                }
                 @media(max-width: 750px) {
                     top: 17px;
                 }

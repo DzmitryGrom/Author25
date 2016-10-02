@@ -23,6 +23,9 @@ $(document).ready(function () {
     $(".link-more").on("click", function() {
         $(this).parent().prev().toggleClass("hidden");
     });
+    $(".link-more-next").on("click", function() {
+        $(this).parent().next().toggleClass("hidden");
+    });
     $(document).mouseup(function (e) {
         var toggleMenu = $(".pop-up-notification");
         if (!toggleMenu.is(e.target) && toggleMenu.has(e.target).length === 0) {
@@ -30,5 +33,10 @@ $(document).ready(function () {
             $(".pop-up_tr").removeClass("show");
         }
     });
+    if($(".pop-up-info").hasClass("show")) {
+        $(".pop-up__shadow").addClass("show");
+    } else {
+        $(".pop-up__shadow").removeClass("show");
+    }
     
 });
