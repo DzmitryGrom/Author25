@@ -30,6 +30,8 @@
 @import "less/components/message.less";
 /*select*/
 @import "less/components/select.less";
+/*content-description*/
+@import "less/components/content-description.less";
 
 /*icon*/
 .i-offline {
@@ -70,155 +72,10 @@
 /*order-name*/
 /*order-name-description*/
 
-.content-order-name-description {
-    background-color: #fff;
-    border: 1px solid #e1e1e1;
-    &-top-panel {
-        background-color: #f5f5f5;
-        padding: 30px 30px 0 30px;
-        position: relative;
-        span{
-            color: #c4c4c4;
-        }
-        &-text{
-            font-size: 18px;
-            font-family: "OpenSansSemibold";
-            padding: 0 0 23px 0;
-            border-bottom: 2px solid #4786c8;
-            display: inline-block;
-        }
-        &-liked{
-            font-size: 14px;
-            font-family: "OpenSansRegular";
-            position: absolute;
-            right: 30px;
-            bottom: 25px;
-            &:hover {
-                cursor: pointer;
-            }
-            &:hover .fa{
-                color: #ffd800;
-            }
-        }
-        
-        i{
-            font-size: 15px;
-        }
-    }
-    .solid {
-        border-top: 1px solid #e6e6e6;
-        margin-bottom: 30px;
-        position: relative;
-        .btn-open-list {
-            font-size: 14px;
-            font-family: "OpenSansRegular";
-            color: #4786c8;
-            cursor: pointer;
-            display: inline-block;
-            position: absolute;
-            background-color: #fff;
-            padding-left: 20px;
-            right: 0;
-            top: -11px;
-            z-index: 2;
-        }
-    }
-    &-list {
-        font-size: 0;
-        padding-top: 30px;
-        &-item {
-            display: inline-block;
-            width: 50%;
-            vertical-align: top;
-            position: relative;
-            @media(max-width: 750px) {
-                width: 100%;
-                display: block;
-                &:last-child:after {
-                    content: "";
-                    display: none;
-                }
-            }
-            &-right-side {
-                font-weight: 600;
-                .date, .date .fa {
-                    color: #e95454; 
-                }
-                .date {
-                    text-decoration: underline;
-                }
-                .date .fa {
-                    margin-left: 5px;
-                }
-                p {
-                    margin-bottom: 30px;
-                }
-                
-            }
-            
-            &:last-child:after {
-                content: "";
-                border-left: 1px solid #e6e6e6;
-                position: absolute;
-                z-index: 2;
-                left: 0;
-                top: 4px;
-                bottom: 0;
-            }
-            
-            &:last-child &-left-side {
-                padding-left: 30px;
-                @media(max-width: 750px) {
-                    padding-left: 0;
-                }
-            } 
-        }
-        
-        &-item-left-side,
-        &-item-right-side {
-            font-size: 14px;
-            font-family: "OpenSansRegular";
-            color: #444444;
-            display: inline-block;
-            width: 50%;
-            vertical-align: top;
-            i{
-                color: #b0b0b0;
-                margin-right: 15px;
-            }
-        }
-        
-    }
-    &-list-description,
-    &-list,
-    &-bottom-panel,
-    &-file,
-    .solid {
-        width: 90%;
-        margin: 0 auto;
-        
-    }
-    &-bottom-panel {
-        padding: 30px 0;
-    }
-    &-list-description {
-        font-size: 14px;
-        font-family: "OpenSansRegular";
-        color: #444444;
-        padding: 30px 0;
-        &-text-top {
-          font-family: "OpenSansBold"  
-        }
-        a:hover {
-            text-decoration: none;
-            color: #444444;
-        }
-    }
-}
+
 .content-order-name-files-inner {
     background-color: #fff;
     padding-bottom:  10px;
-    margin-top: 20px;
     border: 1px solid #e1e1e1;
     &-link {
         font-size: 14px;
