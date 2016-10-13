@@ -15,6 +15,7 @@ $(document).ready(function () {
         step: 1,
         skin: "round_plastic"
     });
+    
 
     sliderFirst = sliderOne.slider();
     

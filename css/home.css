@@ -3581,9 +3581,23 @@ textarea:focus {
   width: 12px;
   height: 12px;
   margin-left: 15px;
-  vertical-align: text-top;
+  vertical-align: top;
 }
 .author-online-text {
+  font-size: 14px;
+  color: #a2c679;
+  margin: -1px 0 0 15px;
+  display: inline-block;
+  line-height: 1;
+}
+.author-offline {
+  background-image: url(../img/interface/ellipse-off.png);
+  width: 12px;
+  height: 12px;
+  margin-left: 15px;
+  vertical-align: top;
+}
+.author-offline-text {
   font-size: 14px;
   color: #a2c679;
   margin: -1px 0 0 15px;

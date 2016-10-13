@@ -3581,9 +3581,23 @@ textarea:focus {
   width: 12px;
   height: 12px;
   margin-left: 15px;
-  vertical-align: text-top;
+  vertical-align: top;
 }
 .author-online-text {
+  font-size: 14px;
+  color: #a2c679;
+  margin: -1px 0 0 15px;
+  display: inline-block;
+  line-height: 1;
+}
+.author-offline {
+  background-image: url(../img/interface/ellipse-off.png);
+  width: 12px;
+  height: 12px;
+  margin-left: 15px;
+  vertical-align: top;
+}
+.author-offline-text {
   font-size: 14px;
   color: #a2c679;
   margin: -1px 0 0 15px;
@@ -4843,6 +4857,25 @@ textarea::-webkit-input-placeholder {
   left: 9px;
   font-family: Arial, sans-serif;
   margin-top: 50px;
+}
+#Slider4 + .jslider {
+  margin-top: 5px;
+}
+#Slider4 + .jslider .jslider-scale {
+  top: 15px;
+}
+#Slider4 + .jslider .jslider-scale ins {
+  top: 0;
+  left: -4px;
+}
+#Slider4 + .jslider .jslider-scale span:nth-child(2) ins {
+  left: -12px;
+}
+#Slider4 + .jslider .jslider-scale span:nth-child(3) ins {
+  left: -16px;
+}
+#Slider4 + .jslider .jslider-scale span:last-child ins {
+  left: -24px;
 }
 .jslider table {
   width: 100%;

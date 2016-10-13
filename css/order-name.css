@@ -16,9 +16,23 @@
   width: 12px;
   height: 12px;
   margin-left: 15px;
-  vertical-align: text-top;
+  vertical-align: top;
 }
 .author-online-text {
+  font-size: 14px;
+  color: #a2c679;
+  margin: -1px 0 0 15px;
+  display: inline-block;
+  line-height: 1;
+}
+.author-offline {
+  background-image: url(../img/interface/ellipse-off.png);
+  width: 12px;
+  height: 12px;
+  margin-left: 15px;
+  vertical-align: top;
+}
+.author-offline-text {
   font-size: 14px;
   color: #a2c679;
   margin: -1px 0 0 15px;
@@ -1866,6 +1880,7 @@ a.pop-up-info-text-btn-next {
   font-size: 13px;
   font-family: "OpenSansRegular";
   color: #444444;
+  position: relative;
 }
 @media (max-width: 768px) {
   .content-description-text {
@@ -1873,8 +1888,26 @@ a.pop-up-info-text-btn-next {
     margin-top: 10px;
   }
 }
+.content-description-text .text-hidden {
+  max-height: 160px;
+  overflow: hidden;
+}
+.content-description-text .content-description-text-point {
+  position: absolute;
+  left: 0px;
+  bottom: 25px;
+  display: none;
+}
+.content-description-text .text-hidden + .content-description-text-point {
+  display: inline-block;
+}
 .content-description-text .read-more {
   color: #6a99d0;
+  display: inline-block;
+  margin-top: 15px;
+}
+.content-description-text .read-more:hover {
+  cursor: pointer;
 }
 .content-description-ad {
   background-color: #f5f5f5;

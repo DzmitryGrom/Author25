@@ -14,12 +14,31 @@
         font-size: 13px;
         font-family: "OpenSansRegular";
         color: #444444;
+        position: relative;
         @media(max-width: 768px) {
             width: 90%;
             margin-top: 10px;
         }
+        .text-hidden {
+            max-height: 160px;
+            overflow: hidden;
+        }
+        .content-description-text-point {
+            position: absolute;
+            left: 0px;
+            bottom: 25px;
+            display: none;
+        }
+        .text-hidden + .content-description-text-point {
+            display: inline-block;
+        }
         .read-more {
             color: #6a99d0;
+            display: inline-block;
+            margin-top: 15px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     &-ad {
