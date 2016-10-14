@@ -338,6 +338,9 @@
                     display: block;
                     width: 95%;
                 }
+                &:hover {
+                    text-decoration: none;
+                }
                 
             }
         }
@@ -347,11 +350,10 @@
             &-left, 
             &-right {
                 display: inline-block;
-                width: 50%;
-                
             }
             &-left {
                 padding-left: 30px;
+                width: 30%;
                 @media(max-width: 768px) {
                     width: 38%;   
                 }
@@ -359,7 +361,14 @@
                     left: 30px;
                 }
             }
+            &-left__without-padding {
+                padding-left: 0;
+                @media(max-width: 768px) {
+                    vertical-align: top;
+                }
+            }
             &-right {
+                width: 70%;
                 text-align: right;
                 @media(max-width: 768px) {
                     width: 62%;   
@@ -374,6 +383,40 @@
                     @media(max-width: 768px) {
                         width: 150px;   
                     }
+                }
+            }
+            &-text {
+                font-size: 14px;
+                font-family: "OpenSansRegular";
+                color: #d0d0d0;
+                &:nth-child(2) {
+                    margin: 0 20px;
+                    @media(max-width: 768px) {
+                        margin: 0;
+                    }
+                }
+                .fa {
+                    margin-right: 10px;
+                }
+                .fa-line-chart {
+                    color: #e95454;
+                }
+                .fa-paper-plane {
+                    color: #ffd800;
+                }
+                .fa-download {
+                    color: #b5d194;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            &-link {
+                @media(max-width: 768px) {
+                    display: block;
+                    width: 100%;
+                    text-align: right;
+                    padding-bottom: 15px;
                 }
             }
         }

@@ -4718,6 +4718,9 @@ textarea:focus {
     width: 95%;
   }
 }
+.content-search-list-item__work-middle-panel-text:hover {
+  text-decoration: none;
+}
 .content-search-list-item__work-bottom-panel {
   position: relative;
   padding: 20px 30px;
@@ -4725,10 +4728,10 @@ textarea:focus {
 .content-search-list-item__work-bottom-panel-left,
 .content-search-list-item__work-bottom-panel-right {
   display: inline-block;
-  width: 50%;
 }
 .content-search-list-item__work-bottom-panel-left {
   padding-left: 30px;
+  width: 30%;
 }
 @media (max-width: 768px) {
   .content-search-list-item__work-bottom-panel-left {
@@ -4738,7 +4741,16 @@ textarea:focus {
 .content-search-list-item__work-bottom-panel-left .author img {
   left: 30px;
 }
+.content-search-list-item__work-bottom-panel-left__without-padding {
+  padding-left: 0;
+}
+@media (max-width: 768px) {
+  .content-search-list-item__work-bottom-panel-left__without-padding {
+    vertical-align: top;
+  }
+}
 .content-search-list-item__work-bottom-panel-right {
+  width: 70%;
   text-align: right;
 }
 @media (max-width: 768px) {
@@ -4757,6 +4769,42 @@ textarea:focus {
 @media (max-width: 768px) {
   .content-search-list-item__work-bottom-panel-right .btn-gray {
     width: 150px;
+  }
+}
+.content-search-list-item__work-bottom-panel-text {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  color: #d0d0d0;
+}
+.content-search-list-item__work-bottom-panel-text:nth-child(2) {
+  margin: 0 20px;
+}
+@media (max-width: 768px) {
+  .content-search-list-item__work-bottom-panel-text:nth-child(2) {
+    margin: 0;
+  }
+}
+.content-search-list-item__work-bottom-panel-text .fa {
+  margin-right: 10px;
+}
+.content-search-list-item__work-bottom-panel-text .fa-line-chart {
+  color: #e95454;
+}
+.content-search-list-item__work-bottom-panel-text .fa-paper-plane {
+  color: #ffd800;
+}
+.content-search-list-item__work-bottom-panel-text .fa-download {
+  color: #b5d194;
+}
+.content-search-list-item__work-bottom-panel-text:hover {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .content-search-list-item__work-bottom-panel-link {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding-bottom: 15px;
   }
 }
 .content-search-list-item__pagination {
