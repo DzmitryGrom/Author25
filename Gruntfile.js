@@ -14,6 +14,7 @@ module.exports = function (grunt) {
                     'css/sell-work.css': 'less/sell-work.less',
                     'css/work.css': 'less/work.less',
                     'css/search-work.css': 'less/search-work.less',
+                    'css/payment-services.css': 'less/payment-services.less',
                     'css/content.css': 'less/content.less'
                 }
             }
