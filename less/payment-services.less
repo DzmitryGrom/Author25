@@ -28,10 +28,51 @@
         font-family: "OpenSansRegular";
     }
 }
-.content-payment-services {
+.content-payment-services-info {
     background-color: #f5f5f5;
     margin: 30px;
-    padding: 20px;
+    padding: 10px 20px;
+    &-item {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        text-align: left;
+        &-text {
+            font-size: 14px;
+            font-family: "OpenSansRegular";
+            color: #b0b0b0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        &-text-big {
+            font-size: 14px;
+            font-family: "OpenSansSemibold";
+            color: #b0b0b0;
+        }
+        &-value {
+            font-size: 20px;
+            color: #444444;
+        }
+    }
+    &-item__left {
+        text-align: center;
+    }
+    &-item__right {
+        position: relative;
+        padding-left: 30px;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            border-left: 1px solid #e6e6e6;
+        }
+    }
+}
+.content-payment-services-select {
+    
 }
 .select2-container {
     width: 100% !important;

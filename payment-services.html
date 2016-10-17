@@ -144,8 +144,27 @@
                 <h2 class="content-center-description">Оплата услуги "Премиальное размещение заказа"</h2>
                 <p class="content-center-name">Магистерская диссертация <a href="#">Название</a></p>
                 <div class="content-full-width">
-                    <div class="content-payment-services">
-                    
+                    <div class="content-payment-services-info">
+                        <div class="content-payment-services-info-item content-payment-services-info-item__left">
+                            <p class="content-payment-services-info-item-text">СУММА К ОПЛАТЕ</p>
+                            <p class="content-payment-services-info-item-value">13
+                                <i class="fa fa-rub" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <div class="content-payment-services-info-item content-payment-services-info-item__right">
+                            <p class="content-payment-services-info-item-text-big">Из чего складывается сумма:</p>
+                            <p class="content-payment-services-info-item-text">Остаток на балансе</p>
+                            <p class="content-payment-services-info-item-text">Ставка автора</p>
+                            <p class="content-payment-services-info-item-text">Комиссия сервиса</p>
+                        </div>
+                    </div>
+                    <div class="content-payment-services-select">
+                       <span>Выберите страну:</span>
+                       <select class="js-example-templating js-states form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                            <optgroup>
+                                <option value="RU">Россия</option>
+                            </optgroup>
+                        </select> 
                     </div>
                 </div>
                 
@@ -214,6 +233,6 @@
 <script src="js/libs/bootstrap.js"></script>
 <script src="js/libs/select2.min.js"></script>
 <script src="js/main.js"></script>
-
+<script src="js/select-country.js"></script>
 </body>
 </html>
