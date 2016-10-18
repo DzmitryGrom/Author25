@@ -4274,6 +4274,46 @@ input[type=file] {
   border-color: #ececec;
 }
 /*notification-without-orders*/
+.i_visa-master {
+  background-image: url(../img/interface/visa-master.png);
+  width: 81px;
+  height: 26px;
+}
+.i_sms {
+  background-image: url(../img/interface/sms.png);
+  width: 52px;
+  height: 37px;
+}
+.i_qiwi {
+  background-image: url(../img/interface/qiwi.png);
+  width: 90px;
+  height: 45px;
+}
+.i_evroset {
+  background-image: url(../img/interface/evroset.png);
+  width: 72px;
+  height: 36px;
+}
+.i_yandex-money {
+  background-image: url(../img/interface/yandex.png);
+  width: 76px;
+  height: 39px;
+}
+.i_svaznoy {
+  background-image: url(../img/interface/svaznoy.png);
+  width: 90px;
+  height: 23px;
+}
+.i_webmoney {
+  background-image: url(../img/interface/webmonet.png);
+  width: 100px;
+  height: 26px;
+}
+.i_sberbank {
+  background-image: url(../img/interface/sberbank.png);
+  width: 99px;
+  height: 28px;
+}
 .content-center {
   width: 100%;
   display: block;
@@ -4328,8 +4368,63 @@ input[type=file] {
   bottom: 0;
   border-left: 1px solid #e6e6e6;
 }
+.content-payment-services-select,
+.content-payment-services-payments {
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.content-payment-services-payments-list-item {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 10px 0 0 20px;
+}
+.content-payment-services-payments-list-item:hover {
+  background-color: #d0e7fe;
+  cursor: pointer;
+}
+.content-payment-services-payments-list-item-left,
+.content-payment-services-payments-list-item-right {
+  display: inline-block;
+  vertical-align: middle;
+}
+.content-payment-services-payments-list-item-left {
+  width: 30%;
+  text-align: center;
+}
+.content-payment-services-payments-list-item-right {
+  width: 70%;
+  text-align: left;
+}
+.content-payment-services-payments-list-item-right-link {
+  display: block;
+  font-size: 16px;
+  font-family: "OpenSansRegular";
+  color: #6a99d0;
+}
+.content-payment-services-payments-list-item-right-link:hover {
+  text-decoration: none;
+}
+.content-payment-services-payments-list-item-right-text {
+  font-size: 12px;
+  font-family: "OpenSansRegular";
+  color: #bcbcbc;
+}
+.content-payment-services-description {
+  font-size: 16px;
+  font-family: "Open0SansRegular";
+  color: #444444;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
 .select2-container {
-  width: 100% !important;
+  display: inline-block;
+  width: 185px!important;
+  vertical-align: middle;
 }
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: #ececec;
