@@ -4356,3 +4356,6 @@ input[type=file] {
   height: 34px;
   border-color: #ececec;
 }
+.img-flag {
+  margin-bottom: 3px;
+}
