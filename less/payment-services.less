@@ -78,17 +78,35 @@
         background-color: #f5f5f5;
         margin: 30px;
         padding: 10px 20px;
+        @media(max-width: 768px) {
+            padding: 10px 0;
+            margin: 20px;
+        }
         &-item {
             display: inline-block;
             width: 50%;
             vertical-align: middle;
             text-align: left;
+            @media(max-width: 768px) {
+                width: 100%;
+            }
             &-text {
                 font-size: 14px;
                 font-family: "OpenSansRegular";
                 color: #b0b0b0;
+                position: relative;
                 &:last-child {
                     margin: 0;
+                }
+                &-value {
+                    position: absolute;
+                    left: 300px;
+                    top: 0;
+                    z-index: 2;
+                    @media(max-width: 768px) {
+                        left: inherit;
+                        right: 20px;
+                    }
                 }
             }
             &-text-big {
@@ -115,12 +133,18 @@
                 bottom: 0;
                 border-left: 1px solid #e6e6e6;
             }
+            @media(max-width: 768px) {
+                &:before {
+                    content: "";
+                    display: none;
+                }
+            }
         }
     }
     &-select,
     &-payments,
     &-conditions {
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
         border-bottom: 1px solid #e6e6e6;
         padding-bottom: 30px;
@@ -133,6 +157,9 @@
                 width: 50%;
                 margin-bottom: 20px;
                 padding: 10px 0 10px 20px;
+                @media(max-width: 850px) {
+                    width: 100%;
+                }
                 &:hover {
                     background-color: #d0e7fe;
                     cursor: pointer;
@@ -188,6 +215,9 @@
         vertical-align: middle;
         width: 95%;
         margin: 0 auto ;
+        @media(max-width: 768px) {
+            width: 90%;
+        }
     }
     .btns-next-prev-inner {
         width: 90%;

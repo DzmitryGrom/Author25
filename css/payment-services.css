@@ -3801,7 +3801,7 @@ textarea:focus {
 @media (max-width: 992px) {
   .footer-list {
     width: 100%;
-    padding: 0 2px;
+    padding: 0 10px;
     position: relative;
   }
 }
@@ -4407,19 +4407,43 @@ input[type=file] {
   margin: 30px;
   padding: 10px 20px;
 }
+@media (max-width: 768px) {
+  .content-payment-services-info {
+    padding: 10px 0;
+    margin: 20px;
+  }
+}
 .content-payment-services-info-item {
   display: inline-block;
   width: 50%;
   vertical-align: middle;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .content-payment-services-info-item {
+    width: 100%;
+  }
+}
 .content-payment-services-info-item-text {
   font-size: 14px;
   font-family: "OpenSansRegular";
   color: #b0b0b0;
+  position: relative;
 }
 .content-payment-services-info-item-text:last-child {
   margin: 0;
+}
+.content-payment-services-info-item-text-value {
+  position: absolute;
+  left: 300px;
+  top: 0;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .content-payment-services-info-item-text-value {
+    left: inherit;
+    right: 20px;
+  }
 }
 .content-payment-services-info-item-text-big {
   font-size: 14px;
@@ -4445,10 +4469,16 @@ input[type=file] {
   bottom: 0;
   border-left: 1px solid #e6e6e6;
 }
+@media (max-width: 768px) {
+  .content-payment-services-info-item__right:before {
+    content: "";
+    display: none;
+  }
+}
 .content-payment-services-select,
 .content-payment-services-payments,
 .content-payment-services-conditions {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 30px;
@@ -4459,6 +4489,11 @@ input[type=file] {
   width: 50%;
   margin-bottom: 20px;
   padding: 10px 0 10px 20px;
+}
+@media (max-width: 850px) {
+  .content-payment-services-payments-list-item {
+    width: 100%;
+  }
 }
 .content-payment-services-payments-list-item:hover {
   background-color: #d0e7fe;
@@ -4511,6 +4546,11 @@ input[type=file] {
   vertical-align: middle;
   width: 95%;
   margin: 0 auto ;
+}
+@media (max-width: 768px) {
+  .content-payment-services-text-bottom {
+    width: 90%;
+  }
 }
 .content-payment-services .btns-next-prev-inner {
   width: 90%;
