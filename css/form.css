@@ -4240,6 +4240,7 @@ textarea::-webkit-input-placeholder {
 /*btns-next-prev*/
 .btns-next-prev-inner {
   text-align: center;
+  padding-top: 30px;
 }
 @media (max-width: 992px) {
   .btns-next-prev-inner {
@@ -4263,7 +4264,6 @@ textarea::-webkit-input-placeholder {
   text-align: center;
   color: #fff;
   border: none;
-  margin-top: 30px;
   position: relative;
   padding: 13px 15px;
   min-width: 156px;

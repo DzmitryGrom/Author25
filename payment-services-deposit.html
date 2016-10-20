@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title>Author25-payment-services</title>
+    <title>Author25-payment-services-deposit</title>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="css/libs/select2.css">
     <link rel="stylesheet" href="css/payment-services.css">
@@ -141,46 +141,30 @@
         <!--content-->
         <div class="content container">
             <div class="content-center">
-                <h2 class="content-center-description">Оплата услуги "Премиальное размещение заказа"</h2>
-                <p class="content-center-name">Магистерская диссертация <a href="#">Название</a></p>
+                <h2 class="content-center-description">Ввести средства</h2>
                 <div class="content-full-width">
                     <div class="content-payment-services">
-                        <div class="content-payment-services-info">
-                            <div class="content-payment-services-info-item content-payment-services-info-item__left">
-                                <p class="content-payment-services-info-item-text">СУММА К ОПЛАТЕ</p>
-                                <p class="content-payment-services-info-item-value">13
-                                    <i class="fa fa-rub" aria-hidden="true"></i>
-                                </p>
-                            </div>
-                            <div class="content-payment-services-info-item content-payment-services-info-item__right">
-                                <p class="content-payment-services-info-item-text-big">Из чего складывается сумма:</p>
-                                <p class="content-payment-services-info-item-text">Остаток на балансе
-                                    <span class="content-payment-services-info-item-text-value">+ 0 
-                                        <i class="fa fa-rub" aria-hidden="true"></i>
-                                    </span>
-                                </p>
-                                <p class="content-payment-services-info-item-text">Ставка автора
-                                    <span class="content-payment-services-info-item-text-value">- 10 
-                                        <i class="fa fa-rub" aria-hidden="true"></i>
-                                    </span>
-                                </p>
-                                <p class="content-payment-services-info-item-text">Комиссия сервиса
-                                    <span class="content-payment-services-info-item-text-value">- 3 
-                                        <i class="fa fa-rub" aria-hidden="true"></i>
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
                         <div class="content-payment-services-select">
-                           <span class="content-payment-services-description">Выберите страну:</span>
-                           <select class="js-example-templating js-states form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                                <optgroup>
-                                    <option value="RU">Россия</option>
-                                    <option value="UK">Украина</option>
-                                    <option value="KZ">Казахстан</option>
-                                    <option value="DR">Другая</option>
-                                </optgroup>
-                            </select> 
+                            <div class="content-payment-services-select-item">
+                                <div class="content-payment-services-select-item-inner content-payment-services-select-item-inner__left">
+                                    <span class="content-payment-services-description">Выберите сумму:</span>
+                                    <input type="text" class="form-control">
+                                    <span class="content-payment-services-description">руб.</span>
+                                </div>
+                            </div>
+                            <div class="content-payment-services-select-item">
+                                <div class="content-payment-services-select-item-inner content-payment-services-select-item-inner__right">
+                                    <span class="content-payment-services-description">Выберите страну:</span>
+                                   <select class="js-example-templating js-states form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">1
+                                        <optgroup>
+                                            <option value="RU">Россия</option>
+                                            <option value="UK">Украина</option>
+                                            <option value="KZ">Казахстан</option>
+                                            <option value="DR">Другая</option>
+                                        </optgroup>
+                                    </select> 
+                                </div>
+                            </div>
                         </div>
                         <div class="content-payment-services-payments">
                             <p class="content-payment-services-description">Выберите способ оплаты:</p>
