@@ -3082,6 +3082,15 @@ textarea:focus {
   padding: 1px 6px;
   margin-left: 5px;
 }
+.content-sitebar-user-info-list-item__gray a {
+  color: #b0b0b0;
+}
+.content-sitebar-user-info-list-item__gray:hover a {
+  color: #b0b0b0;
+}
+.content-sitebar-user-info-list-item__gray:first-child {
+  border-top: none;
+}
 .content-sitebar-user-info-list-item__narrow {
   line-height: 1;
   padding: 15px;
@@ -4534,6 +4543,30 @@ textarea::-webkit-input-placeholder {
   top: -11px;
   z-index: 2;
 }
+.content-description-item {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  color: #444444;
+  padding: 30px 0;
+}
+.content-description-item-inner-title {
+  font-size: 16px;
+}
+.content-description-item-inner-more-info {
+  margin-top: 20px;
+  display: none;
+}
+.content-description-item-text-top {
+  font-family: "OpenSansBold";
+}
+.content-description-item-text-gray {
+  color: #cccccc;
+  margin: 0;
+  font-size: 16px;
+}
 .content-description-list {
   font-size: 0;
   padding-top: 30px;
@@ -4607,6 +4640,7 @@ textarea::-webkit-input-placeholder {
 }
 .content-description-list-description,
 .content-description-list,
+.content-description-item-inner,
 .content-description-bottom-panel,
 .content-description-file,
 .content-description .solid {

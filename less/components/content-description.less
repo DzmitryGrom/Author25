@@ -228,6 +228,30 @@
             z-index: 2;
         }
     }
+    &-item {
+        background-color: #fff;
+        border: 1px solid #e1e1e1;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-family: "OpenSansRegular";
+        color: #444444;
+        padding: 30px 0;
+        &-inner-title {
+            font-size: 16px;
+        }
+        &-inner-more-info {
+            margin-top: 20px;
+            display: none;
+        }
+        &-text-top {
+            font-family: "OpenSansBold"; 
+        }
+        &-text-gray {
+            color: #cccccc;
+            margin: 0;
+            font-size: 16px;
+        }
+    }
     &-list {
         font-size: 0;
         padding-top: 30px;
@@ -298,6 +322,7 @@
     }
     &-list-description,
     &-list,
+    &-item-inner,
     &-bottom-panel,
     &-file,
     .solid {
@@ -320,5 +345,6 @@
             text-decoration: none;
             color: #444444;
         }
+        
     }
 }

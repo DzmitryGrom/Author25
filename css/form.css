@@ -3082,6 +3082,15 @@ textarea:focus {
   padding: 1px 6px;
   margin-left: 5px;
 }
+.content-sitebar-user-info-list-item__gray a {
+  color: #b0b0b0;
+}
+.content-sitebar-user-info-list-item__gray:hover a {
+  color: #b0b0b0;
+}
+.content-sitebar-user-info-list-item__gray:first-child {
+  border-top: none;
+}
 .content-sitebar-user-info-list-item__narrow {
   line-height: 1;
   padding: 15px;
