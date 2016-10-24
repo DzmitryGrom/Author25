@@ -16,6 +16,7 @@ module.exports = function (grunt) {
                     'css/search-work.css': 'less/search-work.less',
                     'css/payment-services.css': 'less/payment-services.less',
                     'css/help.css': 'less/help.less',
+                    'css/select-author.css': 'less/select-author.less',
                     'css/content.css': 'less/content.less'
                 }
             }

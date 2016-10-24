@@ -1,38 +1,59 @@
-@import "main.less";
-/*stars*/
-@import "less/components/stars-active.less";
-/*author*/
-@import "less/components/author.less";
-/*btn-blue*/
-@import "less/components/btn-blue.less";
-/*btn-red*/
-@import "less/components/btn-red.less";
-/*btn-delete*/
-@import "components/btn-delete.less";
-/*btn-green*/
-@import "less/components/btn-green.less";
-/*btn-gray*/
-@import "less/components/btn-gray.less";
-/*btn-select-order*/
-@import "less/components/btn-select-order.less";
-/*status*/
-@import "less/components/content-status.less";
-/*error-complaint*/
-@import "less/components/alerts.less";
-/*rate*/
-@import "less/components/rate.less";
-/*tooltip*/
-@import "less/components/tooltip.less";
-/*checkbox*/
-@import "less/components/checkbox.less";
-/*pop-up-info*/
-@import "less/components/pop-up-info.less";
-/*message*/
-@import "less/components/message.less";
-/*select*/
-@import "less/components/select.less";
-/*content-description*/
-@import "less/components/content-description.less";
+.content-author {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    padding: 25px 0;
+    &-left {
+        display: inline-block;
+        vertical-align: bottom;
+        margin: 0 20px;
+        position: relative;
+    }
+    &-center {
+        display: inline-block;
+        vertical-align: bottom;
+        text-align: left;
+        margin: 0 20px;
+        &-text-top,
+        &-text-bottom{
+            font-size: 14px;
+            font-family: "OpenSansRegular";
+            margin: 0;
+        }
+        &-text-bottom {
+            color: #b0b0b0;
+        }
+    }
+    &-right {
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        z-index: 2;
+    }
+    .stars-inner {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .author-estimate {
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: middle;
+        font-family: "OpenSansRegular";
+        color: #4786c8;
+        cursor: pointer;
+        margin: 2px 10px 0 10px;
+        text-decoration: underline;
+    }
+    .time__block {
+        display: block;
+    }
+}
+
+
+
+
+
 
 /*icon*/
 .i-offline {
@@ -209,6 +230,22 @@
     &-list-item {
         margin-bottom: 20px;
         position: relative;
+        &-search {
+            background-color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            .form-control {
+                width: 335px;
+                display: inline-block;
+                margin: 0 20px;
+            }
+            &-text {
+                font-size: 14px;
+                font-family: "OpenSansRegular";
+                color: #444444;
+                display: inline-block;
+            }
+        }
         &__best {
             border: 2px solid #f4d350;
             position: relative;
@@ -228,6 +265,14 @@
         &-author-info {
             padding-top: 20px;
             border: 1px solid #e1e1e1;
+        }
+        &-author-info__padding-bottom {
+            padding-top: 27px;
+            img,
+            .content-order-name-offers-list-item-author-info-item-left,
+            .content-order-name-offers-list-item-author-info-item-center {
+                margin-bottom: 27px;
+            }
         }
         &-special-offer {
             padding: 50px 0;
@@ -307,6 +352,10 @@
                     font-family: "OpenSansSemibold";
                     margin-right: 10px;
                     color: #4786c8;
+                    display: inline-block;
+                }
+                &-stars-inner {
+                    display: inline-block;
                 }
                 &-open-more-info {
                     font-size: 14px;
@@ -437,13 +486,31 @@
                         left: 1px;
 
                     }
-                }                       
+                }
+                .time__green {
+                    color: #a2c679;
+                }
                 &-stars-act {
                     font-size: 14px;
                     color: #ffd800;
                     i {
                         margin-right: 0;
                     }
+                }
+            }
+            &-item-center {
+                display: inline-block;
+                vertical-align: bottom;
+                text-align: left;
+                margin: 0 20px;
+                &-text-top,
+                &-text-bottom {
+                    font-size: 14px;
+                    font-family: "OpenSansRegular";
+                    margin: 0;
+                }
+                &-text-bottom {
+                    color: #b0b0b0;
                 }
             }
             &-item-right {
@@ -489,6 +556,9 @@
                     }
                 }
             }
+            &-item-right__position-middle {
+                top: 41px;
+            }
             &-content {
                 margin: 30px 0 30px 80px;
                 width: 85%;
@@ -512,6 +582,23 @@
                 padding: 20px 30px;
                 @media(max-width: 750px) {
                     padding: 20px 15px;
+                }
+                &-title {
+                    font-size: 13px;
+                    font-family: "OpenSansSemibold";
+                    color: #444444;
+                }
+                &-more-author {
+                    color: #4786c8;
+                    font-size: 14px;
+                    display: inline-block;
+                    margin-top: 10px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    .fa {
+                        margin-right: 5px;
+                    }
                 }
                 &-info {
                     width: 70%;
@@ -647,7 +734,20 @@
                         z-index: 2; 
                     }
                 }
-
+                &-info__full-width {
+                    width: 90%;
+                    position: relative;
+                    .content-order-name-offers-list-item-author-info-bottom-panel-info-show-description {
+                        width: 70%;
+                    }
+                    .more {
+                        position: absolute;
+                        right: 0;
+                        bottom: -29px;
+                        margin: 0;
+                        z-index: 2;
+                    }
+                }
                 .quantity-message,
                 .btn-message {
                     display: inline-block;
@@ -684,6 +784,11 @@
                     }
                 }
                 
+            }
+            &-bottom-panel__without-border {
+                border-top: none;
+                padding: 20px 78px;
+                display: none;
             }
             &-message {
                 display: none;
@@ -1021,4 +1126,3 @@
         }
     }
 }
-

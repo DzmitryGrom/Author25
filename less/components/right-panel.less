@@ -1,0 +1,61 @@
+.right-panel {
+    display: inline-block;
+    width: 22%;
+    padding: 53px 0 0 30px;
+    &-inner {
+        background-color: #fff;
+        border: 1px solid #e1e1e1;
+        text-align: center;
+        &-description {
+            font-size: 16px;
+            padding: 16px 0;
+        }
+        &-description, 
+        &-description__big,
+        &-text {
+            font-family: "OpenSansRegular";
+            color: #444444;
+            display: inline-block;
+            width: 85%;
+        }
+        &-description__big {
+            font-size: 18px;
+            padding: 16px 0;
+        }
+        &-text {
+            font-size: 14px;
+            padding: 0;
+        }
+        .solid {
+            border-bottom: 1px solid #e6e6e6;
+        }
+        &-user {
+            display: inline-block;
+            width: 80%;
+            margin: 25px auto 10px;
+            position: relative;
+            img {
+                margin: 0;
+                position: absolute;
+                left: 0;
+                top: -10px;
+            }
+            .btn-inner {
+                margin-top: 25px;
+            }
+            .btn-green {
+                padding: 12px 0;
+                width: 100%;
+            }
+            .author-login {
+                vertical-align: middle;
+                padding-left: 10px;
+            }
+            .btn-delete {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+}
