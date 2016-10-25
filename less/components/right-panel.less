@@ -2,6 +2,16 @@
     display: inline-block;
     width: 22%;
     padding: 53px 0 0 30px;
+    @media(max-width: 1015px) {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
     &-inner {
         background-color: #fff;
         border: 1px solid #e1e1e1;
@@ -34,6 +44,9 @@
             width: 80%;
             margin: 25px auto 10px;
             position: relative;
+            @media(max-width: 1015px) {
+                text-align: left;
+            }
             img {
                 margin: 0;
                 position: absolute;
@@ -42,14 +55,23 @@
             }
             .btn-inner {
                 margin-top: 25px;
+                text-align: center;
             }
             .btn-green {
                 padding: 12px 0;
                 width: 100%;
+                @media(max-width: 1015px) {
+                    max-width: 192px;
+                    
+                }
             }
             .author-login {
                 vertical-align: middle;
                 padding-left: 10px;
+                @media(max-width: 1015px) {
+                    padding-left: 0px;
+                    margin-left: 60px;
+                }
             }
             .btn-delete {
                 position: absolute;

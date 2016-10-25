@@ -4387,6 +4387,14 @@ input[type=file] {
   border: 20px solid transparent;
   border-left: 12px solid #a2c679;
 }
+@media (max-width: 865px) {
+  .btns-next-prev-inner-text-bottom {
+    margin-top: 10px;
+  }
+}
+.btns-next-prev-inner__padding-bottom {
+  padding-bottom: 20px;
+}
 /*notification-without-orders*/
 .i_visa-master {
   background-image: url(../img/interface/visa-master.png);
