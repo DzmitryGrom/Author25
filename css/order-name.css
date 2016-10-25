@@ -6322,6 +6322,42 @@ a.pop-up-info-text-btn-next {
 }
 /*order-name*/
 /*order-name-description*/
+/*offers-list*/
+/*icon*/
+.i-offline {
+  background-image: url(../img/interface/offline.png);
+  width: 12px;
+  height: 12px;
+}
+.i_doc {
+  background-image: url(../img/interface/doc.png);
+  width: 26px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 25px;
+}
+.i_download {
+  background-image: url(../img/interface/download.png);
+  width: 20px;
+  height: 23px;
+  vertical-align: top;
+}
+/*content*/
+.content {
+  position: relative;
+}
+@media (max-width: 992px) {
+  .content-center {
+    margin-top: 60px;
+  }
+}
+.content-center-description {
+  font-size: 24px;
+  font-family: "OpenSansRegular";
+  margin-bottom: 30px;
+}
+/*order-name*/
+/*order-name-description*/
 .content-order-name-files-inner {
   background-color: #fff;
   padding-bottom: 10px;
@@ -6514,6 +6550,22 @@ a.pop-up-info-text-btn-next {
   margin-bottom: 20px;
   position: relative;
 }
+.content-order-name-offers-list-item-search {
+  background-color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+.content-order-name-offers-list-item-search .form-control {
+  width: 335px;
+  display: inline-block;
+  margin: 0 20px;
+}
+.content-order-name-offers-list-item-search-text {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  color: #444444;
+  display: inline-block;
+}
 .content-order-name-offers-list-item__best {
   border: 2px solid #f4d350;
   position: relative;
@@ -6533,6 +6585,14 @@ a.pop-up-info-text-btn-next {
 .content-order-name-offers-list-item-author-info {
   padding-top: 20px;
   border: 1px solid #e1e1e1;
+}
+.content-order-name-offers-list-item-author-info__padding-bottom {
+  padding-top: 27px;
+}
+.content-order-name-offers-list-item-author-info__padding-bottom img,
+.content-order-name-offers-list-item-author-info__padding-bottom .content-order-name-offers-list-item-author-info-item-left,
+.content-order-name-offers-list-item-author-info__padding-bottom .content-order-name-offers-list-item-author-info-item-center {
+  margin-bottom: 27px;
 }
 .content-order-name-offers-list-item-special-offer {
   padding: 50px 0;
@@ -6630,6 +6690,10 @@ a.pop-up-info-text-btn-next {
   font-family: "OpenSansSemibold";
   margin-right: 10px;
   color: #4786c8;
+  display: inline-block;
+}
+.content-order-name-offers-list-item-author-info-item-left-stars-inner {
+  display: inline-block;
 }
 .content-order-name-offers-list-item-author-info-item-left-open-more-info {
   font-size: 14px;
@@ -6771,12 +6835,30 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
     left: 1px;
   }
 }
+.content-order-name-offers-list-item-author-info-item-left .time__green {
+  color: #a2c679;
+}
 .content-order-name-offers-list-item-author-info-item-left-stars-act {
   font-size: 14px;
   color: #ffd800;
 }
 .content-order-name-offers-list-item-author-info-item-left-stars-act i {
   margin-right: 0;
+}
+.content-order-name-offers-list-item-author-info-item-center {
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: left;
+  margin: 0 20px;
+}
+.content-order-name-offers-list-item-author-info-item-center-text-top,
+.content-order-name-offers-list-item-author-info-item-center-text-bottom {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  margin: 0;
+}
+.content-order-name-offers-list-item-author-info-item-center-text-bottom {
+  color: #b0b0b0;
 }
 .content-order-name-offers-list-item-author-info-item-right {
   position: absolute;
@@ -6834,6 +6916,9 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
     margin-left: 5px;
   }
 }
+.content-order-name-offers-list-item-author-info-item-right__position-middle {
+  top: 41px;
+}
 .content-order-name-offers-list-item-author-info-content {
   margin: 30px 0 30px 80px;
   width: 85%;
@@ -6862,6 +6947,23 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
   .content-order-name-offers-list-item-author-info-bottom-panel {
     padding: 20px 15px;
   }
+}
+.content-order-name-offers-list-item-author-info-bottom-panel-title {
+  font-size: 13px;
+  font-family: "OpenSansSemibold";
+  color: #444444;
+}
+.content-order-name-offers-list-item-author-info-bottom-panel-more-author {
+  color: #4786c8;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 10px;
+}
+.content-order-name-offers-list-item-author-info-bottom-panel-more-author:hover {
+  text-decoration: none;
+}
+.content-order-name-offers-list-item-author-info-bottom-panel-more-author .fa {
+  margin-right: 5px;
 }
 .content-order-name-offers-list-item-author-info-bottom-panel-info {
   width: 70%;
@@ -7008,6 +7110,20 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
   bottom: 0;
   z-index: 2;
 }
+.content-order-name-offers-list-item-author-info-bottom-panel-info__full-width {
+  width: 90%;
+  position: relative;
+}
+.content-order-name-offers-list-item-author-info-bottom-panel-info__full-width .content-order-name-offers-list-item-author-info-bottom-panel-info-show-description {
+  width: 70%;
+}
+.content-order-name-offers-list-item-author-info-bottom-panel-info__full-width .more {
+  position: absolute;
+  right: 0;
+  bottom: -29px;
+  margin: 0;
+  z-index: 2;
+}
 .content-order-name-offers-list-item-author-info-bottom-panel .quantity-message,
 .content-order-name-offers-list-item-author-info-bottom-panel .btn-message {
   display: inline-block;
@@ -7044,6 +7160,11 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
   font-size: 12px;
   vertical-align: top;
   margin: 1px 5px 0 0;
+}
+.content-order-name-offers-list-item-author-info-bottom-panel__without-border {
+  border-top: none;
+  padding: 20px 78px;
+  display: none;
 }
 .content-order-name-offers-list-item-author-info-message {
   display: none;
@@ -7215,6 +7336,9 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
   margin-left: 20px;
   vertical-align: middle;
   border-radius: 3px;
+}
+.content-order-name-offers-list-item-author-info .active {
+  display: block;
 }
 .content-order-name-offers-list-item-invited-author {
   padding-bottom: 40px;
