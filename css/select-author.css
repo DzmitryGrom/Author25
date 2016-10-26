@@ -3494,6 +3494,11 @@ textarea:focus {
     padding: 30px 0px 20px 15px;
   }
 }
+.content-notification-history-list-item-description {
+  font-size: 24px;
+  font-family: "OpenSansRegular";
+  color: #444444;
+}
 .content-notification-history-list-item .fa-check-circle {
   font-size: 24px;
   color: #a2c679;
@@ -3519,6 +3524,7 @@ textarea:focus {
 }
 .content-notification-history-list-item-content-date-user {
   margin-right: 30px;
+  color: #4786c8;
 }
 .content-notification-history-list-item-content-date-user i {
   color: #b0b0b0;
@@ -3630,6 +3636,20 @@ textarea:focus {
   position: relative;
   margin-bottom: 30px;
 }
+.content-notification-orders-list-item-description {
+  font-size: 24px;
+  font-family: "OpenSansRegular";
+  color: #444444;
+  margin-bottom: 25px;
+}
+.content-notification-orders-list-item-text {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  color: #b0b0b0;
+}
+.content-notification-orders-list-item-text__small {
+  font-size: 13px;
+}
 .content-notification-orders-list-item-link {
   color: #4786c8;
   font-size: 14px;
@@ -3663,6 +3683,9 @@ textarea:focus {
     margin-left: 15px;
     width: 90%;
   }
+}
+.content-notification-orders-list-item-text-top__without-margin {
+  margin: 0;
 }
 .content-notification-orders-list-item-content-list {
   font-size: 0;
@@ -3744,6 +3767,14 @@ textarea:focus {
 .content-notification-orders-list-item-content-list-item__message-red .fa-comments,
 .content-notification-orders-list-item-content-list-item__message-red span {
   color: #e95454;
+}
+.content-notification-orders-list-item__padding {
+  padding: 30px 25px;
+}
+@media (max-width: 768px) {
+  .content-notification-orders-list-item__padding {
+    padding: 30px 15px;
+  }
 }
 .content-notification-orders-btn-all {
   font-size: 14px;

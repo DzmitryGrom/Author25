@@ -15,6 +15,20 @@
         padding: 30px 0 0 0;
         position: relative;
         margin-bottom: 30px;
+        &-description {
+            font-size: 24px;
+            font-family: "OpenSansRegular";
+            color: #444444;
+            margin-bottom: 25px;
+        }
+        &-text {
+            font-size: 14px;
+            font-family: "OpenSansRegular";
+            color: #b0b0b0;
+        }
+        &-text__small {
+            font-size: 13px;
+        }
         &-link{
             color: #4786c8;
             font-size: 14px;
@@ -44,6 +58,9 @@
                 margin-left: 15px;
                 width: 90%;
             }
+        }
+        &-text-top__without-margin {
+            margin: 0;
         }
         &-content-list{
             font-size: 0;
@@ -127,6 +144,12 @@
                     color: #e95454;
                 }
             }
+        }
+    }
+    &-list-item__padding {
+        padding: 30px 25px;
+        @media(max-width: 768px) {
+            padding: 30px 15px;
         }
     }
     &-btn-all{
