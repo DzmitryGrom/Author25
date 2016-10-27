@@ -6604,6 +6604,11 @@ a.pop-up-info-text-btn-next {
     width: 55%;
   }
 }
+.content-order-name-offers-list-item-search-description {
+  font-size: 16px;
+  font-family: "OpenSansSemibold";
+  color: #444444;
+}
 .content-order-name-offers-list-item-search-text {
   font-size: 14px;
   font-family: "OpenSansRegular";
@@ -6624,6 +6629,18 @@ a.pop-up-info-text-btn-next {
     position: absolute;
     right: 15px;
   }
+}
+.content-order-name-offers-list-item-search__text-left {
+  text-align: left;
+  padding-left: 20px;
+}
+.content-order-name-offers-list-item-search__text-left .content-order-name-offers-list-item-search-text {
+  display: block;
+  margin-bottom: 15px;
+}
+.content-order-name-offers-list-item-search__text-left .form-control {
+  margin-left: 0;
+  width: 230px;
 }
 .content-order-name-offers-list-item__best {
   border: 2px solid #f4d350;
@@ -6665,6 +6682,26 @@ a.pop-up-info-text-btn-next {
 }
 .content-order-name-offers-list-item-author-info__padding-bottom span.time {
   top: 20px;
+}
+.content-order-name-offers-list-item-author-info__padding-bottom .img-margin-top {
+  margin-top: 10px;
+}
+.content-order-name-offers-list-item .opinion-inner {
+  display: inline-block;
+  vertical-align: middle;
+}
+.content-order-name-offers-list-item .like,
+.content-order-name-offers-list-item .dislike {
+  display: inline-block;
+  font-size: 14px;
+}
+.content-order-name-offers-list-item .like {
+  color: #b2d38d;
+  padding-right: 5px;
+}
+.content-order-name-offers-list-item .dislike {
+  color: #e95454;
+  padding-left: 5px;
 }
 .content-order-name-offers-list-item-special-offer {
   padding: 50px 0;
@@ -6907,6 +6944,9 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
     left: 1px;
   }
 }
+.content-order-name-offers-list-item-author-info-item-left .time__static {
+  position: static;
+}
 .content-order-name-offers-list-item-author-info-item-left .time__green {
   color: #a2c679;
 }
@@ -6995,7 +7035,13 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
   }
 }
 .content-order-name-offers-list-item-author-info-item-right__position-middle {
-  top: 41px;
+  top: 50%;
+}
+.content-order-name-offers-list-item-author-info-item-right__position-middle-btn {
+  margin-top: -11px;
+}
+.content-order-name-offers-list-item-author-info-item-right__position-middle-btns {
+  margin-top: -6px;
 }
 .content-order-name-offers-list-item-author-info-content {
   margin: 30px 0 30px 80px;
@@ -7082,18 +7128,6 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
     bottom: 6px;
     z-index: 2;
   }
-}
-.content-order-name-offers-list-item-author-info-bottom-panel-info-show .like,
-.content-order-name-offers-list-item-author-info-bottom-panel-info-hide .like {
-  color: #b2d38d;
-  padding-right: 5px;
-  display: inline-block;
-}
-.content-order-name-offers-list-item-author-info-bottom-panel-info-show .dislike,
-.content-order-name-offers-list-item-author-info-bottom-panel-info-hide .dislike {
-  color: #e95454;
-  padding-left: 5px;
-  display: inline-block;
 }
 @media (max-width: 750px) {
   .content-order-name-offers-list-item-author-info-bottom-panel-info-show,
