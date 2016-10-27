@@ -2839,6 +2839,14 @@ textarea:focus {
   padding: 30px;
   border: 1px solid #e1e1e1;
 }
+.content-full-width-title {
+  font-size: 18px;
+  font-family: "OpenSansRegular";
+  margin: 30px 30px 0 30px;
+}
+.content-full-width-title__gray {
+  color: #b0b0b0;
+}
 .content-center {
   display: inline-block;
   width: 78%;
@@ -4187,6 +4195,9 @@ textarea:focus {
   background-color: #b2d38d;
   color: #fff;
   text-decoration: none;
+}
+.btn-green .fa-money {
+  margin-right: 5px;
 }
 /*btn-gray*/
 .btn-gray {
@@ -5652,9 +5663,6 @@ a.pop-up-info-text-btn-next {
   .content-description-info-right .btn-green {
     padding: 12px 15px;
   }
-}
-.content-description-info-right .fa-money {
-  margin-right: 5px;
 }
 .content-description .solid {
   border-top: 1px solid #e6e6e6;

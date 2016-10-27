@@ -2839,6 +2839,14 @@ textarea:focus {
   padding: 30px;
   border: 1px solid #e1e1e1;
 }
+.content-full-width-title {
+  font-size: 18px;
+  font-family: "OpenSansRegular";
+  margin: 30px 30px 0 30px;
+}
+.content-full-width-title__gray {
+  color: #b0b0b0;
+}
 .content-center {
   display: inline-block;
   width: 78%;
@@ -4160,55 +4168,10 @@ textarea:focus {
   color: #fff;
   text-decoration: none;
 }
-/*btn-add-foto*/
-.i_load {
-  background-image: url(../img/interface/load.png);
-  width: 20px;
-  height: 17px;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-input[type=file] {
-  display: none;
-}
-.btn-add-foto {
-  cursor: pointer;
-}
-.btn-add-foto-text {
-  font-size: 14px;
-  font-family: "OpenSansRegular";
-  color: #4786c8;
-  display: inline-block;
-  vertical-align: middle;
-}
-/*btn-delete*/
-.btn-delete {
-  margin-left: 25px;
-  color: #b0b0b0;
-  cursor: pointer;
-  font-size: 16px;
-}
-.btn-delete:hover {
-  color: #e95454;
+.btn-green .fa-money {
+  margin-right: 5px;
 }
 /*btn-blue*/
-.btn-blue {
-  text-decoration: none;
-  background-color: #4786c8;
-  font-size: 14px;
-  font-family: "OpenSansBold";
-  color: #fff;
-  border-radius: 3px;
-  padding: 10px 30px 10px 30px;
-  line-height: 1;
-  border: none;
-  display: inline-block;
-}
-.btn-blue:hover {
-  text-decoration: none;
-  color: #fff;
-}
-/*btn-gray*/
 .btn-gray {
   font-size: 14px;
   line-height: 1;
@@ -4346,7 +4309,6 @@ input[type=file] {
   height: 34px;
   border-color: #ececec;
 }
-/*checkbox*/
 /*btns-next-prev*/
 .btns-next-prev-inner {
   text-align: center;
@@ -4479,7 +4441,7 @@ input[type=file] {
   font-family: "OpenSansRegular";
 }
 .content-payment-services {
-  padding-botto1m: 15px;
+  padding-bottom: 15px;
 }
 .content-payment-services-info {
   background-color: #f5f5f5;
