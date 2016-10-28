@@ -4964,14 +4964,14 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
     margin-left: 5px;
   }
 }
-.content-order-name-offers-list-item-author-info-item-right__position-middle {
-  top: 50%;
+.content-order-name-offers-list-item-author-info-item-right__position-btn {
+  top: 47px;
 }
-.content-order-name-offers-list-item-author-info-item-right__position-middle-btn {
-  margin-top: -11px;
+.content-order-name-offers-list-item-author-info-item-right__position-btns {
+  top: 41px;
 }
-.content-order-name-offers-list-item-author-info-item-right__position-middle-btns {
-  margin-top: -6px;
+.content-order-name-offers-list-item-author-info-item-right__position-btn-select {
+  top: 15px;
 }
 .content-order-name-offers-list-item-author-info-content {
   margin: 30px 0 30px 80px;
@@ -5606,6 +5606,23 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
 .btn-blue:hover {
   text-decoration: none;
   color: #fff;
+}
+/*btn-red*/
+.btn-red {
+  font-size: 14px;
+  font-family: "OpenSansBold";
+  line-height: 1;
+  vertical-align: middle;
+  background-color: #e95454;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 3px;
+  border: none;
+  display: inline-block;
+}
+.btn-red:hover {
+  color: #fff;
+  text-decoration: none;
 }
 /*btn-green*/
 .btn-green {
