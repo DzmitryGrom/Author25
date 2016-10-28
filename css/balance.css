@@ -4372,6 +4372,12 @@ textarea:focus {
   vertical-align: top;
   width: 50%;
 }
+@media (max-width: 650px) {
+  .content-balance-info-item {
+    width: 100%;
+    display: block;
+  }
+}
 .content-balance-info-item-description {
   font-size: 18px;
   font-family: "OpenSansRegular";
@@ -4400,6 +4406,15 @@ textarea:focus {
   font-size: 13px;
   font-family: "OpenSansRegular";
   color: #444444;
+  max-height: 54px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 650px) {
+  .content-balance-info-item-inner-text {
+    max-height: inherit;
+  }
 }
 .content-balance-info-item .content-balance-info-value {
   display: block;
@@ -4411,9 +4426,20 @@ textarea:focus {
   text-align: center;
   padding-right: 15px;
 }
+@media (max-width: 650px) {
+  .content-balance-info-item__left {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
 .content-balance-info-item__right {
   text-align: left;
   padding-left: 15px;
+}
+@media (max-width: 650px) {
+  .content-balance-info-item__right {
+    padding-left: 0;
+  }
 }
 .content-balance-info-value {
   font-size: 20px;
@@ -4462,7 +4488,7 @@ textarea:focus {
 }
 .content-balance-info-href__static {
   position: static;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   display: inline-block;
   text-decoration: none;
 }
