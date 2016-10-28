@@ -217,6 +217,33 @@
                 }
             }
         }
+        &-search__without-text {
+            text-align: left;
+            position: relative;
+            height: 74px;
+            .content-order-name-offers-list-item-search-input-inner {
+                position: absolute;
+                left: 30px;
+                top: 20px;
+                right: 240px;
+                z-index: 2;
+            }
+            .form-control {
+                width: 100%;
+                margin: 0;
+            }
+            .btn-green {
+                position: absolute;
+                padding: 10px 23px;
+                right: 30px;
+                top: 20px;
+                z-index: 2;
+                width: 186px;
+                @media (max-width: 768px) {
+                     width: 186px;
+                }
+            }
+        }
         &-search__text-left {
             text-align: left;
             padding-left: 20px;
@@ -349,10 +376,16 @@
             }
         }
         &-author-info {
-           
             img {
                 margin-left: 20px;
             } 
+            &-number {
+                font-size: 14px;
+                font-family: "OpenSansRegular";
+                color: #444444;
+                display: inline-block;
+                margin-left: 30px;
+            }
             &-item-left {
                 display: inline-block;
                 vertical-align: bottom;

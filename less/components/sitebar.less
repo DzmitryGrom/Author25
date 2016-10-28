@@ -69,7 +69,6 @@
                     font-size: 16px;
                 }
             }
-            
             &-text-top {
                 border-top: 1px solid #e6e6e6;
                 color: #b0b0b0;
@@ -79,6 +78,9 @@
                 color: #444444;
                 padding-top: 0px;
                 margin-bottom: 0;
+            }
+            &-orders-description__blue {
+                color: #4786c8;
             }
             &-text-bottom, &-list-item{
                 font-size: 14px;
@@ -122,6 +124,11 @@
                     &:last-child {
                         margin-bottom: 0;
                     }
+                }
+            }
+            &-list__decoration {
+                .content-sitebar-user-info-list-item-link {
+                    text-decoration: underline;
                 }
             }
             &-text-bottom {
@@ -213,7 +220,22 @@
         }
         
     }
-    
+    &-select {
+        background-color: #f5f5f5;
+        padding: 15px 15px 20px 15px;
+        margin-bottom: 25px;
+        .select2 {
+            width: 100%!important;
+        }
+        &-description {
+            font-size: 14px;
+            font-family: "OpenSansRegular";
+            color: #444444;
+        }
+    }
+    .select-item-text {
+        width: 80%;
+    }
     &-calendar{
         &-text-top{
             font-size: 18px;
@@ -232,6 +254,9 @@
     .content-sitebar-user-info-orders-description {
         padding: 15px;
     }
+}
+.content-sitebar-user__without-margin {
+    margin-bottom: 0;
 }
 @media(max-width: 992px){
     .content-sitebar{

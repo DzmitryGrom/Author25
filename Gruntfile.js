@@ -15,6 +15,7 @@ module.exports = function (grunt) {
                     'css/settings.css': 'less/settings.less',
                     'css/sell-work.css': 'less/sell-work.less',
                     'css/work.css': 'less/work.less',
+                    'css/top-authors.css': 'less/top-authors.less',
                     'css/search-work.css': 'less/search-work.less',
                     'css/payment-services.css': 'less/payment-services.less',
                     'css/help.css': 'less/help.less',

@@ -3000,6 +3000,9 @@ textarea:focus {
   padding-top: 0px;
   margin-bottom: 0;
 }
+.content-sitebar-user-info-orders-description__blue {
+  color: #4786c8;
+}
 .content-sitebar-user-info-text-bottom,
 .content-sitebar-user-info-list-item {
   font-size: 14px;
@@ -3053,6 +3056,9 @@ textarea:focus {
 }
 .content-sitebar-user-info-list-item:last-child {
   margin-bottom: 0;
+}
+.content-sitebar-user-info-list__decoration .content-sitebar-user-info-list-item-link {
+  text-decoration: underline;
 }
 .content-sitebar-user-info-text-bottom {
   color: #b0b0b0;
@@ -3136,6 +3142,22 @@ textarea:focus {
   text-align: center;
   padding: 10px 0;
   border-top: 1px solid #e6e6e6;
+}
+.content-sitebar-select {
+  background-color: #f5f5f5;
+  padding: 15px 15px 20px 15px;
+  margin-bottom: 25px;
+}
+.content-sitebar-select .select2 {
+  width: 100%!important;
+}
+.content-sitebar-select-description {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  color: #444444;
+}
+.content-sitebar .select-item-text {
+  width: 80%;
 }
 .content-sitebar-calendar-text-top {
   font-size: 18px;
@@ -3428,6 +3450,9 @@ textarea:focus {
 }
 .content-sitebar-user__without-paddings .content-sitebar-user-info-orders-description {
   padding: 15px;
+}
+.content-sitebar-user__without-margin {
+  margin-bottom: 0;
 }
 @media (max-width: 992px) {
   .content-sitebar {
@@ -4172,6 +4197,36 @@ textarea:focus {
   margin-right: 5px;
 }
 /*checkbox*/
+.checkbox-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+.checkbox-item-text {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  color: #444444;
+  vertical-align: middle;
+  display: inline-block;
+}
+.checkbox-item-text__gray {
+  color: #b9b9b9;
+}
+.checkbox-item-text__black {
+  color: #444444;
+}
+.checkbox-item-text__margin-right {
+  margin-right: 15px;
+}
+.checkbox-item-right-side {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+.checkbox-item .checkbox-dynamic {
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+}
 .checkbox-dynamic {
   width: 20px;
   height: 20px;

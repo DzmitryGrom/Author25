@@ -1,3 +1,7 @@
+/*select-item*/
+@import "less/components/select-item.less";
+/*help-item*/
+@import "less/components/help-item.less";
 .right-panel {
     display: inline-block;
     width: 22%;
@@ -12,96 +16,5 @@
         text-align: center;
         padding: 0;
     }
-    &-inner {
-        background-color: #fff;
-        border: 1px solid #e1e1e1;
-        text-align: center;
-        &-description {
-            font-size: 16px;
-            padding: 16px 0;
-        }
-        &-description, 
-        &-description__big,
-        &-text {
-            font-family: "OpenSansRegular";
-            color: #444444;
-            display: inline-block;
-            width: 85%;
-        }
-        &-description__big {
-            font-size: 18px;
-            padding: 16px 0;
-        }
-        &-text {
-            font-size: 14px;
-            padding: 0;
-        }
-        .solid {
-            border-bottom: 1px solid #e6e6e6;
-        }
-        &-user {
-            display: inline-block;
-            width: 80%;
-            margin: 25px auto 10px;
-            position: relative;
-            @media(max-width: 1015px) {
-                text-align: left;
-            }
-            img {
-                margin: 0;
-                position: absolute;
-                left: 0;
-                top: -10px;
-            }
-            .btn-inner {
-                margin-top: 25px;
-                text-align: center;
-            }
-            .btn-green {
-                padding: 12px 0;
-                width: 100%;
-                @media(max-width: 1015px) {
-                    max-width: 192px;
-                    
-                }
-            }
-            .author-login {
-                vertical-align: middle;
-                padding-left: 10px;
-                @media(max-width: 1015px) {
-                    padding-left: 0px;
-                    margin-left: 60px;
-                }
-            }
-            .btn-delete {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-        }
-    }
-    &-help {
-        background-color: #fffcee;
-        border: 1px solid #f4d350;
-        text-align: left;
-        padding: 0 15px 15px 15px;
-        .right-panel-inner-description {
-            font-family: "OpenSansSemibold";
-            position: relative;
-            margin: 0;
-            .fa {
-                position: absolute;
-                right: -22px;
-                top: 18px;
-                z-index: 2;
-                color: #f4d350;
-                font-size: 20px;
-            }
-        }
-        &-text {
-            font-size: 13px;
-            font-family: "OpenSansRegular";
-            color: #b0b0b0;
-        }
-    }
+    
 }

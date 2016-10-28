@@ -3000,6 +3000,9 @@ textarea:focus {
   padding-top: 0px;
   margin-bottom: 0;
 }
+.content-sitebar-user-info-orders-description__blue {
+  color: #4786c8;
+}
 .content-sitebar-user-info-text-bottom,
 .content-sitebar-user-info-list-item {
   font-size: 14px;
@@ -3053,6 +3056,9 @@ textarea:focus {
 }
 .content-sitebar-user-info-list-item:last-child {
   margin-bottom: 0;
+}
+.content-sitebar-user-info-list__decoration .content-sitebar-user-info-list-item-link {
+  text-decoration: underline;
 }
 .content-sitebar-user-info-text-bottom {
   color: #b0b0b0;
@@ -3136,6 +3142,22 @@ textarea:focus {
   text-align: center;
   padding: 10px 0;
   border-top: 1px solid #e6e6e6;
+}
+.content-sitebar-select {
+  background-color: #f5f5f5;
+  padding: 15px 15px 20px 15px;
+  margin-bottom: 25px;
+}
+.content-sitebar-select .select2 {
+  width: 100%!important;
+}
+.content-sitebar-select-description {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  color: #444444;
+}
+.content-sitebar .select-item-text {
+  width: 80%;
 }
 .content-sitebar-calendar-text-top {
   font-size: 18px;
@@ -3428,6 +3450,9 @@ textarea:focus {
 }
 .content-sitebar-user__without-paddings .content-sitebar-user-info-orders-description {
   padding: 15px;
+}
+.content-sitebar-user__without-margin {
+  margin-bottom: 0;
 }
 @media (max-width: 992px) {
   .content-sitebar {
@@ -4219,6 +4244,36 @@ textarea:focus {
   border-top-left-radius: 0;
 }
 /*checkbox*/
+.checkbox-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+.checkbox-item-text {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  color: #444444;
+  vertical-align: middle;
+  display: inline-block;
+}
+.checkbox-item-text__gray {
+  color: #b9b9b9;
+}
+.checkbox-item-text__black {
+  color: #444444;
+}
+.checkbox-item-text__margin-right {
+  margin-right: 15px;
+}
+.checkbox-item-right-side {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+.checkbox-item .checkbox-dynamic {
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+}
 .checkbox-dynamic {
   width: 20px;
   height: 20px;
@@ -5706,6 +5761,118 @@ a.pop-up-info-text-btn-next {
   color: #444444;
 }
 /*right-panel*/
+/*select-item*/
+.select-item {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.select-item-description {
+  font-size: 16px;
+  padding: 16px 0;
+}
+.select-item-description,
+.select-item-description__big,
+.select-item-text {
+  font-family: "OpenSansRegular";
+  color: #444444;
+  display: inline-block;
+  width: 85%;
+}
+.select-item-description__big {
+  font-size: 18px;
+  padding: 16px 0;
+}
+.select-item-text {
+  font-size: 14px;
+  padding: 0;
+}
+.select-item .solid {
+  border-bottom: 1px solid #e6e6e6;
+}
+.select-item-user {
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto 10px;
+}
+.select-item-user-text {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  color: #b0b0b0;
+  margin: 20px 0;
+}
+.select-item-user-item {
+  height: 40px;
+  position: relative;
+  margin-top: 25px;
+}
+@media (max-width: 1015px) {
+  .select-item-user {
+    text-align: left;
+  }
+}
+.select-item-user img {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+.select-item-user .btn-inner {
+  margin-top: 10px;
+  text-align: center;
+}
+.select-item-user .btn-green {
+  padding: 12px 0;
+  width: 100%;
+}
+@media (max-width: 1015px) {
+  .select-item-user .btn-green {
+    max-width: 192px;
+  }
+}
+.select-item-user .author-login {
+  vertical-align: middle;
+  padding-left: 10px;
+}
+@media (max-width: 1015px) {
+  .select-item-user .author-login {
+    padding-left: 0px;
+    margin-left: 60px;
+  }
+}
+.select-item-user .btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/*help-item*/
+.help-item {
+  background-color: #fffcee;
+  border: 1px solid #f4d350;
+  text-align: left;
+  padding: 0 15px 15px 15px;
+}
+.help-item-description {
+  font-family: "OpenSansSemibold";
+  font-size: 16px;
+  position: relative;
+  margin: 0;
+  padding: 16px 0;
+}
+.help-item-description .fa {
+  position: absolute;
+  right: 6px;
+  top: 18px;
+  z-index: 2;
+  color: #f4d350;
+  font-size: 20px;
+}
+.help-item-text {
+  font-size: 13px;
+  font-family: "OpenSansRegular";
+  color: #b0b0b0;
+}
 .right-panel {
   display: inline-block;
   width: 22%;
@@ -5722,103 +5889,6 @@ a.pop-up-info-text-btn-next {
     text-align: center;
     padding: 0;
   }
-}
-.right-panel-inner {
-  background-color: #fff;
-  border: 1px solid #e1e1e1;
-  text-align: center;
-}
-.right-panel-inner-description {
-  font-size: 16px;
-  padding: 16px 0;
-}
-.right-panel-inner-description,
-.right-panel-inner-description__big,
-.right-panel-inner-text {
-  font-family: "OpenSansRegular";
-  color: #444444;
-  display: inline-block;
-  width: 85%;
-}
-.right-panel-inner-description__big {
-  font-size: 18px;
-  padding: 16px 0;
-}
-.right-panel-inner-text {
-  font-size: 14px;
-  padding: 0;
-}
-.right-panel-inner .solid {
-  border-bottom: 1px solid #e6e6e6;
-}
-.right-panel-inner-user {
-  display: inline-block;
-  width: 80%;
-  margin: 25px auto 10px;
-  position: relative;
-}
-@media (max-width: 1015px) {
-  .right-panel-inner-user {
-    text-align: left;
-  }
-}
-.right-panel-inner-user img {
-  margin: 0;
-  position: absolute;
-  left: 0;
-  top: -10px;
-}
-.right-panel-inner-user .btn-inner {
-  margin-top: 25px;
-  text-align: center;
-}
-.right-panel-inner-user .btn-green {
-  padding: 12px 0;
-  width: 100%;
-}
-@media (max-width: 1015px) {
-  .right-panel-inner-user .btn-green {
-    max-width: 192px;
-  }
-}
-.right-panel-inner-user .author-login {
-  vertical-align: middle;
-  padding-left: 10px;
-}
-@media (max-width: 1015px) {
-  .right-panel-inner-user .author-login {
-    padding-left: 0px;
-    margin-left: 60px;
-  }
-}
-.right-panel-inner-user .btn-delete {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.right-panel-help {
-  background-color: #fffcee;
-  border: 1px solid #f4d350;
-  text-align: left;
-  padding: 0 15px 15px 15px;
-}
-.right-panel-help .right-panel-inner-description {
-  font-family: "OpenSansSemibold";
-  position: relative;
-  margin: 0;
-}
-.right-panel-help .right-panel-inner-description .fa {
-  position: absolute;
-  right: -22px;
-  top: 18px;
-  z-index: 2;
-  color: #f4d350;
-  font-size: 20px;
-}
-.right-panel-help-text {
-  font-size: 13px;
-  font-family: "OpenSansRegular";
-  color: #b0b0b0;
 }
 /*offers-list*/
 /*icon*/
@@ -5987,6 +6057,23 @@ a.pop-up-info-text-btn-next {
   left: -7px;
   z-index: -1;
 }
+.bonus__small {
+  font-size: 13px;
+  margin: 0 10px 0 0;
+}
+.bonus__small .i_sun__small {
+  background-image: url(../img/interface/sun__big.png);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -6px;
+  left: -4px;
+  z-index: -1;
+}
+.bonus__small .fa {
+  margin-top: 2px;
+  vertical-align: top;
+}
 .bonus__check {
   margin: 0;
 }
@@ -6095,6 +6182,35 @@ a.pop-up-info-text-btn-next {
     padding: 10px 0;
     position: absolute;
     right: 15px;
+  }
+}
+.content-order-name-offers-list-item-search__without-text {
+  text-align: left;
+  position: relative;
+  height: 74px;
+}
+.content-order-name-offers-list-item-search__without-text .content-order-name-offers-list-item-search-input-inner {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  right: 240px;
+  z-index: 2;
+}
+.content-order-name-offers-list-item-search__without-text .form-control {
+  width: 100%;
+  margin: 0;
+}
+.content-order-name-offers-list-item-search__without-text .btn-green {
+  position: absolute;
+  padding: 10px 23px;
+  right: 30px;
+  top: 20px;
+  z-index: 2;
+  width: 186px;
+}
+@media (max-width: 768px) {
+  .content-order-name-offers-list-item-search__without-text .btn-green {
+    width: 186px;
   }
 }
 .content-order-name-offers-list-item-search__text-left {
@@ -6251,6 +6367,13 @@ a.pop-up-info-text-btn-next {
 }
 .content-order-name-offers-list-item-author-info img {
   margin-left: 20px;
+}
+.content-order-name-offers-list-item-author-info-number {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  color: #444444;
+  display: inline-block;
+  margin-left: 30px;
 }
 .content-order-name-offers-list-item-author-info-item-left {
   display: inline-block;
