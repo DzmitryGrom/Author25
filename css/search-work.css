@@ -2932,7 +2932,6 @@ textarea:focus {
     width: 50%;
     display: inline-block;
     vertical-align: top;
-    padding-left: 15px;
   }
 }
 .content-sitebar-user-name {
@@ -2974,6 +2973,16 @@ textarea:focus {
     padding-left: 15px;
   }
 }
+.content-sitebar-user-info-text-top {
+  border-top: 1px solid #e6e6e6;
+  color: #b0b0b0;
+  padding-top: 30px;
+}
+.content-sitebar-user-info-orders-description {
+  color: #444444;
+  padding-top: 0px;
+  margin-bottom: 0;
+}
 .content-sitebar-user-info-text-top,
 .content-sitebar-user-info-orders-description {
   font-size: 18px;
@@ -2990,15 +2999,8 @@ textarea:focus {
     font-size: 16px;
   }
 }
-.content-sitebar-user-info-text-top {
-  border-top: 1px solid #e6e6e6;
-  color: #b0b0b0;
-  padding-top: 30px;
-}
-.content-sitebar-user-info-orders-description {
-  color: #444444;
-  padding-top: 0px;
-  margin-bottom: 0;
+.content-sitebar-user-info-orders-description__without-margin {
+  margin: 0;
 }
 .content-sitebar-user-info-orders-description__blue {
   color: #4786c8;
@@ -3023,12 +3025,12 @@ textarea:focus {
   .content-sitebar-user-info-list-item {
     margin-bottom: 0;
     font-size: 14px;
-    line-height: 44px;
+    line-height: 28px;
   }
 }
 .content-sitebar-user-info-text-bottom:last-child,
 .content-sitebar-user-info-list-item:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .content-sitebar-user-info-text-bottom-value,
 .content-sitebar-user-info-list-item-value {
@@ -3146,7 +3148,6 @@ textarea:focus {
 .content-sitebar-select {
   background-color: #f5f5f5;
   padding: 15px 15px 20px 15px;
-  margin-bottom: 25px;
 }
 .content-sitebar-select .select2 {
   width: 100%!important;
@@ -4216,6 +4217,11 @@ textarea:focus {
   margin-bottom: 20px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .checkbox-item {
+    margin: 45px 0 10px 0;
+  }
+}
 .checkbox-item-text {
   font-size: 14px;
   font-family: "OpenSansRegular";
@@ -4237,6 +4243,13 @@ textarea:focus {
   right: 0;
   top: 0;
   z-index: 2;
+}
+@media (max-width: 768px) {
+  .checkbox-item-right-side {
+    left: 0;
+    width: 100%;
+    top: -30px;
+  }
 }
 .checkbox-item .checkbox-dynamic {
   margin: 0 5px 0 0;

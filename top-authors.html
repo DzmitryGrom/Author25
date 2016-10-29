@@ -141,9 +141,9 @@
         <!--content-->
         <div class="content container">
             <div class="content-sitebar">
-                <div class="content-sitebar-user content-sitebar-user__without-paddings content-sitebar-user__without-margin">
+                <div class="content-sitebar-user content-sitebar-user__without-paddings">
                     <div class="content-sitebar-user-info">
-                        <p class="content-sitebar-user-info-orders-description content-sitebar-user-info-orders-description__blue"><strong>Все предметы</strong></p>
+                        <p class="content-sitebar-user-info-orders-description content-sitebar-user-info-orders-description__without-margin content-sitebar-user-info-orders-description__blue"><strong>Все предметы</strong></p>
                         <ul class="content-sitebar-user-info-list content-sitebar-user-info-list__decoration">
                             <li class="content-sitebar-user-info-list-item">
                                 <a class="content-sitebar-user-info-list-item-link" href="#">Технические</a>
@@ -156,48 +156,49 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="content-sitebar-select">
-                    <p class="content-sitebar-select-description">Гуманитарные</p>
-                    <select class="form-control js-example-basic-single select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                        <option value="AL">Любой предмет...</option>
-                        <option value="WY">Экзамен</option>
-                        <option value="WY">Контрольная</option>
-                    </select>
-                </div>
-                <div class="select-item">
-                    <span class="select-item-description__big">Выбранные авторы</span>
-                    <p class="select-item-text">Вы можете пригласить только 10 авторов</p>
-                    <div class="solid"></div>
-                    <div class="select-item-user">
-                        <p class="select-item-user-text">Выберите авторов из таблицы</p>
+                    <div class="content-sitebar-select">
+                        <p class="content-sitebar-select-description">Гуманитарные</p>
+                        <select class="form-control js-example-basic-single select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                            <option value="AL">Любой предмет...</option>
+                            <option value="WY">Экзамен</option>
+                            <option value="WY">Контрольная</option>
+                        </select>
                     </div>
                 </div>
-                <div class="select-item">
-                    <span class="select-item-description__big">Выбранные авторы</span>
-                    <p class="select-item-text">Вы можете пригласить только 10 авторов</p>
-                    <div class="solid"></div>
-                    <div class="select-item-user">
-                        <div class="select-item-user-item">
-                            <img src="img/interface/user-line.png" alt="user">                                     
-                            <span class="author-login">Неверова</span>
-                            <span class="btn-delete">
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                            </span>
+                <div class="select-item-inner">
+                    <div class="select-item">
+                        <span class="select-item-description__big">Выбранные авторы</span>
+                        <p class="select-item-text">Вы можете пригласить только 10 авторов</p>
+                        <div class="solid"></div>
+                        <div class="select-item-user">
+                            <p class="select-item-user-text">Выберите авторов из таблицы</p>
                         </div>
-                        <div class="select-item-user-item">
-                            <img src="img/interface/user-line.png" alt="user">                                     
-                            <span class="author-login">Неверова</span>
-                            <span class="btn-delete">
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                        
-                        <p class="btn-inner">
-                            <a href="#" class="btn-green">ПРИГЛАСИТЬ</a>
-                        </p>
                     </div>
-                </div>
+                    <div class="select-item">
+                        <span class="select-item-description__big">Выбранные авторы</span>
+                        <p class="select-item-text">Вы можете пригласить только 10 авторов</p>
+                        <div class="solid"></div>
+                        <div class="select-item-user">
+                            <div class="select-item-user-item">
+                                <img src="img/interface/user-line.png" alt="user">                                     
+                                <span class="author-login">Неверова</span>
+                                <span class="btn-delete">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="select-item-user-item">
+                                <img src="img/interface/user-line.png" alt="user">                                     
+                                <span class="author-login">Неверова</span>
+                                <span class="btn-delete">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <p class="btn-inner">
+                                <a href="#" class="btn-green">ПРИГЛАСИТЬ</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>  
             </div>
             <div class="content-center">    
                 <span class="content-center-description">Топ авторов</span>
@@ -250,7 +251,7 @@
                                     </div>   
                                 </div>
                                 <div class="content-order-name-offers-list-item-author-info-item-right content-order-name-offers-list-item-author-info-item-right__position-btn-select text-center">
-                                    <p>
+                                    <p class="stars-inner">
                                         <span class="stars-active">
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -262,7 +263,7 @@
                                         </span>
                                     </p> 
                                     <div>
-                                        <a href="#" class="btn-blue">ВЫБРАТЬ АВТОРА</a>
+                                        <a href="#" class="btn-blue btn-position">ВЫБРАТЬ АВТОРА</a>
                                     </div>
                                 </div>
                                 <div class="content-order-name-offers-list-item-author-info-bottom-panel content-order-name-offers-list-item-author-info-bottom-panel__without-border">
@@ -311,8 +312,8 @@
                                         <p class="content-order-name-offers-list-item-author-info-item-center-text-bottom">Контрольная работа, Решение задач</p>
                                     </div>   
                                 </div>
-                                <div class="content-order-name-offers-list-item-author-info-item-right content-order-name-offers-list-item-author-info-item-right__position-middle content-order-name-offers-list-item-author-info-item-right__position-btn-select text-center">
-                                    <p>
+                                <div class="content-order-name-offers-list-item-author-info-item-right content-order-name-offers-list-item-author-info-item-right__position-btn-select text-center">
+                                    <p class="stars-inner">
                                         <span class="stars-active">
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -324,7 +325,7 @@
                                         </span>
                                     </p> 
                                     <div>
-                                        <a href="#" class="btn-red">ВЫБРАТЬ АВТОРА</a>
+                                        <a href="#" class="btn-red btn-position">ВЫБРАТЬ АВТОРА</a>
                                     </div>
                                 </div>
                                 <div class="content-order-name-offers-list-item-author-info-bottom-panel content-order-name-offers-list-item-author-info-bottom-panel__without-border">

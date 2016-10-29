@@ -2932,7 +2932,6 @@ textarea:focus {
     width: 50%;
     display: inline-block;
     vertical-align: top;
-    padding-left: 15px;
   }
 }
 .content-sitebar-user-name {
@@ -2974,6 +2973,16 @@ textarea:focus {
     padding-left: 15px;
   }
 }
+.content-sitebar-user-info-text-top {
+  border-top: 1px solid #e6e6e6;
+  color: #b0b0b0;
+  padding-top: 30px;
+}
+.content-sitebar-user-info-orders-description {
+  color: #444444;
+  padding-top: 0px;
+  margin-bottom: 0;
+}
 .content-sitebar-user-info-text-top,
 .content-sitebar-user-info-orders-description {
   font-size: 18px;
@@ -2990,15 +2999,8 @@ textarea:focus {
     font-size: 16px;
   }
 }
-.content-sitebar-user-info-text-top {
-  border-top: 1px solid #e6e6e6;
-  color: #b0b0b0;
-  padding-top: 30px;
-}
-.content-sitebar-user-info-orders-description {
-  color: #444444;
-  padding-top: 0px;
-  margin-bottom: 0;
+.content-sitebar-user-info-orders-description__without-margin {
+  margin: 0;
 }
 .content-sitebar-user-info-orders-description__blue {
   color: #4786c8;
@@ -3023,12 +3025,12 @@ textarea:focus {
   .content-sitebar-user-info-list-item {
     margin-bottom: 0;
     font-size: 14px;
-    line-height: 44px;
+    line-height: 28px;
   }
 }
 .content-sitebar-user-info-text-bottom:last-child,
 .content-sitebar-user-info-list-item:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .content-sitebar-user-info-text-bottom-value,
 .content-sitebar-user-info-list-item-value {
@@ -3146,7 +3148,6 @@ textarea:focus {
 .content-sitebar-select {
   background-color: #f5f5f5;
   padding: 15px 15px 20px 15px;
-  margin-bottom: 25px;
 }
 .content-sitebar-select .select2 {
   width: 100%!important;
@@ -5710,6 +5711,11 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
   margin-bottom: 20px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .checkbox-item {
+    margin: 45px 0 10px 0;
+  }
+}
 .checkbox-item-text {
   font-size: 14px;
   font-family: "OpenSansRegular";
@@ -5731,6 +5737,13 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
   right: 0;
   top: 0;
   z-index: 2;
+}
+@media (max-width: 768px) {
+  .checkbox-item-right-side {
+    left: 0;
+    width: 100%;
+    top: -30px;
+  }
 }
 .checkbox-item .checkbox-dynamic {
   margin: 0 5px 0 0;
@@ -5865,6 +5878,11 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
 .btn-delete:hover {
   color: #e95454;
 }
+@media (max-width: 992px) {
+  .content-center {
+    margin-top: 0;
+  }
+}
 .content-center-inner {
   padding-left: 25px;
 }
@@ -5881,6 +5899,59 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
 @media (max-width: 768px) {
   .content-center-description {
     margin-left: 0;
+  }
+}
+@media (max-width: 992px) {
+  .content-sitebar-user .content-sitebar-user-info {
+    width: 100%;
+    display: block;
+    vertical-align: top;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .content-sitebar-user,
+  .select-item-inner {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+@media (max-width: 768px) {
+  .select-item-inner {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .content-order-name-offers-list-item-author-info-item-left-text {
+    margin-bottom: 65px;
+  }
+}
+@media (max-width: 768px) {
+  .content-order-name-offers-list-item-author-info-item-right__position-btn-select {
+    position: static;
+  }
+}
+.content-order-name-offers-list-item-author-info .img-margin-top {
+  margin-left: 15px;
+}
+@media (max-width: 768px) {
+  .content-order-name-offers-list-item-author-info-number {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .content-order-name-offers-list-item-author-info .stars-inner {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .content-order-name-offers-list-item-author-info .btn-position {
+    position: absolute;
+    left: 43px;
+    top: 100px;
   }
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
