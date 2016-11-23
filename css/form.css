@@ -4628,7 +4628,7 @@ textarea::-webkit-input-placeholder {
 }
 @media (max-width: 690px) {
   .content-form-orders-list-item_select-bottom-panel-help-text-bottom {
-    width: 40%;
+    width: 100%;
   }
 }
 @media (max-width: 1010px) {

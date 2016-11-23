@@ -5020,12 +5020,22 @@ textarea::-webkit-input-placeholder {
   background-position: 0 0;
   left: -60px;
 }
+@media (max-width: 768px) {
+  .prev {
+    left: -34px;
+  }
+}
 .prev:hover {
   background-position: 0 -44px;
 }
 .next {
   right: -60px;
   background-position: -44px 0;
+}
+@media (max-width: 768px) {
+  .next {
+    right: -34px;
+  }
 }
 .next:hover {
   background-position: -44px -44px;
@@ -5331,6 +5341,9 @@ a img {
 .pop-up-info__order-placement-more .pop-up-info-text {
   width: 100%;
   padding: 0 30px;
+}
+.pop-up-info__order-placement-more .pop-up-info-text a {
+  color: #4786c8;
 }
 .pop-up-info__order-placement-more-list {
   border-top: 1px solid #e6e6e6;
