@@ -2244,6 +2244,11 @@ textarea:focus {
   box-shadow: none;
   outline: none;
 }
+a:focus {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
 .nav > li > a,
 .content-notification-history-list-item-btn-inner-add,
 .btn-green,
@@ -5608,6 +5613,9 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
   text-decoration: none;
   color: #fff;
 }
+.btn-blue:focus {
+  color: #fff;
+}
 /*btn-red*/
 .btn-red {
   font-size: 14px;
@@ -5624,6 +5632,9 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
 .btn-red:hover {
   color: #fff;
   text-decoration: none;
+}
+.btn-red:focus {
+  color: #fff;
 }
 /*btn-green*/
 .btn-green {
@@ -5642,6 +5653,9 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
   background-color: #b2d38d;
   color: #fff;
   text-decoration: none;
+}
+.btn-green:focus {
+  color: #fff;
 }
 .btn-green .fa-money {
   margin-right: 5px;
@@ -5669,8 +5683,7 @@ p.content-order-name-offers-list-item-author-info-item-left-open-more-info-inner
   text-decoration: none;
 }
 .btn-gray:focus {
-  outline: none;
-  border: none;
+  color: #fff;
 }
 /*select*/
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
